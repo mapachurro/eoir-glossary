@@ -1,0 +1,57 @@
+[
+  {
+    "label": "abuse",
+    "slug": "abuse",
+    "count": 32
+  },
+  {
+    "label": "charges",
+    "slug": "charges",
+    "count": 13
+  },
+  {
+    "label": "civil-strife",
+    "slug": "civil-strife",
+    "count": 18
+  },
+  {
+    "label": "decisions-and-appeals",
+    "slug": "decisions-and-appeals",
+    "count": 31
+  },
+  {
+    "label": "fraud",
+    "slug": "fraud",
+    "count": 6
+  },
+  {
+    "label": "grounds-and-standards-of-proof",
+    "slug": "grounds-and-standards-of-proof",
+    "count": 55
+  },
+  {
+    "label": "nationality-and-status",
+    "slug": "nationality-and-status",
+    "count": 12
+  },
+  {
+    "label": "objections",
+    "slug": "objections",
+    "count": 18
+  },
+  {
+    "label": "parties",
+    "slug": "parties",
+    "count": 5
+  },
+  {
+    "label": "sex-crimes",
+    "slug": "sex-crimes",
+    "count": 9
+  },
+  {
+    "label": "social-services",
+    "slug": "social-services",
+    "count": 16
+  }
+]

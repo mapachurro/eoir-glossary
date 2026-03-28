@@ -1,10 +1,10 @@
 english,english-definition,spanish,spanish-definition,comments,proposals,category,tags
-Fraud,"The act of fraudulently making a false document or altering a real one to be used as if genuine (Black's, p. 750)",Engaño,,,
-Forgery,,Estafa,,,
-Falsification,,"Fraude; falsificación, falsedad documental",," ""A knowing misrepresentation of the truth or concealment of a material fact to induce another to act to his or her detriment."" That said, 'falsification' is often a criminal charge that comes up during EOIR proceedings, relating to someone producing a document (birth certificate, ID, SSN, etc) that is less than legitimate.",
-,,Ardid,"""Gral. Medio empleado hábilmente para engañar o conseguir algo. ""[...] tanto la Administración como la misma Sala de instancia coincidieron en apreciar que la solicitud de asilo aquí concernida no era más que un ardid fraudulento de D. Genaro para eludir o demorar la orden de expulsión que se había dictado contra él"" (STS, 3a, 14",,
-Scam,,,,This concept is frequently expressed in Spanish as 'estafa'.,
+Fraud,"The act of fraudulently making a false document or altering a real one to be used as if genuine (Black's, p. 750)",Engaño,,,,fraud,
+Forgery,,Estafa,,,,fraud,
+Falsification,,"Fraude; falsificación, falsedad documental",," ""A knowing misrepresentation of the truth or concealment of a material fact to induce another to act to his or her detriment."" That said, 'falsification' is often a criminal charge that comes up during EOIR proceedings, relating to someone producing a document (birth certificate, ID, SSN, etc) that is less than legitimate.",,fraud,
+,,Ardid,"""Gral. Medio empleado hábilmente para engañar o conseguir algo. ""[...] tanto la Administración como la misma Sala de instancia coincidieron en apreciar que la solicitud de asilo aquí concernida no era más que un ardid fraudulento de D. Genaro para eludir o demorar la orden de expulsión que se había dictado contra él"" (STS, 3a, 14",,,fraud,
+Scam,,,,This concept is frequently expressed in Spanish as 'estafa'.,,fraud,
 scheme,"scheme. (16c) 1. A systemic plan; a connected or orderly
 arrangement, esp. of related concepts <legislative
 scheme>. 2. An artful plot or plan, usu. to deceive
-others <a scheme to defraud creditors>. (Black's)",,,,
+others <a scheme to defraud creditors>. (Black's)",,,,,fraud,

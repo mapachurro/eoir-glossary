@@ -1,60 +1,80 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
-import { parse } from 'csv-parse/sync';
+import fs from "node:fs/promises";
+import path from "node:path";
+import { parse } from "csv-parse/sync";
 
 const ROOT_DIR = process.cwd();
-const SOURCE_DIR = path.join(ROOT_DIR, 'terminology-sources');
-const OUTPUT_DIR = path.join(ROOT_DIR, 'src', 'data');
+const SOURCE_DIR = path.join(ROOT_DIR, "terminology-sources");
+const OUTPUT_DIR = path.join(ROOT_DIR, "src", "data");
 
-const VALID_STATUSES = new Set(['active', 'deprecated', 'draft']);
+const VALID_STATUSES = new Set(["active", "deprecated", "draft"]);
 
 const TERM_DEFAULTS = {
-  english: '',
-  englishDefinition: '',
-  spanish: '',
-  spanishDefinition: '',
-  comments: '',
+  english: "",
+  englishDefinition: "",
+  spanish: "",
+  spanishDefinition: "",
+  comments: "",
   category: [],
   tags: [],
   aliases: [],
-  status: 'active',
-  lastUpdated: '',
-  source: '',
+  status: "active",
+  lastUpdated: "",
+  source: "",
+  proposals: ['proposals', 'proposal'],
 };
 
 const HEADER_ALIASES = {
-  english: ['english', 'english term', 'term english', 'englishterm'],
+  english: ["english", "english term", "term english", "englishterm"],
   englishDefinition: [
-    'englishdefinition',
-    'english definition',
-    'definition english',
-    'english_definiton',
+    "englishdefinition",
+    "english definition",
+    "definition english",
+    "english_definiton",
   ],
-  spanish: ['spanish', 'spanish term', 'term spanish', 'spanishterm', 'espanol', 'español'],
+  spanish: [
+    "spanish",
+    "spanish term",
+    "term spanish",
+    "spanishterm",
+    "espanol",
+    "español",
+  ],
   spanishDefinition: [
-    'spanishdefinition',
-    'spanish definition',
-    'definition spanish',
-    'definición en español',
+    "spanishdefinition",
+    "spanish definition",
+    "definition spanish",
+    "definición en español",
   ],
-  comments: ['comments', 'comment', 'notes'],
-  category: ['category', 'categories'],
-  tags: ['tag', 'tags'],
-  aliases: ['alias', 'aliases', 'alternate terms', 'alternates', 'alternateterms'],
-  status: ['status'],
-  lastUpdated: ['lastupdated', 'last updated', 'updatedat', 'updated at', 'date updated'],
+  comments: ["comments", "comment", "notes"],
+  category: ["category", "categories"],
+  tags: ["tag", "tags"],
+  aliases: [
+    "alias",
+    "aliases",
+    "alternate terms",
+    "alternates",
+    "alternateterms",
+  ],
+  status: ["status"],
+  lastUpdated: [
+    "lastupdated",
+    "last updated",
+    "updatedat",
+    "updated at",
+    "date updated",
+  ],
 };
 
 function normalizeHeader(header) {
-  return String(header ?? '')
+  return String(header ?? "")
     .trim()
     .toLowerCase()
-    .replace(/[_-]+/g, ' ')
-    .replace(/\s+/g, ' ');
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ");
 }
 
 function normalizeAliasKey(header) {
-  return normalizeHeader(header).replace(/\s+/g, '');
+  return normalizeHeader(header).replace(/\s+/g, "");
 }
 
 function resolveHeaderMap(headers) {
@@ -64,7 +84,7 @@ function resolveHeaderMap(headers) {
     const aliasSet = new Set(aliases.map(normalizeAliasKey));
 
     const matchedHeader = headers.find((header) =>
-      aliasSet.has(normalizeAliasKey(header))
+      aliasSet.has(normalizeAliasKey(header)),
     );
 
     if (matchedHeader) {
@@ -77,8 +97,8 @@ function resolveHeaderMap(headers) {
 
 function getField(row, headerMap, key) {
   const actualHeader = headerMap[key];
-  if (!actualHeader) return '';
-  return String(row[actualHeader] ?? '').trim();
+  if (!actualHeader) return "";
+  return String(row[actualHeader] ?? "").trim();
 }
 
 function splitMultiValueField(value) {
@@ -95,10 +115,12 @@ function splitMultiValueField(value) {
 }
 
 function normalizeStatus(rawStatus, warnings, contextLabel) {
-  const normalized = String(rawStatus ?? '').trim().toLowerCase();
+  const normalized = String(rawStatus ?? "")
+    .trim()
+    .toLowerCase();
 
   if (!normalized) {
-    return 'active';
+    return "active";
   }
 
   if (VALID_STATUSES.has(normalized)) {
@@ -106,15 +128,15 @@ function normalizeStatus(rawStatus, warnings, contextLabel) {
   }
 
   warnings.push(
-    `[status] Invalid status "${rawStatus}" in ${contextLabel}. Defaulting to "active".`
+    `[status] Invalid status "${rawStatus}" in ${contextLabel}. Defaulting to "active".`,
   );
-  return 'active';
+  return "active";
 }
 
 function normalizeDate(rawDate, warnings, contextLabel) {
-  const value = String(rawDate ?? '').trim();
+  const value = String(rawDate ?? "").trim();
 
-  if (!value) return '';
+  if (!value) return "";
 
   // Accept strict YYYY-MM-DD for now
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
@@ -122,27 +144,27 @@ function normalizeDate(rawDate, warnings, contextLabel) {
   }
 
   warnings.push(
-    `[lastUpdated] Invalid date "${rawDate}" in ${contextLabel}. Expected YYYY-MM-DD. Leaving blank.`
+    `[lastUpdated] Invalid date "${rawDate}" in ${contextLabel}. Expected YYYY-MM-DD. Leaving blank.`,
   );
-  return '';
+  return "";
 }
 
 function slugify(value) {
-  return String(value ?? '')
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
+  return String(value ?? "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim()
-    .replace(/&/g, ' and ')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .replace(/-{2,}/g, '-');
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/-{2,}/g, "-");
 }
 
 function buildId(term, existingIds, sourceFile, rowIndex) {
-  const base = slugify(
-    `${term.english || 'untitled'}-${term.spanish || 'no-spanish'}`
-  ) || `term-${rowIndex + 1}`;
+  const base =
+    slugify(`${term.english || "untitled"}-${term.spanish || "no-spanish"}`) ||
+    `term-${rowIndex + 1}`;
 
   let id = base;
   let counter = 2;
@@ -177,15 +199,19 @@ function deriveLabelObjects(terms, fieldName) {
   }
 
   return Array.from(counts.values()).sort((a, b) =>
-    a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })
+    a.label.localeCompare(b.label, "en", { sensitivity: "base" }),
   );
 }
 
 function removeSelfAliases(aliases, english, spanish) {
   const forbidden = new Set(
     [english, spanish]
-      .map((v) => String(v ?? '').trim().toLowerCase())
-      .filter(Boolean)
+      .map((v) =>
+        String(v ?? "")
+          .trim()
+          .toLowerCase(),
+      )
+      .filter(Boolean),
   );
 
   return aliases.filter((alias) => !forbidden.has(alias.toLowerCase()));
@@ -199,19 +225,27 @@ async function readCsvFiles(dirPath) {
   const entries = await fs.readdir(dirPath, { withFileTypes: true });
 
   return entries
-    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith('.csv'))
+    .filter(
+      (entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".csv"),
+    )
     .map((entry) => path.join(dirPath, entry.name))
     .sort((a, b) => a.localeCompare(b));
 }
 
 async function parseCsvFile(filePath) {
-  const raw = await fs.readFile(filePath, 'utf8');
+  const raw = await fs.readFile(filePath, "utf8");
 
-  return parse(raw, {
+  const records = parse(raw, {
     columns: true,
     skip_empty_lines: true,
     bom: true,
+    relax_column_count: true,
+    relax_quotes: true,
   });
+
+  return records.filter((row) =>
+    Object.values(row).some((value) => String(value ?? "").trim() !== ""),
+  );
 }
 
 async function main() {
@@ -249,8 +283,8 @@ async function main() {
     }
 
     for (const [rowIndex, row] of rows.entries()) {
-      const english = getField(row, headerMap, 'english');
-      const spanish = getField(row, headerMap, 'spanish');
+      const english = getField(row, headerMap, "english");
+      const spanish = getField(row, headerMap, "spanish");
       const contextLabel = `${sourceFile} row ${rowIndex + 2}`;
 
       if (!english && !spanish) {
@@ -258,31 +292,38 @@ async function main() {
         continue;
       }
 
-      const category = splitMultiValueField(getField(row, headerMap, 'category'));
-      const tags = splitMultiValueField(getField(row, headerMap, 'tags'));
+      const category = splitMultiValueField(
+        getField(row, headerMap, "category"),
+      );
+      const tags = splitMultiValueField(getField(row, headerMap, "tags"));
       const aliases = removeSelfAliases(
-        splitMultiValueField(getField(row, headerMap, 'aliases')),
+        splitMultiValueField(getField(row, headerMap, "aliases")),
         english,
-        spanish
+        spanish,
       );
 
       const term = {
         ...TERM_DEFAULTS,
         english,
-        englishDefinition: getField(row, headerMap, 'englishDefinition'),
+        englishDefinition: getField(row, headerMap, "englishDefinition"),
         spanish,
-        spanishDefinition: getField(row, headerMap, 'spanishDefinition'),
-        comments: getField(row, headerMap, 'comments'),
+        spanishDefinition: getField(row, headerMap, "spanishDefinition"),
+        comments: getField(row, headerMap, "comments"),
         category,
         tags,
         aliases,
-        status: normalizeStatus(getField(row, headerMap, 'status'), warnings, contextLabel),
-        lastUpdated: normalizeDate(
-          getField(row, headerMap, 'lastUpdated'),
+        status: normalizeStatus(
+          getField(row, headerMap, "status"),
           warnings,
-          contextLabel
+          contextLabel,
+        ),
+        lastUpdated: normalizeDate(
+          getField(row, headerMap, "lastUpdated"),
+          warnings,
+          contextLabel,
         ),
         source: sourceFile,
+        proposals: getField(row, headerMap, 'proposals'),
       };
 
       term.id = buildId(term, existingIds, sourceFile, rowIndex);
@@ -291,35 +332,35 @@ async function main() {
     }
   }
 
-  const categories = deriveLabelObjects(terms, 'category');
-  const tags = deriveLabelObjects(terms, 'tags');
+  const categories = deriveLabelObjects(terms, "category");
+  const tags = deriveLabelObjects(terms, "tags");
 
   await fs.writeFile(
-    path.join(OUTPUT_DIR, 'glossary.json'),
+    path.join(OUTPUT_DIR, "glossary.json"),
     JSON.stringify(terms, null, 2),
-    'utf8'
+    "utf8",
   );
 
   await fs.writeFile(
-    path.join(OUTPUT_DIR, 'categories.json'),
+    path.join(OUTPUT_DIR, "categories.json"),
     JSON.stringify(categories, null, 2),
-    'utf8'
+    "utf8",
   );
 
   await fs.writeFile(
-    path.join(OUTPUT_DIR, 'tags.json'),
+    path.join(OUTPUT_DIR, "tags.json"),
     JSON.stringify(tags, null, 2),
-    'utf8'
+    "utf8",
   );
 
   console.log(`Built ${terms.length} terms from ${csvFiles.length} CSV files.`);
   console.log(`Wrote:`);
-  console.log(`- ${path.join(OUTPUT_DIR, 'glossary.json')}`);
-  console.log(`- ${path.join(OUTPUT_DIR, 'categories.json')}`);
-  console.log(`- ${path.join(OUTPUT_DIR, 'tags.json')}`);
+  console.log(`- ${path.join(OUTPUT_DIR, "glossary.json")}`);
+  console.log(`- ${path.join(OUTPUT_DIR, "categories.json")}`);
+  console.log(`- ${path.join(OUTPUT_DIR, "tags.json")}`);
 
   if (warnings.length > 0) {
-    console.log('\nWarnings:');
+    console.log("\nWarnings:");
     for (const warning of warnings) {
       console.log(`- ${warning}`);
     }

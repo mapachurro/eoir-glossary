@@ -1,6 +1,6 @@
 english,english-definition,spanish,spanish-definition,comments,proposals,category,tags
-Applicant,,Solicitante,,"Asylum-only proceedings, withholding only proceedings, reasonable fear review proceedings, credible fear review proceedings",
-Petitioner,,Demandante,,"Visa processes, I-130, businesses, VAWA claimants.",
-Respondent,,Compareciente,,I-240 proceedings only. An NTA must have been issued.,
-Claimant,,"Querellante, demandante",,,
-Entrant,,,,,
+Applicant,,Solicitante,,"Asylum-only proceedings, withholding only proceedings, reasonable fear review proceedings, credible fear review proceedings",,parties,
+Petitioner,,Demandante,,"Visa processes, I-130, businesses, VAWA claimants.",,parties,
+Respondent,,Compareciente,,I-240 proceedings only. An NTA must have been issued.,,parties,
+Claimant,,"Querellante, demandante",,,,parties,
+Entrant,,,,,,parties,
