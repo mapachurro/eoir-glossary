@@ -132,13 +132,12 @@ a {
 }
 
 .search-bar {
-  margin: 1rem 0 1.5rem;
+  width: 100%;
 }
 
-.search-bar__label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
+.search-bar__input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .search-bar__input {
@@ -187,13 +186,13 @@ a {
 }
 
 .home-search {
-  margin: 1.5rem 0 1rem;
-}
-
-.home-search .button-link {
-  border: none;
-  cursor: pointer;
-  font: inherit;
+  margin: 2rem auto 1.5rem;
+  width: min(90%, 600px);
+  max-width: 600px; /* controls the width (~50%) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .term-meta-link {
@@ -237,4 +236,28 @@ a {
 
 .term-card__suggest-link:hover {
   background: #f6f6f6;
+}
+
+.about-card,
+.source-section {
+  background: #ffffff;
+  border-radius: 0.85rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.about-card h2,
+.source-section h2 {
+  margin-top: 0;
+}
+
+.about-card p,
+.source-section p,
+.source-list li {
+  line-height: 1.55;
+}
+
+.source-list {
+  padding-left: 1.25rem;
 }

@@ -5,6 +5,7 @@ import AllTermsPage from "./pages/AllTermsPage";
 import CategoryPage from "./pages/CategoryPage";
 import TagPage from "./pages/TagPage";
 import SubmissionsPage from "./pages/SubmissionsPage";
+import SourcesPage from "./pages/SourcesPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="terms" element={<AllTermsPage />} />
         <Route path="category/:slug" element={<CategoryPage />} />
         <Route path="tag/:slug" element={<TagPage />} />
+        <Route path="sources" element={<SourcesPage />} />
         <Route path="submissions" element={<SubmissionsPage />} />
       </Route>
     </Routes>
