@@ -1,0 +1,21 @@
+.app-shell {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.term-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.term-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.term-card__toggle {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
