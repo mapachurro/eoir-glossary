@@ -16,6 +16,9 @@ export default function Layout() {
             <NavLink to="/terms">
               All Terms
             </NavLink>
+            <NavLink to="/sources">
+              Bibliography & Sources
+            </NavLink>
             <NavLink to="/submissions">
               Submissions & Revisions
             </NavLink>
