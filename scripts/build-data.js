@@ -20,7 +20,7 @@ const TERM_DEFAULTS = {
   status: "active",
   lastUpdated: "",
   source: "",
-  proposals: ['proposals', 'proposal'],
+  proposals: "",
 };
 
 const HEADER_ALIASES = {
@@ -46,6 +46,7 @@ const HEADER_ALIASES = {
     "definición en español",
   ],
   comments: ["comments", "comment", "notes"],
+  proposals: ["proposals", "proposal"],
   category: ["category", "categories"],
   tags: ["tag", "tags"],
   aliases: [
@@ -114,6 +115,38 @@ function splitMultiValueField(value) {
     });
 }
 
+function humanizeLabel(value) {
+  return String(value ?? "")
+    .trim()
+    .replace(/[-_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function maybeHumanizeLabel(value) {
+  const trimmed = String(value ?? "").trim();
+
+  if (!trimmed) return "";
+
+  // Only humanize clearly slug-like values such as "civil-strife"
+  if (/^[a-z0-9]+(?:[-_][a-z0-9]+)+$/.test(trimmed)) {
+    return humanizeLabel(trimmed);
+  }
+
+  return trimmed;
+}
+
+function normalizeLabelArray(values, transformer = (value) => value) {
+  return values
+    .map(transformer)
+    .map((item) => String(item ?? "").trim())
+    .filter(Boolean)
+    .filter((item, index, arr) => {
+      const lower = item.toLowerCase();
+      return arr.findIndex((x) => x.toLowerCase() === lower) === index;
+    });
+}
+
 function normalizeStatus(rawStatus, warnings, contextLabel) {
   const normalized = String(rawStatus ?? "")
     .trim()
@@ -138,7 +171,6 @@ function normalizeDate(rawDate, warnings, contextLabel) {
 
   if (!value) return "";
 
-  // Accept strict YYYY-MM-DD for now
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
     return value;
   }
@@ -161,7 +193,7 @@ function slugify(value) {
     .replace(/-{2,}/g, "-");
 }
 
-function buildId(term, existingIds, sourceFile, rowIndex) {
+function buildId(term, existingIds, rowIndex) {
   const base =
     slugify(`${term.english || "untitled"}-${term.spanish || "no-spanish"}`) ||
     `term-${rowIndex + 1}`;
@@ -292,12 +324,14 @@ async function main() {
         continue;
       }
 
-      const category = splitMultiValueField(
-        getField(row, headerMap, "category"),
-      );
-      const tags = splitMultiValueField(getField(row, headerMap, "tags"));
+      const rawCategory = splitMultiValueField(getField(row, headerMap, "category"));
+      const rawTags = splitMultiValueField(getField(row, headerMap, "tags"));
+      const rawAliases = splitMultiValueField(getField(row, headerMap, "aliases"));
+
+      const category = normalizeLabelArray(rawCategory, maybeHumanizeLabel);
+      const tags = normalizeLabelArray(rawTags, maybeHumanizeLabel);
       const aliases = removeSelfAliases(
-        splitMultiValueField(getField(row, headerMap, "aliases")),
+        normalizeLabelArray(rawAliases),
         english,
         spanish,
       );
@@ -309,6 +343,7 @@ async function main() {
         spanish,
         spanishDefinition: getField(row, headerMap, "spanishDefinition"),
         comments: getField(row, headerMap, "comments"),
+        proposals: getField(row, headerMap, "proposals"),
         category,
         tags,
         aliases,
@@ -323,11 +358,9 @@ async function main() {
           contextLabel,
         ),
         source: sourceFile,
-        proposals: getField(row, headerMap, 'proposals'),
       };
 
-      term.id = buildId(term, existingIds, sourceFile, rowIndex);
-
+      term.id = buildId(term, existingIds, rowIndex);
       terms.push(term);
     }
   }
@@ -354,7 +387,7 @@ async function main() {
   );
 
   console.log(`Built ${terms.length} terms from ${csvFiles.length} CSV files.`);
-  console.log(`Wrote:`);
+  console.log("Wrote:");
   console.log(`- ${path.join(OUTPUT_DIR, "glossary.json")}`);
   console.log(`- ${path.join(OUTPUT_DIR, "categories.json")}`);
   console.log(`- ${path.join(OUTPUT_DIR, "tags.json")}`);

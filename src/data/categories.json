@@ -10,12 +10,12 @@
     "count": 13
   },
   {
-    "label": "civil-strife",
+    "label": "Civil Strife",
     "slug": "civil-strife",
     "count": 18
   },
   {
-    "label": "decisions-and-appeals",
+    "label": "Decisions And Appeals",
     "slug": "decisions-and-appeals",
     "count": 31
   },
@@ -25,12 +25,12 @@
     "count": 6
   },
   {
-    "label": "grounds-and-standards-of-proof",
+    "label": "Grounds And Standards Of Proof",
     "slug": "grounds-and-standards-of-proof",
     "count": 55
   },
   {
-    "label": "nationality-and-status",
+    "label": "Nationality And Status",
     "slug": "nationality-and-status",
     "count": 12
   },
@@ -45,12 +45,12 @@
     "count": 5
   },
   {
-    "label": "sex-crimes",
+    "label": "Sex Crimes",
     "slug": "sex-crimes",
     "count": 9
   },
   {
-    "label": "social-services",
+    "label": "Social Services",
     "slug": "social-services",
     "count": 16
   }
