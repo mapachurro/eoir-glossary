@@ -1,12 +1,21 @@
-import glossary from "./data/glossary.json";
-import TermList from "./components/TermList";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import AllTermsPage from "./pages/AllTermsPage";
+import CategoryPage from "./pages/CategoryPage";
+import TagPage from "./pages/TagPage";
+import SubmissionsPage from "./pages/SubmissionsPage";
 
 export default function App() {
   return (
-    <main className="app-shell">
-      <h1>EOIR Glossary</h1>
-      <p>{glossary.length} terms loaded.</p>
-      <TermList terms={glossary} />
-    </main>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="terms" element={<AllTermsPage />} />
+        <Route path="category/:slug" element={<CategoryPage />} />
+        <Route path="tag/:slug" element={<TagPage />} />
+        <Route path="submissions" element={<SubmissionsPage />} />
+      </Route>
+    </Routes>
   );
 }

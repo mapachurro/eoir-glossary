@@ -1,35 +1,109 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import slugify from "../utils/slugify";
+import { buildEditSuggestionUrl } from "../utils/githubIssueLinks";
 
 export default function TermCard({ term }) {
   const [expanded, setExpanded] = useState(false);
+  const editUrl = buildEditSuggestionUrl(term);
 
   return (
     <article className="term-card">
       <div className="term-card__main">
-        <p><strong>English:</strong> {term.english || "—"}</p>
-        <p><strong>Spanish:</strong> {term.spanish || "—"}</p>
-        <p><strong>Comments:</strong> {term.comments || "—"}</p>
+        <p>
+          <strong>English:</strong> {term.english || "—"}
+        </p>
+        <p>
+          <strong>Spanish:</strong> {term.spanish || "—"}
+        </p>
+        <p>
+          <strong>Comments:</strong> {term.comments || "—"}
+        </p>
       </div>
 
-      <button
-        type="button"
-        className="term-card__toggle"
-        onClick={() => setExpanded((prev) => !prev)}
-      >
-        {expanded ? "Hide details" : "Show details"}
-      </button>
+      <div className="term-card__actions">
+        <button
+          type="button"
+          className="term-card__toggle"
+          onClick={() => setExpanded((prev) => !prev)}
+        >
+          {expanded ? "Hide details" : "Show details"}
+        </button>
+
+        <a
+          className="term-card__suggest-link"
+          href={editUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Suggest edit
+        </a>
+      </div>
 
       {expanded && (
         <div className="term-card__details">
-          <p><strong>English definition:</strong> {term.englishDefinition || "—"}</p>
-          <p><strong>Spanish definition:</strong> {term.spanishDefinition || "—"}</p>
-          <p><strong>Category:</strong> {term.category.length ? term.category.join(", ") : "—"}</p>
-          <p><strong>Tags:</strong> {term.tags.length ? term.tags.join(", ") : "—"}</p>
-          <p><strong>Aliases:</strong> {term.aliases.length ? term.aliases.join(", ") : "—"}</p>
-          <p><strong>Status:</strong> {term.status}</p>
-          <p><strong>Last updated:</strong> {term.lastUpdated || "—"}</p>
-          <p><strong>Source:</strong> {term.source}</p>
-          <p><strong>Proposals:</strong> {term.proposals || "—"}</p>
+          <p>
+            <strong>English definition:</strong> {term.englishDefinition || "—"}
+          </p>
+          <p>
+            <strong>Spanish definition:</strong> {term.spanishDefinition || "—"}
+          </p>
+
+          <p>
+            <strong>Category:</strong>{" "}
+            {term.category.length ? (
+              <span className="term-meta-list">
+                {term.category.map((category, index) => (
+                  <span key={category}>
+                    <Link
+                      className="term-meta-link"
+                      to={`/category/${slugify(category)}`}
+                    >
+                      {category}
+                    </Link>
+                    {index < term.category.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </span>
+            ) : (
+              "—"
+            )}
+          </p>
+
+          <p>
+            <strong>Tags:</strong>{" "}
+            {term.tags.length ? (
+              <span className="term-meta-list">
+                {term.tags.map((tag, index) => (
+                  <span key={tag}>
+                    <Link className="term-meta-link" to={`/tag/${slugify(tag)}`}>
+                      {tag}
+                    </Link>
+                    {index < term.tags.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </span>
+            ) : (
+              "—"
+            )}
+          </p>
+
+          <p>
+            <strong>Aliases:</strong>{" "}
+            {term.aliases.length ? term.aliases.join(", ") : "—"}
+          </p>
+          <p>
+            <strong>Status:</strong> {term.status}
+          </p>
+          <p>
+            <strong>Last updated:</strong> {term.lastUpdated || "—"}
+          </p>
+          <p>
+            <strong>Source:</strong> {term.source}
+          </p>
+          <p>
+            <strong>Proposals:</strong> {term.proposals || "—"}
+          </p>
         </div>
       )}
     </article>
