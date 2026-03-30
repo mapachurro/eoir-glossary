@@ -65,7 +65,8 @@ export default function AllTermsPage() {
         <div className="empty-state">
           <h2>No matching terms found</h2>
           <p>
-            Try a broader word, a different spelling, or search in English or Spanish.
+            Try a broader word, a different spelling, or search in English or
+            Spanish.
           </p>
         </div>
       ) : (

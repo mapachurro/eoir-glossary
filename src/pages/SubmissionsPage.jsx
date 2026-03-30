@@ -1,7 +1,5 @@
-const NEW_TERM_URL =
-  "https://github.com/mapachurro/eoir-glossary/issues/new";
-const REVISION_URL =
-  "https://github.com/mapachurro/eoir-glossary/issues/new";
+const NEW_TERM_URL = "https://github.com/mapachurro/eoir-glossary/issues/new";
+const REVISION_URL = "https://github.com/mapachurro/eoir-glossary/issues/new";
 
 export default function SubmissionsPage() {
   return (
@@ -15,7 +13,8 @@ export default function SubmissionsPage() {
         <article className="browse-card">
           <h2>Submit a revision</h2>
           <p>
-            Suggest a change to an existing term, translation, definition, or note.
+            Suggest a change to an existing term, translation, definition, or
+            note.
           </p>
           <a
             className="button-link"
@@ -30,7 +29,8 @@ export default function SubmissionsPage() {
         <article className="browse-card">
           <h2>Submit a new term</h2>
           <p>
-            Propose a new glossary entry with as many fields filled in as possible.
+            Propose a new glossary entry with as many fields filled in as
+            possible.
           </p>
           <a
             className="button-link"

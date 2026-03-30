@@ -49,7 +49,8 @@ const bibliographyEntries = [
     author: "EASO (European Asylum Support Office)",
   },
   {
-    title: "Estándares probatorios en el sistema acusatorio y su desarrollo en Colombia",
+    title:
+      "Estándares probatorios en el sistema acusatorio y su desarrollo en Colombia",
     author: "Claudia Edith Velandia Coy",
   },
   {
@@ -60,7 +61,8 @@ const bibliographyEntries = [
   {
     title:
       "Glosario de Términos y de Conceptos Jurídicos o Relativos al Poder Judicial",
-    author: "Oficina de Administración de los Tribunales, Academia Judicial Puertorriqueña, 2015",
+    author:
+      "Oficina de Administración de los Tribunales, Academia Judicial Puertorriqueña, 2015",
   },
   {
     title: "Guía Práctica de la EASO: Valoración de las pruebas",
@@ -77,7 +79,8 @@ const bibliographyEntries = [
     author: "UNHCR",
   },
   {
-    title: "http://noticias.juridicas.com/base_datos/Admin/rd2393-2004.t11.html#a138",
+    title:
+      "http://noticias.juridicas.com/base_datos/Admin/rd2393-2004.t11.html#a138",
     author: "",
   },
   {
@@ -85,7 +88,8 @@ const bibliographyEntries = [
     author: "",
   },
   {
-    title: "https://foreignpolicy.com/2015/01/26/al-qaeda-islamic-state-myth-of-the-terrorist-safe-haven/",
+    title:
+      "https://foreignpolicy.com/2015/01/26/al-qaeda-islamic-state-myth-of-the-terrorist-safe-haven/",
     author: "",
   },
   {
@@ -121,7 +125,8 @@ const bibliographyEntries = [
     author: "Cámara de Diputados del H. Congreso de la Unión (de México)",
   },
   {
-    title: "Lobo, S., 1992. A House Of My Own. Tucson, Ariz.: University of Arizona Press",
+    title:
+      "Lobo, S., 1992. A House Of My Own. Tucson, Ariz.: University of Arizona Press",
     author: "",
   },
   {
@@ -187,7 +192,8 @@ const bibliographyEntries = [
     author: "US Dept. of State",
   },
   {
-    title: "The Inconvenience of the reasonable person standard in criminal law",
+    title:
+      "The Inconvenience of the reasonable person standard in criminal law",
     author: "Juan Pablo Pérez-León Acevedo",
   },
   {
@@ -208,20 +214,23 @@ export default function SourcesPage() {
       <p className="page-intro">
         This page is intended to provide clarity as to how this glossary came to
         be, and where its information came from. Any terminological decision is
-        only as good as its sources, so we encourage you to understand how
-        those decisions were made.
+        only as good as its sources, so we encourage you to understand how those
+        decisions were made.
       </p>
 
       <section className="source-section">
         <p>
           The bibliography below lists source materials consulted in compiling
-          and maintaining the glossary. 
-          Some sources were drawn from broadly, while others served to narrow down more specific contexts.
+          and maintaining the glossary. Some sources were drawn from broadly,
+          while others served to narrow down more specific contexts.
         </p>
         <p>
-          Whenever a source was used, we have attempted to make note of it in the corresponding definition, note, or comment, but there may be cases where we failed to do this.
-          If an entry does not cite a source, it is safe to assume that the equivalent provided has not been thoroughly interrogated.
-          Whether that's acceptable or not in each case we leave to your best judgment.
+          Whenever a source was used, we have attempted to make note of it in
+          the corresponding definition, note, or comment, but there may be cases
+          where we failed to do this. If an entry does not cite a source, it is
+          safe to assume that the equivalent provided has not been thoroughly
+          interrogated. Whether that's acceptable or not in each case we leave
+          to your best judgment.
         </p>
 
         <div className="sources-table-wrapper">
