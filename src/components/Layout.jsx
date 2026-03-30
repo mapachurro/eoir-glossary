@@ -6,7 +6,7 @@ export default function Layout() {
       <header className="site-header">
         <div className="site-header__inner">
           <Link to="/" className="site-title">
-            EOIR Glossary
+            Immigration Glossary - Glosario de lo migratorio
           </Link>
 
           <nav className="site-nav">

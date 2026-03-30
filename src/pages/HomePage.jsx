@@ -26,9 +26,9 @@ export default function HomePage() {
 
   return (
     <section className="page">
-      <h1>EOIR Glossary</h1>
+      <h1>Immigration Glossary - Glosario de lo migratorio</h1>
       <p className="page-intro">
-        A bilingual English-Spanish glossary for immigration court terminology.
+        A living English-Spanish bilingual glossary of immigration and migration terminology.
       </p>
 
       <form className="home-search" onSubmit={handleSearchSubmit}>
@@ -54,30 +54,29 @@ export default function HomePage() {
       <section className="about-card">
         <h2>About this project</h2>
         <p>
-          This glossary is an independent reference project intended to help
-          readers navigate English and Spanish terminology used in immigration
-          court and related legal contexts.
+          This is an interactive platform to consult and maintain a living glossary of immigration and migration terms.
         </p>
         <p>
-          It is <strong>not</strong> an official website, publication, or service
-          of the Executive Office for Immigration Review (EOIR), the U.S.
-          Department of Justice (DOJ), or any other government agency.
+          The present glossary <strong>is not an official production of any branch, entity, or agency of any government.</strong> While it strives to be as accurate, up-to-date, and nuanced as possible, you should make your own decision on its trustworthiness. The author(s) offer no guarantees; we only hope it helps you.
         </p>
         <p>
-          This project is provided for reference, education, and terminology
-          support only. It is not legal advice, and it should not be used as a
-          substitute for official guidance, governing law, court rules, or advice
-          from a qualified attorney or accredited representative.
+          This project is intended to be used by anyone seeking to understand the similarities, differences, alignments and lacunae of immigration law, procedure, proceedings, contexts and experiences between the United States and other places. In particular, **it was designed and written with the professional linguist in mind: translators, interpreters, and terminologists**, although legal scholars, attorneys, and others may find it useful as well. 
+          Its initial version is a bilingual Spanish-English glossary. 
+          <br />
+          <strong>This website is not and does not provide legal advice.
+          It should not be used as a substitute for official guidance, case law consultation, court rules, or advice
+          from a qualified attorney or accredited representative. </strong>
+        </p>
+        <h3>Where did this come from?</h3>
+        <p>
+          This work has its origins all the way back in the 1950s, when Berlitz was contracted by the US Federal Government to create a glossary for the first interpreters, translators, and professionals who began to deal with the institutionalization of the movement of people across the Mexico - US border, given the, at the time, newly-created frameworks of migration and asylum laws.
         </p>
         <p>
-          Terminology, usage, and translation choices may vary by jurisdiction,
-          speaker, interpreter, attorney, judge, agency, and context. Where
-          possible, users should compare entries against primary legal materials
-          and other authoritative sources.
+          That glossary, over the decades, was updated from time to time, often by people working with or for the Immigration Courts, wherever they happened to be housed within the structure of the Federal Government at the time. Currently, that entity is the Executive Office for Immigration Review, or <a href="https://www.justice.gov/eoir">EOIR</a>.
         </p>
         <p>
-          For background on the materials consulted in building this glossary, see{" "}
-          <Link to="/sources">Bibliography &amp; Sources</Link>.
+          The bulk of this glossary was drawn from the work of Staff Interpreter Oliver JL Renwick and his colleagues, who provided a comprehensively updated and expanded glossary for the EOIR in 2020. For full details on sources and a bibliography, see the{" "}
+          <Link to="/sources">Bibliography &amp; Sources</Link> page.
         </p>
       </section>
 
