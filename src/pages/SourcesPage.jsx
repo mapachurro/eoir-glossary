@@ -208,18 +208,20 @@ export default function SourcesPage() {
       <p className="page-intro">
         This page is intended to provide clarity as to how this glossary came to
         be, and where its information came from. Any terminological decision is
-        only as good as its sources, so readers are encouraged to understand how
+        only as good as its sources, so we encourage you to understand how
         those decisions were made.
       </p>
 
       <section className="source-section">
         <p>
           The bibliography below lists source materials consulted in compiling
-          and maintaining the glossary. Not every entry includes a named author,
-          and not every glossary term draws equally from every source. In some
-          cases, editorial decisions reflect comparison across multiple
-          references, usage in context, or the absence of a single exact
-          equivalent.
+          and maintaining the glossary. 
+          Some sources were drawn from broadly, while others served to narrow down more specific contexts.
+        </p>
+        <p>
+          Whenever a source was used, we have attempted to make note of it in the corresponding definition, note, or comment, but there may be cases where we failed to do this.
+          If an entry does not cite a source, it is safe to assume that the equivalent provided has not been thoroughly interrogated.
+          Whether that's acceptable or not in each case we leave to your best judgment.
         </p>
 
         <div className="sources-table-wrapper">
