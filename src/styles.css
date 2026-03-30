@@ -261,3 +261,48 @@ a {
 .source-list {
   padding-left: 1.25rem;
 }
+
+/* Styles for sources table */
+
+.sources-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.sources-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  background: #ffffff;
+}
+
+.sources-table th,
+.sources-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 1.45;
+}
+
+.sources-table th {
+  background: #f3f3f3;
+  font-weight: 700;
+}
+
+.sources-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.sources-table td:first-child {
+  width: 65%;
+}
+
+.sources-table td:last-child {
+  width: 35%;
+}
+
+.source-link {
+  word-break: break-word;
+}

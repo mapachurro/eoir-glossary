@@ -57,12 +57,20 @@ export default function HomePage() {
           This is an interactive platform to consult and maintain a living glossary of immigration and migration terms.
         </p>
         <p>
-          The present glossary <strong>is not an official production of any branch, entity, or agency of any government.</strong> While it strives to be as accurate, up-to-date, and nuanced as possible, you should make your own decision on its trustworthiness. The author(s) offer no guarantees; we only hope it helps you.
+          The present glossary <strong>is not an official production of any branch, entity, or agency of any government.</strong> 
+          While it strives to be as accurate, up-to-date, and nuanced as possible, you should make your own decision on its trustworthiness. 
+          The author(s) offer no guarantees; we only hope it helps you.
         </p>
         <p>
-          This project is intended to be used by anyone seeking to understand the similarities, differences, alignments and lacunae of immigration law, procedure, proceedings, contexts and experiences between the United States and other places. In particular, **it was designed and written with the professional linguist in mind: translators, interpreters, and terminologists**, although legal scholars, attorneys, and others may find it useful as well. 
+          This project is intended to be used by anyone seeking to understand the similarities, differences, 
+          alignments and lacunae of immigration law, procedure, proceedings, contexts and experiences between the United States and other places. 
+          In particular, <strong>it was designed and written with the professional linguist in mind: translators, interpreters, and terminologists</strong>, 
+          although legal scholars, attorneys, and others may find it useful as well.
+        </p>
+        <p>
           Its initial version is a bilingual Spanish-English glossary. 
-          <br />
+        </p>
+        <p>
           <strong>This website is not and does not provide legal advice.
           It should not be used as a substitute for official guidance, case law consultation, court rules, or advice
           from a qualified attorney or accredited representative. </strong>
