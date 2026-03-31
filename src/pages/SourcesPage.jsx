@@ -1,3 +1,70 @@
+const historicalGlossaries = [
+  {
+    title: "Berlitz English to Spanish",
+    pdf: "resources/historical-glossaries/Berlitz_English_to_Spanish.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/Berlitz_English_to_Spanish.png",
+    description:
+      "A bilingual glossary resource reflecting one strand of terminology support used in immigration-related contexts.",
+  },
+  {
+    title: "Berlitz List of Terms",
+    pdf: "resources/historical-glossaries/Berlitz_List_of_Terms.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/Berlitz_List_of_Terms.png",
+    description:
+      "A term list associated with Berlitz immigration-court glossary materials.",
+  },
+  {
+    title: "Berlitz Spanish to English",
+    pdf: "resources/historical-glossaries/Berlitz_Spanish_to_English.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/Berlitz_Spanish_to_English.png",
+    description:
+      "A reverse-direction bilingual glossary showing Spanish-to-English legal and court terminology.",
+  },
+  {
+    title: "Berlitz Supplementary List",
+    pdf: "resources/historical-glossaries/Berlitz_Supplementary_List.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/Berlitz_Supplementary_List.png",
+    description:
+      "A supplementary term list illustrating how glossary work often expanded through addenda and practical updates.",
+  },
+  {
+    title: "EOIR Glossary Part I",
+    pdf: "resources/historical-glossaries/EOIR Glossary pt I.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/EOIR Glossary pt I.png",
+    description:
+      "Part one of an EOIR glossary document reflecting institutional terminology work in immigration court settings.",
+  },
+  {
+    title: "EOIR Glossary Part II",
+    pdf: "resources/historical-glossaries/EOIR Glossary pt II.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/EOIR Glossary pt II.png",
+    description:
+      "Part two of an EOIR glossary document, continuing the terminological record and institutional framing.",
+  },
+  {
+    title: "Loos Immigration Glossary (5-07)",
+    pdf: "resources/historical-glossaries/Loos Immigration Glossary  5-07.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/Loos Immigration Glossary  5-07.png",
+    description:
+      "An immigration glossary associated with earlier terminology practice and reference work.",
+  },
+  {
+    title: "Siglas Comunes en el Tribunal de Inmigracion",
+    pdf: "resources/historical-glossaries/Siglas Comunes en el Tribunal de Inmigracion.pdf",
+    thumbnail:
+      "resources/historical-glossaries/thumbnails/Siglas Comunes en el Tribunal de Inmigracion.png",
+    description:
+      "A reference for common acronyms used in immigration-court contexts.",
+  },
+];
+
 const bibliographyEntries = [
   {
     title: "Anuario de la Comisión de Derecho Internacional 2009, Vol.I",
@@ -12,7 +79,7 @@ const bibliographyEntries = [
     author: "",
   },
   {
-    title: "Black's Law Dictionary, 9th Edxition",
+    title: "Black's Law Dictionary, 9th Edition",
     author: "",
   },
   {
@@ -206,6 +273,58 @@ function isUrl(value) {
   return /^https?:\/\//i.test(value);
 }
 
+function buildPublicUrl(relativePath) {
+  return encodeURI(`${import.meta.env.BASE_URL}${relativePath}`);
+}
+
+function HistoryThumbnail({ item }) {
+  const pdfUrl = buildPublicUrl(item.pdf);
+  const thumbnailUrl = buildPublicUrl(item.thumbnail);
+
+  return (
+    <article className="glossary-history-card">
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="glossary-history-card__image-link"
+      >
+        <img
+          src={thumbnailUrl}
+          alt={`Thumbnail preview for ${item.title}`}
+          className="glossary-history-card__image"
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+            const fallback = event.currentTarget.nextElementSibling;
+            if (fallback) {
+              fallback.hidden = false;
+            }
+          }}
+        />
+        <div
+          className="glossary-history-card__fallback"
+          hidden
+          aria-hidden="true"
+        >
+          <span>{item.title}</span>
+        </div>
+      </a>
+
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="source-link"
+      >
+        Open PDF
+      </a>
+    </article>
+  );
+}
+
 export default function SourcesPage() {
   return (
     <section className="page">
@@ -219,17 +338,47 @@ export default function SourcesPage() {
       </p>
 
       <section className="source-section">
+        <h2>History of glossary and terminology work</h2>
+
+        <p>
+          Immigration terminology in U.S. legal and quasi-legal contexts has not
+          been shaped by a single glossary or a single institution. Over time,
+          different glossaries, agency publications, interpreter materials,
+          legal references, and practice-oriented compilations have reflected
+          changing terminology, different institutional priorities, and the
+          practical needs of attorneys, interpreters, judges, and respondents.
+        </p>
+
+        <p>
+          The documents below are included as part of that history. They are not
+          always consistent with one another, and they should not be treated as a
+          single unified authority. Instead, they help show how terminology has
+          been proposed, standardized, contested, adapted, or inherited across
+          time.
+        </p>
+
+        <div className="glossary-history-grid">
+          {historicalGlossaries.map((item) => (
+            <HistoryThumbnail key={item.title} item={item} />
+          ))}
+        </div>
+      </section>
+
+      <section className="source-section">
+        <h2>Comprehensive bibliography</h2>
+
         <p>
           The bibliography below lists source materials consulted in compiling
           and maintaining the glossary. Some sources were drawn from broadly,
           while others served to narrow down more specific contexts.
         </p>
+
         <p>
           Whenever a source was used, we have attempted to make note of it in
           the corresponding definition, note, or comment, but there may be cases
           where we failed to do this. If an entry does not cite a source, it is
           safe to assume that the equivalent provided has not been thoroughly
-          interrogated. Whether that's acceptable or not in each case we leave
+          interrogated. Whether that is acceptable or not in each case we leave
           to your best judgment.
         </p>
 
