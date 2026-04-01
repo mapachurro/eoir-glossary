@@ -344,7 +344,7 @@ export default function SourcesPage() {
           use to refer to the people who do the kind of work I did at the time:
           translators, interpreters, terminologists focusing on managing the
           conceptual and terminological bases for trans-linguistic actions of
-          many types (read: localization, internatoinalization, transcreation,
+          many types (read: localization, internationalization, transcreation,
           all the -ns). Specifically, I asked her if "linguists" was OK as a
           "basket term". She shrugged; one of us suggested "field linguist", and
           while that might bring to mind people like the Summer Institute of
@@ -486,8 +486,8 @@ export default function SourcesPage() {
           invole extending that legal system to people who should not be assumed
           to speak English, or not speak it well enough to be linguistically
           present in legal proceedings. The US Governmment did not have the
-          resources on-hand to figure out how to handle this; to ensure that
-          those who did <strong>spoke with one voice</strong>; we, as humans,
+          resources on-hand to figure out how to handle this. When it came to ensuring that 
+          those who did <strong>spoke with one voice</strong>, we, as humans,
           didn't even have a codified profession of "interpreter" yet. Consider
           the fact that the profession as such is considered to have been
           created during the Nuremberg Trials.
@@ -572,7 +572,7 @@ export default function SourcesPage() {
           awake and paying attention, and there is a clear note in the footer of
           every page of the copy of this glossary that I have:{" "}
           <i>
-            "This glossary is the property of <strong>redacted</strong>. The
+            "This glossary is the property of </i><strong>redacted</strong>.<i> The
             copy or distribution of this document to other parties is strictly
             prohibited."
           </i>
@@ -582,7 +582,7 @@ export default function SourcesPage() {
           that the document is, at this point, available elsewhere, I will link
           to it and discuss it more in depth. For the time being, however, I'll
           beg your forgiveness for not wanting to pick a fight with a company
-          that has a much more well-funded legal department than me.
+          that has a much more well-funded legal department than I do.
         </p>
 
         <h2>The EOIR glossary, parts I and II</h2>
@@ -697,7 +697,10 @@ export default function SourcesPage() {
             explanatory terminology bases. Other EOIR interpreters made
             additional contributions, which I endeavoured to note in the text,
             and I am sure I am forgetting others who helped explain key concepts
-            to me. The intention of this glossary is not prescriptive or
+            to me. 
+            <br />
+            <br />
+            The intention of this glossary is not prescriptive or
             restrictive; rather, it seeks to serve as a reference and a starting
             point for further development and elucidation of the twisted
             terminological webs of this field of law, administration, and
@@ -705,11 +708,17 @@ export default function SourcesPage() {
             thought of the interpreter who has been newly hired to the EOIR, and
             can't make heads or tails of what the difference is between an
             admission and a concession, or why people aren't following the
-            Federal Rules of Evidence. In composing this glossary, I began by
+            Federal Rules of Evidence. 
+            <br />
+            <br />
+            In composing this glossary, I began by
             compiling every term from every official and otherwise reputable
             Immigration glossary I could find--seven or eight in
             total--cross-referenced all of them for consensus on terms, and
-            began researching, revising, and occasionally deleting. I hope this
+            began researching, revising, and occasionally deleting. 
+            <br />
+            <br />
+            I hope this
             glossary is the next step in what is already a long history of
             terminology study and standardization in the immigration agencies of
             the United States. -Oliver JL Renwick
