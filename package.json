@@ -18,7 +18,8 @@
     "dev": "vite",
     "build:data": "node ./scripts/build-data.js",
     "build": "npm run build:data && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean-slate": "bash ./clean-slate.sh"
   },
   "dependencies": {
     "csv-parse": "^6.2.1",

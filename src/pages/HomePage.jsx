@@ -53,21 +53,31 @@ export default function HomePage() {
       </div>
 
       <section className="about-card">
-        <h2>About this project</h2>
+        <h2>What is this site?</h2>
         <p>
           This is an interactive platform to consult and maintain a living
           glossary of immigration and migration terms.
         </p>
         <p>
-          The present glossary{" "}
           <strong>
-            is not an official production of any branch, entity, or agency of
+            It is not an official production of any branch, entity, or agency of
             any government.
           </strong>
+        </p>
+        <p>
           While it strives to be as accurate, up-to-date, and nuanced as
           possible, you should make your own decision on its trustworthiness.
           The author(s) offer no guarantees; we only hope it helps you.
         </p>
+        <p>
+          <strong>
+            This website is not and does not provide legal advice. It should not
+            be used as a substitute for official guidance, case law
+            consultation, court rules, or advice from a qualified attorney or
+            accredited representative.{" "}
+          </strong>
+        </p>
+        <h2>Who would use this?</h2>
         <p>
           This project is intended to be used by anyone seeking to understand
           the similarities, differences, alignments and lacunae of immigration
@@ -81,15 +91,34 @@ export default function HomePage() {
           well.
         </p>
         <p>Its initial version is a bilingual Spanish-English glossary.</p>
-        <p>
-          <strong>
-            This website is not and does not provide legal advice. It should not
-            be used as a substitute for official guidance, case law
-            consultation, court rules, or advice from a qualified attorney or
-            accredited representative.{" "}
-          </strong>
-        </p>
-        <h3>Where did this come from?</h3>
+        <ul>
+          <li>
+            {" "}
+            <strong>Will it be expanded to other languages?</strong>
+            <p>
+              Maybe! That's what open-source, collaborative resources are for.
+              Here's our <Link to="/submissions">Submissions</Link> page.
+            </p>
+          </li>
+          <li>
+            <strong>
+              Will it be expanded to cover topics other than immigration?
+            </strong>
+            <p>
+              On the one hand: Immigration is the context to end all contexts.
+              Immigration is not a specific event or type of thing; it can, and
+              does, touch every conceivable aspect of the lives of people who do
+              it. That's why we have tags and categories.
+            </p>
+            <p>
+              On the other hand: <strong>No.</strong> This glossary may come to
+              be interlinked with others, but there should be a separation of
+              concerns; otherwise, it's just a dictionary, and loses its ability
+              to provide domain-specific insight and guidance.
+            </p>
+          </li>
+        </ul>
+        <h2>Where did this come from?</h2>
         <p>
           This work has its origins all the way back in the 1950s, when Berlitz
           was contracted by the US Federal Government to create a glossary for
@@ -109,9 +138,13 @@ export default function HomePage() {
         <p>
           The bulk of this glossary was drawn from the work of Staff Interpreter
           Oliver JL Renwick and his colleagues, who provided a comprehensively
-          updated and expanded glossary for the EOIR in 2020. For full details
-          on sources and a bibliography, see the{" "}
-          <Link to="/sources">Bibliography &amp; Sources</Link> page.
+          updated and expanded glossary for the EOIR in 2020.
+        </p>
+        <p>
+          <strong>
+            For full details on sources and a bibliography, see the{" "}
+            <Link to="/sources">Bibliography &amp; Sources</Link> page.
+          </strong>
         </p>
       </section>
 
