@@ -1,14 +1,16 @@
-  import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import glossary from "../data/glossary.json";
 import { buildGlossaryMatcher } from "../utils/linkGlossaryText";
 
 const { lookup, regex } = buildGlossaryMatcher(glossary);
 
 function normalizeValue(value) {
-  return String(value ?? "").trim().toLowerCase();
+  return String(value ?? "")
+    .trim()
+    .toLowerCase();
 }
 
-export default function LinkedGlossaryText({ text }) {
+export default function LinkedGlossaryText({ text, excludeId }) {
   const value = String(text ?? "");
 
   if (!value || !regex) {
@@ -30,7 +32,7 @@ export default function LinkedGlossaryText({ text }) {
 
     const matchedTerm = lookup.get(normalizeValue(matchedText));
 
-    if (matchedTerm) {
+    if (matchedTerm && matchedTerm.id !== excludeId) {
       parts.push(
         <Link
           key={`${matchedTerm.id}-${start}`}
