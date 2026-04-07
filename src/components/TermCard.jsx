@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import slugify from "../utils/slugify";
 import { buildEditSuggestionUrl } from "../utils/githubIssueLinks";
+import glossary from "../data/glossary.json";
+import { findTermByLabel } from "../utils/termLookup";
+import LinkedGlossaryText from "./LinkedGlossaryText";
 
-export default function TermCard({ term }) {
-  const [expanded, setExpanded] = useState(false);
+export default function TermCard({ term, defaultExpanded = false }) {
+  const [expanded, setExpanded] = useState(defaultExpanded);
   const editUrl = buildEditSuggestionUrl(term);
 
   return (
@@ -18,11 +21,17 @@ export default function TermCard({ term }) {
         </p>
         <p>
           <strong>Definition (English):</strong>{" "}
-          {term.englishDefinition || "—"}
+          <LinkedGlossaryText
+            text={term.englishDefinition}
+            excludedId={term.id}
+          />
         </p>
         <p>
           <strong>Definition (Spanish):</strong>{" "}
-          {term.spanishDefinition || "—"}
+          <LinkedGlossaryText
+            text={term.spanishDefinition}
+            excludedId={term.id}
+          />
         </p>
         <p>
           <strong>Comments:</strong> {term.comments || "—"}
@@ -77,7 +86,10 @@ export default function TermCard({ term }) {
               <span className="term-meta-list">
                 {term.tags.map((tag, index) => (
                   <span key={tag}>
-                    <Link className="term-meta-link" to={`/tag/${slugify(tag)}`}>
+                    <Link
+                      className="term-meta-link"
+                      to={`/tag/${slugify(tag)}`}
+                    >
                       {tag}
                     </Link>
                     {index < term.tags.length - 1 ? ", " : ""}
@@ -88,10 +100,61 @@ export default function TermCard({ term }) {
               "—"
             )}
           </p>
-
           <p>
             <strong>Aliases:</strong>{" "}
-            {term.aliases.length ? term.aliases.join(", ") : "—"}
+            {term.aliases.length ? (
+              <span className="term-meta-list">
+                {term.aliases.map((alias, index) => {
+                  const matchedTerm = findTermByLabel(glossary, alias);
+
+                  return (
+                    <span key={alias}>
+                      {matchedTerm ? (
+                        <Link
+                          className="term-meta-link"
+                          to={`/term/${matchedTerm.id}`}
+                        >
+                          {alias}
+                        </Link>
+                      ) : (
+                        alias
+                      )}
+                      {index < term.aliases.length - 1 ? ", " : ""}
+                    </span>
+                  );
+                })}
+              </span>
+            ) : (
+              "—"
+            )}
+          </p>
+          <p>
+            <strong>Contrasts with:</strong>{" "}
+            {term.contrastsWith?.length ? (
+              <span className="term-meta-list">
+                {term.contrastsWith.map((item, index) => {
+                  const matchedTerm = findTermByLabel(glossary, item);
+
+                  return (
+                    <span key={item}>
+                      {matchedTerm ? (
+                        <Link
+                          className="term-meta-link"
+                          to={`/term/${matchedTerm.id}`}
+                        >
+                          {item}
+                        </Link>
+                      ) : (
+                        item
+                      )}
+                      {index < term.contrastsWith.length - 1 ? ", " : ""}
+                    </span>
+                  );
+                })}
+              </span>
+            ) : (
+              "—"
+            )}
           </p>
           <p>
             <strong>Status:</strong> {term.status}
