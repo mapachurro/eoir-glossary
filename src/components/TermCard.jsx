@@ -4,6 +4,7 @@ import slugify from "../utils/slugify";
 import { buildEditSuggestionUrl } from "../utils/githubIssueLinks";
 import glossary from "../data/glossary.json";
 import { findTermByLabel } from "../utils/termLookup";
+import LinkedGlossaryText from "./LinkedGlossaryText";
 
 export default function TermCard({ term, defaultExpanded = false }) {
   const [expanded, setExpanded] = useState(defaultExpanded);
@@ -19,10 +20,12 @@ export default function TermCard({ term, defaultExpanded = false }) {
           <strong>Spanish:</strong> {term.spanish || "—"}
         </p>
         <p>
-          <strong>Definition (English):</strong> {term.englishDefinition || "—"}
-        </p>
+  <strong>Definition (English):</strong>{" "}
+  <LinkedGlossaryText text={term.englishDefinition} />
+</p>
         <p>
-          <strong>Definition (Spanish):</strong> {term.spanishDefinition || "—"}
+          <strong>Definition (Spanish):</strong> {" "}
+          <LinkedGlossaryText text={term.spanishDefinition} />
         </p>
         <p>
           <strong>Comments:</strong> {term.comments || "—"}

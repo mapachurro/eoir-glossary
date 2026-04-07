@@ -361,3 +361,12 @@ a {
   font-weight: 600;
   font-size: 0.9rem;
 }
+/* Inline link styling */
+.inline-glossary-link {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.inline-glossary-link:hover {
+  text-decoration-thickness: 2px;
+}
