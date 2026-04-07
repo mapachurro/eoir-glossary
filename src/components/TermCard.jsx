@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import slugify from "../utils/slugify";
 import { buildEditSuggestionUrl } from "../utils/githubIssueLinks";
+import glossary from "../data/glossary.json";
+import { findTermByLabel } from "../utils/termLookup";
 
-export default function TermCard({ term }) {
-  const [expanded, setExpanded] = useState(false);
+export default function TermCard({ term, defaultExpanded = false }) {
+  const [expanded, setExpanded] = useState(defaultExpanded);
   const editUrl = buildEditSuggestionUrl(term);
 
   return (
@@ -88,11 +90,31 @@ export default function TermCard({ term }) {
               "—"
             )}
           </p>
-
           <p>
-            <strong>Aliases:</strong>{" "}
-            {term.aliases.length ? term.aliases.join(", ") : "—"}
-          </p>
+  <strong>Aliases:</strong>{" "}
+  {term.aliases.length ? (
+    <span className="term-meta-list">
+      {term.aliases.map((alias, index) => {
+        const matchedTerm = findTermByLabel(glossary, alias);
+
+        return (
+          <span key={alias}>
+            {matchedTerm ? (
+              <Link className="term-meta-link" to={`/term/${matchedTerm.id}`}>
+                {alias}
+              </Link>
+            ) : (
+              alias
+            )}
+            {index < term.aliases.length - 1 ? ", " : ""}
+          </span>
+        );
+      })}
+    </span>
+  ) : (
+    "—"
+  )}
+</p>
           <p>
             <strong>Status:</strong> {term.status}
           </p>
