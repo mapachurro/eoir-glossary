@@ -17,6 +17,14 @@ export default function TermCard({ term }) {
           <strong>Spanish:</strong> {term.spanish || "—"}
         </p>
         <p>
+          <strong>Definition (English):</strong>{" "}
+          {term.englishDefinition || "—"}
+        </p>
+        <p>
+          <strong>Definition (Spanish):</strong>{" "}
+          {term.spanishDefinition || "—"}
+        </p>
+        <p>
           <strong>Comments:</strong> {term.comments || "—"}
         </p>
       </div>
@@ -42,13 +50,6 @@ export default function TermCard({ term }) {
 
       {expanded && (
         <div className="term-card__details">
-          <p>
-            <strong>English definition:</strong> {term.englishDefinition || "—"}
-          </p>
-          <p>
-            <strong>Spanish definition:</strong> {term.spanishDefinition || "—"}
-          </p>
-
           <p>
             <strong>Category:</strong>{" "}
             {term.category.length ? (
