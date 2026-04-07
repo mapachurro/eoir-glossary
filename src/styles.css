@@ -365,8 +365,10 @@ a {
 .inline-glossary-link {
   text-decoration: underline;
   text-underline-offset: 0.12em;
+  color: inherit;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
 }
 
 .inline-glossary-link:hover {
-  text-decoration-thickness: 2px;
+  border-bottom-style: solid;
 }
