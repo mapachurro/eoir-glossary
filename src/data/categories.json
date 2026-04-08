@@ -1,6 +1,6 @@
 [
   {
-    "label": "abuse",
+    "label": "Abuse",
     "slug": "abuse",
     "count": 32
   },
@@ -15,7 +15,7 @@
     "count": 18
   },
   {
-    "label": "Decisions And Appeals",
+    "label": "Decisions and appeals",
     "slug": "decisions-and-appeals",
     "count": 31
   },
@@ -25,7 +25,7 @@
     "count": 6
   },
   {
-    "label": "Grounds And Standards Of Proof",
+    "label": "Grounds and standards of proof",
     "slug": "grounds-and-standards-of-proof",
     "count": 55
   },
