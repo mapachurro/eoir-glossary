@@ -52,7 +52,7 @@ export default function AllTermsPage() {
 
   return (
     <section className="page">
-      <h1>All Terms</h1>
+      <h1>All terms</h1>
       <p>{filteredTerms.length} terms shown.</p>
 
       <SearchBar
@@ -60,7 +60,7 @@ export default function AllTermsPage() {
         onChange={handleQueryChange}
         placeholder="Search English, Spanish, comments, tags, aliases..."
       />
-
+      <br />
       {filteredTerms.length === 0 ? (
         <div className="empty-state">
           <h2>No matching terms found</h2>

@@ -13,21 +13,32 @@ export default function TermCard({ term, defaultExpanded = false }) {
   return (
     <article className="term-card">
       <div className="term-card__main">
+        <div className="term-head">
+          <div className="term-head__english">
+            <span className="term-label">English: </span>
+            <span className="term-value">
+              <strong>{term.english || "—"}</strong>
+            </span>
+          </div>
+          <br />
+          <div className="term-head__spanish">
+            <span className="term-label">Spanish: </span>
+            <span className="term-value">
+              <strong>{term.spanish || "—"}</strong>
+            </span>
+          </div>
+        </div>
+        <br />
+        <hr />
         <p>
-          <strong>English:</strong> {term.english || "—"}
-        </p>
-        <p>
-          <strong>Spanish:</strong> {term.spanish || "—"}
-        </p>
-        <p>
-          <strong>Definition (English):</strong>{" "}
+          <strong>Definition</strong> (English):{" "}
           <LinkedGlossaryText
             text={term.englishDefinition}
             excludedId={term.id}
           />
         </p>
         <p>
-          <strong>Definition (Spanish):</strong>{" "}
+          <strong>Definition</strong> (Spanish):{" "}
           <LinkedGlossaryText
             text={term.spanishDefinition}
             excludedId={term.id}
