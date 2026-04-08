@@ -150,7 +150,7 @@ export default function HomePage() {
 
       <div className="browse-grid">
         <section className="browse-card">
-          <h2>Browse by category</h2>
+          <h2>Categories</h2>
           <ul className="link-list">
             {topCategories.map((category) => (
               <li key={category.slug}>
@@ -163,7 +163,7 @@ export default function HomePage() {
         </section>
 
         <section className="browse-card">
-          <h2>Browse by tag</h2>
+          <h2>Tags</h2>
           <ul className="link-list">
             {topTags.map((tag) => (
               <li key={tag.slug}>
