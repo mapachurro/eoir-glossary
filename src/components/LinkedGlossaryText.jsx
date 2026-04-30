@@ -2,48 +2,72 @@ import { Link } from "react-router-dom";
 import glossary from "../data/glossary.json";
 import { buildGlossaryMatcher } from "../utils/linkGlossaryText";
 
+const URL_MATCH_REGEX = /https?:\/\/[^\s]+/i;
+const URL_SCAN_REGEX = /(https?:\/\/[^\s]+)/gi;
+
 const { lookup, regex } = buildGlossaryMatcher(glossary);
 
 function normalizeValue(value) {
-  return String(value ?? "")
-    .trim()
-    .toLowerCase();
+  return String(value ?? "").trim().toLowerCase();
 }
 
 export default function LinkedGlossaryText({ text, excludeId }) {
   const value = String(text ?? "");
 
-  if (!value || !regex) {
-    return value || "—";
-  }
+  if (!value) return "—";
 
   const parts = [];
   let lastIndex = 0;
+
+  const combinedPatternParts = [];
+
+  if (regex?.source) {
+    combinedPatternParts.push(regex.source);
+  }
+
+  combinedPatternParts.push(URL_SCAN_REGEX.source);
+
+  const combinedRegex = new RegExp(combinedPatternParts.join("|"), "gi");
+
   let match;
 
-  while ((match = regex.exec(value)) !== null) {
+  while ((match = combinedRegex.exec(value)) !== null) {
     const matchedText = match[0];
     const start = match.index;
-    const end = regex.lastIndex;
+    const end = combinedRegex.lastIndex;
 
     if (start > lastIndex) {
       parts.push(value.slice(lastIndex, start));
     }
 
-    const matchedTerm = lookup.get(normalizeValue(matchedText));
-
-    if (matchedTerm && matchedTerm.id !== excludeId) {
+    if (URL_MATCH_REGEX.test(matchedText)) {
       parts.push(
-        <Link
-          key={`${matchedTerm.id}-${start}`}
-          to={`/term/${matchedTerm.id}`}
-          className="inline-glossary-link"
+        <a
+          key={`url-${start}`}
+          href={matchedText}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="external-link"
         >
           {matchedText}
-        </Link>,
+        </a>,
       );
     } else {
-      parts.push(matchedText);
+      const matchedTerm = lookup.get(normalizeValue(matchedText));
+
+      if (matchedTerm && matchedTerm.id !== excludeId) {
+        parts.push(
+          <Link
+            key={`${matchedTerm.id}-${start}`}
+            to={`/term/${matchedTerm.id}`}
+            className="inline-glossary-link"
+          >
+            {matchedText}
+          </Link>,
+        );
+      } else {
+        parts.push(matchedText);
+      }
     }
 
     lastIndex = end;
