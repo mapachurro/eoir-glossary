@@ -387,3 +387,13 @@ a {
 .term-head__spanish .term-value {
   font-style: italic;
 }
+/* External link formatting */
+.external-link {
+  color: #1a73e8;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.external-link:hover {
+  text-decoration-thickness: 2px;
+}

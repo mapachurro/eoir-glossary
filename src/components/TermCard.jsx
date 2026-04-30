@@ -34,18 +34,21 @@ export default function TermCard({ term, defaultExpanded = false }) {
           <strong>Definition</strong> (English):{" "}
           <LinkedGlossaryText
             text={term.englishDefinition}
-            excludedId={term.id}
+            excludeId={term.id}
           />
         </p>
+
         <p>
           <strong>Definition</strong> (Spanish):{" "}
           <LinkedGlossaryText
             text={term.spanishDefinition}
-            excludedId={term.id}
+            excludeId={term.id}
           />
         </p>
+
         <p>
-          <strong>Comments:</strong> {term.comments || "—"}
+          <strong>Comments:</strong>{" "}
+          <LinkedGlossaryText text={term.comments} excludeId={term.id} />
         </p>
       </div>
 
