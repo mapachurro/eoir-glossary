@@ -7,6 +7,9 @@ import TagPage from "./pages/TagPage";
 import SubmissionsPage from "./pages/SubmissionsPage";
 import SourcesPage from "./pages/SourcesPage";
 import TermPage from "./pages/TermPage";
+import FormsPage from "./pages/FormsPage";
+import AdjournmentCodesPage from "./pages/AdjournmentCodesPage";
+import LegalAuthority from "./pages/LegalAuthority";
 
 export default function App() {
   return (
@@ -19,6 +22,9 @@ export default function App() {
         <Route path="sources" element={<SourcesPage />} />
         <Route path="submissions" element={<SubmissionsPage />} />
         <Route path="term/:id" element={<TermPage />} />
+        <Route path="forms" element={<FormsPage />} />
+        <Route path="adjournment-codes" element={<AdjournmentCodesPage />} />
+        <Route path="legal-authority" element={<LegalAuthority />} />
       </Route>
     </Routes>
   );
