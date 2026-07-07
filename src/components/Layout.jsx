@@ -11,14 +11,19 @@ export default function Layout() {
           </Link>
 
           <nav className="site-nav">
-            <NavLink to="/" end>
-              Home
-            </NavLink>
-            <NavLink to="/terms">All Terms</NavLink>
-            <NavLink to="/forms">Forms</NavLink>
-            <NavLink to="/legal-authority">Authority</NavLink>
-            <NavLink to="/sources">Bibliography & Sources</NavLink>
-            <NavLink to="/submissions">Submissions & Revisions</NavLink>
+            <div className="site-nav__row">
+              <NavLink to="/" end>
+                Home
+              </NavLink>
+              <NavLink to="/terms">All Terms</NavLink>
+              <NavLink to="/forms">Forms</NavLink>
+              <NavLink to="/legal-authority">Authority</NavLink>
+            </div>
+
+            <div className="site-nav__row">
+              <NavLink to="/sources">Bibliography & Sources</NavLink>
+              <NavLink to="/submissions">Submissions & Revisions</NavLink>
+            </div>
           </nav>
         </div>
       </header>
