@@ -17,6 +17,7 @@ export default function Layout() {
             <NavLink to="/sources">Bibliography & Sources</NavLink>
             <NavLink to="/submissions">Submissions & Revisions</NavLink>
             <NavLink to="/forms">Forms</NavLink>
+            <NavLink to="/legal-authority">Authority</NavLink>
           </nav>
         </div>
       </header>

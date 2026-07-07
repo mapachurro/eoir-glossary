@@ -2,15 +2,18 @@ import { useMemo, useState } from "react";
 import authority from "../data/authority.json";
 import SearchBar from "../components/SearchBar";
 
-function matchesForm(authority, query) {
+function matchesAuthority(item, query) {
   const haystack = [
-    authority.body,
-    authority.citation,
-    authority.name,
-    ...(authority.topics || []),
-    authority.summary,
-    authority.officialUrl,
-    authority.notes,
+    item.body,
+    item.citation,
+    item.name,
+    item.year,
+    item.status,
+    ...(item.topics || []),
+    ...(item.relatedTerms || []),
+    item.summary,
+    item.officialUrl,
+    item.notes,
   ]
     .join(" ")
     .toLowerCase();
@@ -23,54 +26,76 @@ export default function LegalAuthority() {
 
   const filteredAuthority = useMemo(() => {
     if (!query.trim()) return authority;
-    return authority.filter((auth) => matchesForm(auth, query));
+    return authority.filter((item) => matchesAuthority(item, query));
   }, [query]);
 
   return (
     <section className="page">
       <h1>Legal Authority</h1>
-      <p className="page-intro">
-        A wildly incomplete and non-authoritative guide to legal authority. 
-        More commonly referred to as "case law", these are decisions made, generally by the appellate authority of the Board of Immigration Appeals, or by a US District Court, the Supreme Court, the Attorney General in those instances wherein he or she sees fit to <strong>write new law</strong>, or--
-    </p>
-    <p>
-        These cases are often referred to by a series of initials, especially when they are BIA-issued.
-        In case it's not clear already, <strong>this sure as hell is not legal advice</strong>.
-        But if someone keeps talking about "as per Matter of W-T-A-F", and this page helps you, well... then it helps.
+
+      <p>
+        Immigration law in the United States is a fascinating patchwork of Federal law, regulation, and case law from the Board of Immigration Appeals, Federal Circuit Courts, the Supreme Court, and the secret off-the-menu item of Attorney General-authored decisions. Try to keep up.
+      </p>
+
+      <p>
+        This is not legal advice. This is a wildly incomplete, evolving knowledge base of case law and relevant statutes that may, or may not, come up frequently in immigration proceedings and processes. 
       </p>
 
       <SearchBar
         value={query}
         onChange={setQuery}
-        placeholder="Search by form number, agency, title, purpose..."
+        placeholder="Search by case name, citation, topic, body, summary..."
       />
 
-      <div className="forms-grid">
-        {filteredForms.map((form) => (
-          <article className="form-card" key={form.id}>
-            <div className="form-card__header">
-              <span className="form-card__agency">{form.agency}</span>
-              <h2>{form.formNumber}</h2>
+      <div className="authority-grid">
+        {filteredAuthority.map((item) => (
+          <article className="authority-card" key={item.id}>
+            <div className="authority-card__header">
+              {item.body && (
+                <span className="authority-card__body">{item.body}</span>
+              )}
+
+              {item.year && (
+                <span className="authority-card__year">{item.year}</span>
+              )}
             </div>
 
-            <h3>{form.title}</h3>
+            <h2>{item.name}</h2>
 
-            {form.spanishTitle && (
-              <p className="form-card__spanish">{form.spanishTitle}</p>
+            {item.citation && (
+              <p className="authority-card__citation">{item.citation}</p>
             )}
 
-            <p>{form.purpose}</p>
-
-            {form.relatedTerms?.length > 0 && (
+            {item.status && (
               <p>
-                <strong>Related terms:</strong>{" "}
-                {form.relatedTerms.join(", ")}
+                <strong>Status:</strong> {item.status}
               </p>
             )}
 
-            {form.officialUrl && (
-              <a href={form.officialUrl} target="_blank" rel="noreferrer">
-                Official form/source
+            {item.summary && <p>{item.summary}</p>}
+
+            {item.topics?.length > 0 && (
+              <p>
+                <strong>Topics:</strong> {item.topics.join(", ")}
+              </p>
+            )}
+
+            {item.relatedTerms?.length > 0 && (
+              <p>
+                <strong>Related terms:</strong>{" "}
+                {item.relatedTerms.join(", ")}
+              </p>
+            )}
+
+            {item.notes && (
+              <p>
+                <strong>Notes:</strong> {item.notes}
+              </p>
+            )}
+
+            {item.officialUrl && (
+              <a href={item.officialUrl} target="_blank" rel="noreferrer">
+                Official source
               </a>
             )}
           </article>
