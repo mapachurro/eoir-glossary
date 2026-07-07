@@ -6,7 +6,8 @@ export default function Layout() {
       <header className="site-header">
         <div className="site-header__inner">
           <Link to="/" className="site-title">
-            Immigration Glossary - Glosario de lo migratorio
+            <span>Immigration Glossary</span>
+            <span>Glosario de lo migratorio</span>
           </Link>
 
           <nav className="site-nav">
@@ -14,10 +15,10 @@ export default function Layout() {
               Home
             </NavLink>
             <NavLink to="/terms">All Terms</NavLink>
-            <NavLink to="/sources">Bibliography & Sources</NavLink>
-            <NavLink to="/submissions">Submissions & Revisions</NavLink>
             <NavLink to="/forms">Forms</NavLink>
             <NavLink to="/legal-authority">Authority</NavLink>
+            <NavLink to="/sources">Bibliography & Sources</NavLink>
+            <NavLink to="/submissions">Submissions & Revisions</NavLink>
           </nav>
         </div>
       </header>

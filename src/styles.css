@@ -38,10 +38,19 @@ a {
   justify-content: space-between;
 }
 
+/* Tweaks to site title formatting */
+
 .site-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  color: inherit;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.site-title span:last-child {
+  margin-top: 0.15rem;
 }
 
 .site-nav {
