@@ -24,5 +24,18 @@
     "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/media/1413846/dl?inline=",
     "notes": ""
+  },
+  {
+    "id": "matter-of-k-e-s-g",
+    "name": "Matter of K-E-S-G",
+    "citation": "29 I&N Dec. 145 (BIA 2025)",
+    "year": 2025,
+    "body": "Board of Immigration Appeals",
+    "topics": ["asylum", "particular social group", "cognizability"],
+    "relatedTerms": ["asylum", "particular social group", "social cognizability"],
+    "summary": "A particular social group defined by the alien's sex or sex and nationality, standing alone, is overbroad and insufficiently particular to be cognizable.",
+    "status": "Current",
+    "officialUrl": "http://justice.gov/eoir/media/1408366/dl?inline=",
+    "notes": "This is higly relevant and impactful case law, in that PSG formulations such as 'Mexican women who XYZ' become immediately subject to a request for pre-termission by DHS."
   }
 ]
