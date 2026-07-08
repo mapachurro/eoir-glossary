@@ -11,5 +11,18 @@
     "status": "",
     "officialUrl": "",
     "notes": ""
+  },
+  {
+    "id": "matter-of-h-a-a-v",
+    "name": "Matter of H-A-A-V",
+    "citation": "29 I&N Dec. 233 (BIA 2025)",
+    "year": 2025,
+    "body": "Board of Immigration Appeals",
+    "topics": ["asylum", "pre-termission", "pretermit", "prima facie eligibility"],
+    "relatedTerms": ["pre-termit"],
+    "summary": "If the factual allegations underlying a claim for asylum, withholding of removal, or protection under the Convention Against Torture, viewed in the light most favorable to the respondent, do not establish prima facie eligibility for relief or protection, an Immigration Judge may pretermit the applications without a full evidentiary hearing on the merits of the claim.",
+    "status": "Current",
+    "officialUrl": "https://www.justice.gov/eoir/media/1413846/dl?inline=",
+    "notes": ""
   }
 ]
