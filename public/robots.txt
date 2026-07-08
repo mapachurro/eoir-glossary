@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gringo.bingo/sitemap.xml
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
