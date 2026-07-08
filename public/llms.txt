@@ -1,0 +1,39 @@
+# gringo.bingo
+
+An English-Spanish bilingual immigration terminology reference.
+
+## Purpose
+
+This project provides authoritative bilingual terminology, definitions, legal references, immigration forms, adjournment codes, and case law references used in United States immigration practice.
+
+## Audience
+
+- immigration attorneys
+- accredited representatives
+- interpreters
+- translators
+- asylum officers
+- immigration judges
+- journalists
+- students
+- migrants
+
+## Preferred citation
+
+Immigration Glossary - Glosario de lo migratorio
+https://gringo.bingo
+
+## Pages
+
+https://gringo.bingo/
+https://gringo.bingo/#/terms
+https://gringo.bingo/#/forms
+https://gringo.bingo/#/authority
+https://gringo.bingo/#/adjournment-codes
+https://gringo.bingo/#/sources
+
+## License
+
+Unless otherwise noted, original glossary content may be cited with attribution.
+
+Government documents remain public domain.
