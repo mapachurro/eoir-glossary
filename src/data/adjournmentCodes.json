@@ -1,0 +1,13 @@
+[
+  {
+    "id": "code-1",
+    "code": "1",
+    "meaning": "Respondent to seek representation",
+    "spanishMeaning": "Tiempo adicional para que el o la compareciente pueda buscar representación legal",
+    "category": "Respondent",
+    "affectsAsylumClock": "Stops",
+    "notes": "",
+    "source": "https://www.justice.gov/eoir/policy-manual-eoir/part-VII/appendices/m",
+    "relatedTerms": []
+  }
+]

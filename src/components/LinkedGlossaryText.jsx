@@ -8,7 +8,9 @@ const URL_SCAN_REGEX = /(https?:\/\/[^\s]+)/gi;
 const { lookup, regex } = buildGlossaryMatcher(glossary);
 
 function normalizeValue(value) {
-  return String(value ?? "").trim().toLowerCase();
+  return String(value ?? "")
+    .trim()
+    .toLowerCase();
 }
 
 export default function LinkedGlossaryText({ text, excludeId }) {
