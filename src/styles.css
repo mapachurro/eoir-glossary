@@ -20,6 +20,13 @@ a {
   min-height: 100vh;
 }
 
+.container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .site-header {
   background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
@@ -29,9 +36,7 @@ a {
 }
 
 .site-header__inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -78,10 +83,10 @@ a {
   border-bottom: 2px solid #1a1a1a;
 }
 
+
 .site-main {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .page h1 {
@@ -91,7 +96,6 @@ a {
 }
 
 .page-intro {
-  max-width: 70ch;
   font-size: 1.05rem;
   line-height: 1.5;
 }
@@ -193,9 +197,22 @@ a {
 }
 
 @media (max-width: 700px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .site-header__inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-nav {
+    align-items: flex-start;
+  }
+
+  .site-nav__row {
+    flex-wrap: wrap;
   }
 
   .page h1 {
