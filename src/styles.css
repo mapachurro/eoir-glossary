@@ -515,3 +515,110 @@ a {
 .authority-card__citation {
   font-style: italic;
 }
+
+/* Formatting for the adjournment codes page */
+
+.results-count {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.code-category-section {
+  margin-top: 2rem;
+}
+
+.code-category-section h2 {
+  color: #12325a;
+}
+
+.code-table {
+  overflow: hidden;
+  border-radius: 0.85rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.code-table__header,
+.code-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 190px;
+}
+
+.code-table__header {
+  background: #12325a;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.code-table__header span,
+.code-row > div {
+  padding: 1rem;
+}
+
+.code-row {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.code-row:nth-child(odd) {
+  background: #eef3f8;
+}
+
+.code-row__code {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.code-row__main h3 {
+  margin: 0 0 0.4rem;
+}
+
+.code-row__spanish {
+  margin: 0.25rem 0 0;
+  color: #2f6f3e;
+  font-style: italic;
+}
+
+.code-row__notes,
+.code-row__related,
+.code-row__source {
+  margin: 0.5rem 0 0;
+}
+
+.clock-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  background: #f0f0f0;
+  font-weight: 700;
+}
+
+.clock-badge--runs {
+  background: #e8f4ea;
+}
+
+.clock-badge--stops {
+  background: #f8e8e8;
+}
+
+.clock-badge--neutral {
+  background: #eeeeee;
+}
+
+@media (max-width: 760px) {
+  .code-table__header {
+    display: none;
+  }
+
+  .code-row {
+    grid-template-columns: 1fr;
+  }
+
+  .code-row > div {
+    padding: 0.75rem 1rem;
+  }
+
+  .code-row__code::before {
+    content: "Code: ";
+    font-weight: 700;
+  }
+}
