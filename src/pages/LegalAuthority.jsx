@@ -79,10 +79,16 @@ export default function LegalAuthority() {
               </p>
             )}
 
-            {item.summary && (
-              <p className="authority-card__summary">
-                <strong>Summary:</strong> {item.summary}
-              </p>
+            {item.summary?.length > 0 && (
+              <section className="authority-card__summary">
+                <h3>Summary</h3>
+
+                <ul className="authority-card__summary-list">
+                  {item.summary.map((point, index) => (
+                    <li key={`${item.id}-summary-${index}`}>{point}</li>
+                  ))}
+                </ul>
+              </section>
             )}
 
             {item.holding?.length > 0 && (

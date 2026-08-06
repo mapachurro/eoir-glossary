@@ -626,7 +626,14 @@ a {
 /* Attempting to style json */
 
 .authority-card__summary {
-  white-space: pre-line;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.authority-card__summary li {
+  margin-bottom: 0.65rem;
+  line-height: 1.5;
 }
 
 .authority-card__holding-list {
