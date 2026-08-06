@@ -622,3 +622,20 @@ a {
     font-weight: 700;
   }
 }
+
+/* Attempting to style json */
+
+.authority-card__summary {
+  white-space: pre-line;
+}
+
+.authority-card__holding-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.authority-card__holding-list li {
+  margin-bottom: 0.65rem;
+  line-height: 1.5;
+}
