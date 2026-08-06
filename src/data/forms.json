@@ -17,11 +17,11 @@
   "formNumber": "I-863",
   "title": "Notice of Referral to Immigration Judge",
   "aka": "Referral to Immigration Court",
-  "spanishTitle": "",
-  "purpose": "Refers certain immigration benefit applications or proceedings to the Immigration Court for adjudication.",
-  "relatedTerms": ["immigration judge", "referral", "EOIR", "removal proceedings"],
-  "officialUrl": "https://www.uscis.gov/forms",
-  "notes": "Often encountered in asylum and other defensive proceedings."
+  "spanishTitle": "Aviso de remisión ante un juez de inmigración",
+  "purpose": "The I-863 is a less commonly used form than some; it is a sort of charging document, as it has a similar effect to an NTA, in that the named person is placed in EOIR proceedings. As per the relevant statute (https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-235/section-235.6), this can be, for example, following a credible fear interview, when credible fear is not found; when someone is suspected to be faking their legal status, and other situations, as well.",
+  "relatedTerms": ["credible fear", "EOIR", "charging document"],
+  "officialUrl": "https://www.justice.gov/eoir/dhs-notice-referral-ij-form-i-863",
+  "notes": "Unlikely to come up outside of EOIR; if you hear it at USCIS, that's a bad day."
 },
 {
   "id": "i-261",
