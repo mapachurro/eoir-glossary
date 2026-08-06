@@ -5,6 +5,7 @@ import SearchBar from "../components/SearchBar";
 function matchesAuthority(item, query) {
   const haystack = [
     item.body,
+    item.holding,
     item.citation,
     item.name,
     item.year,
@@ -34,11 +35,17 @@ export default function LegalAuthority() {
       <h1>Legal Authority</h1>
 
       <p>
-        Immigration law in the United States is a fascinating patchwork of Federal law, regulation, and case law from the Board of Immigration Appeals, Federal Circuit Courts, the Supreme Court, and the secret off-the-menu item of Attorney General-authored decisions. Try to keep up.
+        Immigration law in the United States is a fascinating patchwork of
+        Federal law, regulation, and case law from the Board of Immigration
+        Appeals, Federal Circuit Courts, the Supreme Court, and the secret
+        off-the-menu item of Attorney General-authored decisions. Try to keep
+        up.
       </p>
 
       <p>
-        This is not legal advice. This is a wildly incomplete, evolving knowledge base of case law and relevant statutes that may, or may not, come up frequently in immigration proceedings and processes. 
+        This is not legal advice. This is a wildly incomplete, evolving
+        knowledge base of case law and relevant statutes that may, or may not,
+        come up frequently in immigration proceedings and processes.
       </p>
 
       <SearchBar
@@ -72,7 +79,29 @@ export default function LegalAuthority() {
               </p>
             )}
 
-            {item.summary && <p>{item.summary}</p>}
+            {item.summary?.length > 0 && (
+              <section className="authority-card__summary">
+                <h3>Summary</h3>
+
+                <ul className="authority-card__summary-list">
+                  {item.summary.map((point, index) => (
+                    <li key={`${item.id}-summary-${index}`}>{point}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {item.holding?.length > 0 && (
+              <section className="authority-card__holding">
+                <h3>Holding</h3>
+
+                <ul className="authority-card__holding-list">
+                  {item.holding.map((point, index) => (
+                    <li key={`${item.id}-holding-${index}`}>{point}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
 
             {item.topics?.length > 0 && (
               <p>
@@ -82,8 +111,7 @@ export default function LegalAuthority() {
 
             {item.relatedTerms?.length > 0 && (
               <p>
-                <strong>Related terms:</strong>{" "}
-                {item.relatedTerms.join(", ")}
+                <strong>Related terms:</strong> {item.relatedTerms.join(", ")}
               </p>
             )}
 
