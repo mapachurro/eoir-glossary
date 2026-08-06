@@ -32,7 +32,9 @@
     "citation": "29 I&N Dec. 233 (BIA 2025)",
     "year": 2025,
     "body": "Board of Immigration Appeals",
-    "holding": [],
+    "holding": [
+      "If the factual allegations underlying a claim for asylum, withholding of removal, or protection under the Convention Against Torture, viewed in the light most favorable to the respondent, do not establish prima facie eligibility for relief or protection, an Immigration Judge may pretermit the applications without a full evidentiary hearing on the merits of the claim."
+    ],
     "topics": [
       "asylum",
       "pre-termission",
@@ -41,7 +43,7 @@
     ],
     "relatedTerms": ["pre-termit"],
     "cites": [],
-    "summary": "If the factual allegations underlying a claim for asylum, withholding of removal, or protection under the Convention Against Torture, viewed in the light most favorable to the respondent, do not establish prima facie eligibility for relief or protection, an Immigration Judge may pretermit the applications without a full evidentiary hearing on the merits of the claim.",
+    "summary": "",
     "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/media/1413846/dl?inline=",
     "notes": ""
@@ -52,7 +54,9 @@
     "citation": "29 I&N Dec. 145 (BIA 2025)",
     "year": 2025,
     "body": "Board of Immigration Appeals",
-    "holding": [],
+    "holding": [
+      "A particular social group defined by the alien's sex or sex and nationality, standing alone, is overbroad and insufficiently particular to be cognizable."
+    ],
     "topics": ["asylum", "particular social group", "cognizability"],
     "relatedTerms": [
       "asylum",
@@ -60,7 +64,7 @@
       "social cognizability"
     ],
     "cites": [],
-    "summary": "A particular social group defined by the alien's sex or sex and nationality, standing alone, is overbroad and insufficiently particular to be cognizable.",
+    "summary": "",
     "status": "Current",
     "officialUrl": "http://justice.gov/eoir/media/1408366/dl?inline=",
     "notes": "This is higly relevant and impactful case law, in that PSG formulations such as 'Mexican women who XYZ' become immediately subject to a request for pre-termission by DHS."
@@ -71,11 +75,14 @@
     "citation": "29 I&N Dec. 794 (BIA 2026)",
     "year": 2026,
     "body": "Board of Immigration Appeals",
-    "holding": [],
+    "holding": [
+      "(1) Flight risk encompasses not only whether a respondent is likely to appear at future hearings, but also whether the respondent is likely to comply with future orders of the Immigration Judge.",
+      "(2) Speculative future eligibility for relief does not materially diminish a finding of flight risk."
+    ],
     "topics": ["bond", "flight risk", "custody", "detention"],
     "relatedTerms": ["bond", "flight risk"],
     "cites": [],
-    "summary": "(1) Flight risk encompasses not only whether a respondent is likely to appear at future hearings, but also whether the respondent is likely to comply with future orders of the Immigration Judge. (2) Speculative future eligibility for relief does not materially diminish a finding of flight risk.",
+    "summary": "",
     "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/media/1454391/dl?inline=",
     "notes": "Nuanced and specific: in A-L-S, the BIA reiterates the importance of flight risk for an IJ considering issuing a bond, and emphasizes that the mere fact that the respondent may have relief should not 'materially' reduce the risk of flight. While this may sound niche, many bond cases are borderline cases already."
@@ -86,7 +93,9 @@
     "citation": "593 U.S. 155 (2021)",
     "year": 2021,
     "body": "Supreme Court",
-    "holding": [],
+    "holding": [
+      "For purposes of triggering the stop-time rule for cancellation of removal, the government must serve a single Notice to Appear containing all statutorily required information. The required information cannot be supplied through multiple documents served at different times."
+    ],
     "topics": [
       "notice to appear",
       "stop-time rule",
@@ -99,10 +108,10 @@
       "cancellation of removal"
     ],
     "cites": [],
-    "summary": "For purposes of triggering the stop-time rule for cancellation of removal, the government must serve a single Notice to Appear containing all statutorily required information. The required information cannot be supplied through multiple documents served at different times.",
+    "summary": "Of tremendous significance to both practitioners, especially Respondents' counsel, as this Supreme Court decision further clarifies the way in which a person must be notified of the commencement of removal proceedings against them (through service of a Notice to Appear), as well as to Language Nerds, because this decision goes extremely hard regarding the murky grammar of the English language. In any case, TL;DR: an NTA has to consist of one single, atomic, unitary document that includes both notice that the named person must appear for immigration proceedings, as well as the place, date, and time of that initial appearance. This sounds stupid and like 'yeah of course duh?' but, uh... It's harder to make a valid NTA than you would expect.",
     "status": "Current",
     "officialUrl": "https://www.supremecourt.gov/opinions/20pdf/19-863_6jgm.pdf",
-    "notes": "Of tremendous significance to both practitioners, especially Respondents' counsel, as this Supreme Court decision further clarifies the way in which a person must be notified of the commencement of removal proceedings against them (through service of a Notice to Appear), as well as to Language Nerds, because this decision goes extremely hard regarding the murky grammar of the English language. In any case, TL;DR: an NTA has to consist of one single, atomic, unitary document that includes both notice that the named person must appear for immigration proceedings, as well as the place, date, and time of that initial appearance. This sounds stupid and like 'yeah of course duh?' but, uh... It's harder to make a valid NTA than you would expect."
+    "notes": ""
   },
   {
     "id": "matter-of-buri-mora",
