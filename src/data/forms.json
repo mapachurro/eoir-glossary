@@ -1,26 +1,74 @@
 [
-  {
-    "id": "eoir-33",
-    "agency": "EOIR",
-    "formNumber": "EOIR-33",
-    "title": "Change of address form",
-    "aka": "That blue colored form on the table in front of you",
-    "spanishTitle": "Formulario de cambio de dirección/información de contacto",
-    "purpose": "Used to update address or contact information with the immigration court.",
-    "relatedTerms": ["change of address", "immigration court"],
-    "officialUrl": "https://www.justice.gov/eoir/eoir-forms",
-    "notes": ""
-  },
-  {
-    "id": "i-485",
-    "agency": "USCIS",
-    "formNumber": "I-485",
-    "title": "Application to Register Permanent Residence or Adjust Status",
-    "aka": "Green Card application",
-    "spanishTitle": "Solicitud para registrar residencia permanente o ajustar la condición migratoria",
-    "purpose": "Used to apply for lawful permanent resident status from within the United States.",
-    "relatedTerms": ["adjustment of status", "lawful permanent resident"],
-    "officialUrl": "https://www.uscis.gov/i-485",
-    "notes": ""
-  }
+{
+  "id": "i-213",
+  "agency": "DHS",
+  "formNumber": "I-213",
+  "title": "Record of Deportable / Inadmissible Alien",
+  "aka": "I-213",
+  "spanishTitle": "",
+  "purpose": "Internal DHS record documenting information gathered about a noncitizen during an immigration encounter or investigation.",
+  "relatedTerms": ["evidence", "removal proceedings", "inadmissibility", "deportability"],
+  "officialUrl": "https://www.uscis.gov/forms",
+  "notes": "Not filed by applicants. Frequently appears as evidence in removal proceedings."
+},
+{
+  "id": "i-863",
+  "agency": "DHS",
+  "formNumber": "I-863",
+  "title": "Notice of Referral to Immigration Judge",
+  "aka": "Referral to Immigration Court",
+  "spanishTitle": "Notificación de remisión al juez de inmigración",
+  "purpose": "Refers certain immigration benefit applications or proceedings to the Immigration Court for adjudication.",
+  "relatedTerms": ["immigration judge", "referral", "EOIR", "removal proceedings"],
+  "officialUrl": "https://www.uscis.gov/forms",
+  "notes": "Often encountered in asylum and other defensive proceedings."
+},
+{
+  "id": "i-261",
+  "agency": "DHS",
+  "formNumber": "I-261",
+  "title": "Additional Charges of Inadmissibility / Deportability",
+  "aka": "Additional Charges",
+  "spanishTitle": "Cargos adicionales de inadmisibilidad o deportabilidad",
+  "purpose": "Used by DHS to amend or add factual allegations or legal charges in an existing Notice to Appear.",
+  "relatedTerms": ["notice to appear", "NTA", "charges", "removal proceedings"],
+  "officialUrl": "https://www.uscis.gov/forms",
+  "notes": "Commonly used after proceedings have already begun."
+},
+{
+  "id": "i-830",
+  "agency": "USCIS",
+  "formNumber": "I-830",
+  "title": "Notice to EOIR: Alien Address",
+  "aka": "I-830",
+  "spanishTitle": "Notificación al EOIR sobre dirección del extranjero",
+  "purpose": "Communicates changes or updates in address or other information between USCIS and EOIR for pending immigration court proceedings.",
+  "relatedTerms": ["change of address", "EOIR", "USCIS"],
+  "officialUrl": "https://www.uscis.gov/i-830",
+  "notes": "Typically prepared by USCIS rather than the respondent."
+},
+{
+  "id": "i-192",
+  "agency": "USCIS",
+  "formNumber": "I-192",
+  "title": "Application for Advance Permission to Enter as a Nonimmigrant",
+  "aka": "Waiver application",
+  "spanishTitle": "Solicitud de permiso anticipado para ingresar como no inmigrante",
+  "purpose": "Requests discretionary permission to enter the United States temporarily despite certain grounds of inadmissibility.",
+  "relatedTerms": ["waiver", "inadmissibility", "nonimmigrant"],
+  "officialUrl": "https://www.uscis.gov/i-192",
+  "notes": "Commonly associated with U visa, T visa, and certain Canadian border applicants."
+},
+{
+  "id": "i-871",
+  "agency": "DHS",
+  "formNumber": "I-871",
+  "title": "Notice of Intent to Issue a Final Administrative Removal Order",
+  "aka": "NOI to FARO",
+  "spanishTitle": "Notificación de intención de emitir una orden administrativa final de expulsión",
+  "purpose": "Advises a noncitizen that DHS intends to remove them through expedited administrative removal procedures.",
+  "relatedTerms": ["administrative removal", "final administrative removal order", "FARO"],
+  "officialUrl": "https://www.uscis.gov/forms",
+  "notes": "Used in administrative removal proceedings under INA § 238(b)."
+}
 ]
