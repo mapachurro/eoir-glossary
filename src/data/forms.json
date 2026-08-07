@@ -29,23 +29,23 @@
   "formNumber": "I-261",
   "title": "Additional Charges of Inadmissibility / Deportability",
   "aka": "",
-  "spanishTitle": "",
+  "spanishTitle": "Imputaciones adicionales de inadmisibilidad o expulsabilidad",
   "purpose": "The I-261 is used to add, amend, or otherwise modify the NTA in a given case. This can include adding new charges, correcting factual bases, or otherwise modifying the document. This is an entirely internal form; there don't even appear to be many images of it available online. It played an important role in the Saga of 'what is a notice to appear, anyway?'; for more on this, see Niz-Chavez, here: https://gringo.bingo/#/legal-authority  ",
   "relatedTerms": ["notice to appear", "NTA", "charges", "removal proceedings"],
-  "officialUrl": "https://www.uscis.gov/forms",
-  "notes": "Commonly used after proceedings have already begun."
+  "officialUrl": "N/A",
+  "notes": ""
 },
 {
   "id": "i-830",
-  "agency": "USCIS",
+  "agency": "",
   "formNumber": "I-830",
   "title": "Notice to EOIR: Alien Address",
   "aka": "I-830",
   "spanishTitle": "",
-  "purpose": "Communicates changes or updates in address or other information between USCIS and EOIR for pending immigration court proceedings.",
-  "relatedTerms": ["change of address", "EOIR", "USCIS"],
-  "officialUrl": "https://www.uscis.gov/i-830",
-  "notes": "Typically prepared by USCIS rather than the respondent."
+  "purpose": "Working on this one. Check back later..",
+  "relatedTerms": [],
+  "officialUrl": "N/A",
+  "notes": ""
 },
 {
   "id": "i-192",
@@ -53,22 +53,22 @@
   "formNumber": "I-192",
   "title": "Application for Advance Permission to Enter as a Nonimmigrant",
   "aka": "Waiver application",
-  "spanishTitle": "",
-  "purpose": "Requests discretionary permission to enter the United States temporarily despite certain grounds of inadmissibility.",
+  "spanishTitle": "Solicitud de permiso anticipado para entrar como no inmigrante",
+  "purpose": "The I-192 is a document that might end up in a Record of Proceedings, but it's not commonly used inside the US. Instead, it is used most often in embassies or consulates abroad wherein someone is requesting that previous immigration history -- something that happened that made them 'inadmissible' -- be waived so that they may enter the country legally.",
   "relatedTerms": ["waiver", "inadmissibility", "nonimmigrant"],
   "officialUrl": "https://www.uscis.gov/i-192",
-  "notes": "Commonly associated with U visa, T visa, and certain Canadian border applicants."
+  "notes": ""
 },
 {
   "id": "i-871",
   "agency": "DHS",
   "formNumber": "I-871",
-  "title": "Notice of Intent to Issue a Final Administrative Removal Order",
+  "title": "Notice of Intent/Decision to Reinstate Prior Order",
   "aka": "",
-  "spanishTitle": "",
-  "purpose": "Advises a noncitizen that DHS intends to remove them through expedited administrative removal procedures.",
-  "relatedTerms": ["administrative removal", "final administrative removal order", "FARO"],
-  "officialUrl": "https://www.uscis.gov/forms",
-  "notes": "Used in administrative removal proceedings under INA § 238(b)."
+  "spanishTitle": "Aviso de intención o auto de restablecimiento de una orden previa",
+  "purpose": "Yet another charging document, the I-871 is specific to the circumstances of someone who has previously been removed from the country, or at least, had an order of removal against them, left the country, and has entered the country again, and is thereby being placed in removal proceedings.",
+  "relatedTerms": [],
+  "officialUrl": "N/A",
+  "notes": "Internal document only."
 }
 ]
