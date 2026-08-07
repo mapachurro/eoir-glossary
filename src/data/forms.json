@@ -1,26 +1,74 @@
 [
-  {
-    "id": "eoir-33",
-    "agency": "EOIR",
-    "formNumber": "EOIR-33",
-    "title": "Change of address form",
-    "aka": "That blue colored form on the table in front of you",
-    "spanishTitle": "Formulario de cambio de dirección/información de contacto",
-    "purpose": "Used to update address or contact information with the immigration court.",
-    "relatedTerms": ["change of address", "immigration court"],
-    "officialUrl": "https://www.justice.gov/eoir/eoir-forms",
-    "notes": ""
-  },
-  {
-    "id": "i-485",
-    "agency": "USCIS",
-    "formNumber": "I-485",
-    "title": "Application to Register Permanent Residence or Adjust Status",
-    "aka": "Green Card application",
-    "spanishTitle": "Solicitud para registrar residencia permanente o ajustar la condición migratoria",
-    "purpose": "Used to apply for lawful permanent resident status from within the United States.",
-    "relatedTerms": ["adjustment of status", "lawful permanent resident"],
-    "officialUrl": "https://www.uscis.gov/i-485",
-    "notes": ""
-  }
+{
+  "id": "i-213",
+  "agency": "DHS",
+  "formNumber": "I-213",
+  "title": "Record of Deportable / Inadmissible Alien",
+  "aka": "",
+  "spanishTitle": "Expediente de un extranjero expulsable o inadmisible",
+  "purpose": "The I-213 serves as DHS' and its sub-agencies' 'source of truth' regarding a given person that they consider deportable. The information in the 213 is used to create the NTA itself, and often comes up during immigration proceedings when an individual fails to appear for a hearing. At that point, the DHS representative present at court has to file an updated I-213 with the Court in order for the IJ to act upon a request for in absentia removal from DHS counsel for failure to appear.",
+  "relatedTerms": ["evidence", "removal proceedings", "inadmissibility", "deportability"],
+  "officialUrl": "https://www.dhs.gov/sites/default/files/2025-05/25_0226_opa_i-213-final-draft-redacted_508.pdf",
+  "notes": "Not filed by applicants. Often mentioned in fast-moving procedural conversations between Counsel and the IJ."
+},
+{
+  "id": "i-863",
+  "agency": "DHS",
+  "formNumber": "I-863",
+  "title": "Notice of Referral to Immigration Judge",
+  "aka": "",
+  "spanishTitle": "Aviso de remisión ante un juez de inmigración",
+  "purpose": "The I-863 is a less commonly used form than some; it is a sort of charging document, as it has a similar effect to an NTA, in that the named person is placed in EOIR proceedings. As per the relevant statute (https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-235/section-235.6), this can be, for example, following a credible fear interview, when credible fear is not found; when someone is suspected to be faking their legal status, and other situations, as well.",
+  "relatedTerms": ["credible fear", "EOIR", "charging document"],
+  "officialUrl": "https://www.justice.gov/eoir/dhs-notice-referral-ij-form-i-863",
+  "notes": "Unlikely to come up outside of EOIR; if you hear it at USCIS, that's a bad day."
+},
+{
+  "id": "i-261",
+  "agency": "DHS",
+  "formNumber": "I-261",
+  "title": "Additional Charges of Inadmissibility / Deportability",
+  "aka": "",
+  "spanishTitle": "Imputaciones adicionales de inadmisibilidad o expulsabilidad",
+  "purpose": "The I-261 is used to add, amend, or otherwise modify the NTA in a given case. This can include adding new charges, correcting factual bases, or otherwise modifying the document. This is an entirely internal form; there don't even appear to be many images of it available online. It played an important role in the Saga of 'what is a notice to appear, anyway?'; for more on this, see Niz-Chavez, here: https://gringo.bingo/#/legal-authority  ",
+  "relatedTerms": ["notice to appear", "NTA", "charges", "removal proceedings"],
+  "officialUrl": "N/A",
+  "notes": ""
+},
+{
+  "id": "i-830",
+  "agency": "",
+  "formNumber": "I-830",
+  "title": "Notice to EOIR: Alien Address",
+  "aka": "I-830",
+  "spanishTitle": "",
+  "purpose": "Working on this one. Check back later..",
+  "relatedTerms": [],
+  "officialUrl": "N/A",
+  "notes": ""
+},
+{
+  "id": "i-192",
+  "agency": "USCIS",
+  "formNumber": "I-192",
+  "title": "Application for Advance Permission to Enter as a Nonimmigrant",
+  "aka": "Waiver application",
+  "spanishTitle": "Solicitud de permiso anticipado para entrar como no inmigrante",
+  "purpose": "The I-192 is a document that might end up in a Record of Proceedings, but it's not commonly used inside the US. Instead, it is used most often in embassies or consulates abroad wherein someone is requesting that previous immigration history -- something that happened that made them 'inadmissible' -- be waived so that they may enter the country legally.",
+  "relatedTerms": ["waiver", "inadmissibility", "nonimmigrant"],
+  "officialUrl": "https://www.uscis.gov/i-192",
+  "notes": ""
+},
+{
+  "id": "i-871",
+  "agency": "DHS",
+  "formNumber": "I-871",
+  "title": "Notice of Intent/Decision to Reinstate Prior Order",
+  "aka": "",
+  "spanishTitle": "Aviso de intención o auto de restablecimiento de una orden previa",
+  "purpose": "Yet another charging document, the I-871 is specific to the circumstances of someone who has previously been removed from the country, or at least, had an order of removal against them, left the country, and has entered the country again, and is thereby being placed in removal proceedings.",
+  "relatedTerms": [],
+  "officialUrl": "N/A",
+  "notes": "Internal document only."
+}
 ]
