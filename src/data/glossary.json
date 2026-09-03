@@ -15883,5 +15883,21 @@
     "proposals": "",
     "id": "carr-compliant-cumple-con-el-caso-carr",
     "contrastsWith": ["substantially incomplete application"]
+  },
+  {
+    "english": "MAM hearing",
+    "englishDefinition": "What would be called a 'competency evaluation' in criminal court, this type of hearing is carried out in order to determine mental competence of a respondent, in accordance with the BIA decision Matter of M-A-M-.",
+    "spanish": "audiencia MAM",
+    "spanishDefinition": "Lo que, en lo penal, se llamaría algo como 'una evaluación de capacidad mental'. Las pautas para esta audiencia se basan en la jurisprudencia publicada por la Junta de Apelaciones Migratiorias, `Matter of M-A-M-`.",
+    "comments": "See also the entry on the underlying authority, Matter of M-A-M-, for more detail.",
+    "category": [],
+    "tags": [],
+    "aliases": [],
+    "status": "active",
+    "lastUpdated": "9-3-2026",
+    "source": "mapachurro",
+    "proposals": "",
+    "id": "mam-hearing-audiencia-mam",
+    "contrastsWith": ["competency evaluation"]
   }
 ]
