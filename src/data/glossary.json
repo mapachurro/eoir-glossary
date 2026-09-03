@@ -1027,6 +1027,22 @@
     "id": "asylum-clock-acumulacion-de-dias-dias-transcurridos",
     "contrastsWith": []
   },
+    {
+    "english": "Asylum Cooperative Agreeement (ACA)",
+    "englishDefinition": "A bilateral agreement between the government of the United States and the government of another country which establishes the terms through which asylum seekers coming to one country may be sent to the other country in order to pursue their asylum claims in that country.",
+    "spanish": "acuerdo cooperativo de asilo",
+    "spanishDefinition": "Un acuerdo bilateral entre el gobierno de los Estados Unidos y el gobierno de otro país, por el cual se establecen las condiciones bajo las cuales a ciertos solicitantes de asilo en el territorio de uno se podrán trasladar al otro para llevar a cabo el proceso de petición de asilo en aquel.",
+    "comments": "",
+    "category": [],
+    "tags": [],
+    "aliases": [],
+    "status": "active",
+    "lastUpdated": "",
+    "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
+    "proposals": "",
+    "id": "asylum-clock-acumulacion-de-dias-dias-transcurridos",
+    "contrastsWith": []
+  },
   {
     "english": "asylum interview",
     "englishDefinition": "",
