@@ -326,7 +326,7 @@
 },
 {
   "id": "matter-of-quilantan",
-  "name": "Matter of Quilantan",
+  "name": "Matter of Graciela QUILANTAN, Respondent",
   "citation": "25 I&N Dec. 285 (BIA 2010)",
   "year": 2010,
   "body": "Board of Immigration Appeals",
@@ -356,5 +356,37 @@
   "status": "Current",
   "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3688.pdf",
   "notes": ""
+},
+{
+  "id": "matter-of-monreal",
+  "name": "Matter of Monreal",
+  "citation": "23 I&N Dec. 56 (BIA 2001)",
+  "year": 2001,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "To establish 'exceptional and extremely unusual hardship' for non-LPR cancellation of removal under INA § 240A(b), an applicant must demonstrate that a qualifying spouse, parent, or child would suffer hardship substantially beyond that ordinarily expected to result from the applicant's removal, although the hardship need not be unconscionable.",
+    "The exceptional and extremely unusual hardship standard is more demanding than the former 'extreme hardship' standard applicable to suspension of deportation.",
+    "Only hardship to qualifying relatives may be considered in determining statutory eligibility for non-LPR cancellation; hardship to the applicant may be considered only insofar as it affects a qualifying relative."
+  ],
+  "topics": [
+    "cancellation of removal",
+    "42B",
+    "hardship",
+    "exceptional and extremely unusual hardship",
+    "qualifying relative"
+  ],
+  "relatedTerms": [
+    "cancellation of removal",
+    "exceptional and extremely unusual hardship",
+    "qualifying relative"
+  ],
+  "cites": [],
+  "summary": [
+    "One of the foundational cases defining the 'exceptional and extremely unusual hardship' requirement for non-LPR cancellation of removal, aka 42-B relief. Monreal establishes that ordinary consequences of removal, even serious ones, are not enough; hardship to a qualifying relative must be substantially beyond what would ordinarily be expected.",
+    "The case also sharply limits whose hardship counts. The respondent's own hardship is not independently part of the statutory analysis, although circumstances affecting the respondent can matter insofar as they produce hardship for a qualifying U.S.-citizen or lawful-permanent-resident spouse, parent, or child."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3447.pdf",
+  "notes": "Frequently cited in 42B proceedings as a baseline statement of the hardship standard. It should be read alongside later hardship cases, particularly Matter of Andazola and Matter of Recinas."
 }
 ]
