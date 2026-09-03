@@ -165,5 +165,38 @@
     "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/page/file/1435951/dl",
     "notes": ""
-  }
+  },
+  {
+  "id": "matter-of-c-a-r-r",
+  "name": "Matter of C-A-R-R-",
+  "citation": "29 I&N Dec. 13 (BIA 2025)",
+  "year": 2025,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "An Immigration Judge is not required to consider an Application for Asylum and for Withholding of Removal (Form I-589) on the merits if it is incomplete, and an incomplete application may be considered waived or abandoned, particularly where the respondent has been given an opportunity to cure the deficiency.",
+    "A declaration is not a constituent part of an asylum application. An Immigration Judge therefore may not deem a Form I-589 incomplete or abandoned solely because the respondent did not submit a declaration."
+  ],
+  "topics": [
+    "asylum",
+    "I-589",
+    "abandonment",
+    "pre-termission",
+    "pretermit"
+  ],
+  "relatedTerms": [
+    "asylum",
+    "I-589",
+    "pre-termit"
+  ],
+  "cites": [
+    "Matter of Interiano-Rosa, 25 I&N Dec. 264 (BIA 2010)"
+  ],
+  "summary": [
+    "C-A-R-R- addresses some conditions under which an Immigration Judge may treat an asylum application as incomplete and thereby consider it waived or abandoned. The I-589 itself--the actual freaking form, not a supplement pointed to with a note like 'see supplement'--must contain substantive answers to every question.",
+    "Importantly, however, a separate written declaration is not itself a required constituent part of Form I-589. Failure to submit a declaration therefore does not, standing alone, make the asylum application incomplete."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/eoir/volume-29",
+  "notes": "This is, in a way, a long time coming, and represents a tremendously powerful tool for the DHS to request pre-termission of cases, thereby clearing out the cases that, `on their face`, are highly unlikely to prosper on their merits. The other tool, or horseman of the apocalypse depending on your politics, is Matter of H-A-A-V-, which addresses whether the facts alleged by the respondent in their application, even if accepted as true, establish prima facie eligibility for relief. One interesting thing to consider is the existence, in Spanish administrative law / case administration, of the legal figure 'aceptar a trámite'. This is a binary yes /no initial decisoin, generally made by a judge or similarly positioned legal expert, as to whether the case meets certain prima facie levels of sufficiency on given criteria. In a way -- if we can step back for a second -- the idea that the US Immigration courts went forward with a full hearing on applications that were wildly incomplete and whose alleged fact patterns clearly match existing case law barring the relief requested -- is a bit insane."
+}
 ]
