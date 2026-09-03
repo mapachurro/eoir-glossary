@@ -165,5 +165,228 @@
     "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/page/file/1435951/dl",
     "notes": ""
-  }
+  },
+  {
+  "id": "matter-of-c-a-r-r",
+  "name": "Matter of C-A-R-R-",
+  "citation": "29 I&N Dec. 13 (BIA 2025)",
+  "year": 2025,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "An Immigration Judge is not required to consider an Application for Asylum and for Withholding of Removal (Form I-589) on the merits if it is incomplete, and an incomplete application may be considered waived or abandoned, particularly where the respondent has been given an opportunity to cure the deficiency.",
+    "A declaration is not a constituent part of an asylum application. An Immigration Judge therefore may not deem a Form I-589 incomplete or abandoned solely because the respondent did not submit a declaration."
+  ],
+  "topics": [
+    "asylum",
+    "I-589",
+    "abandonment",
+    "pre-termission",
+    "pretermit"
+  ],
+  "relatedTerms": [
+    "asylum",
+    "I-589",
+    "pre-termit"
+  ],
+  "cites": [
+    "Matter of Interiano-Rosa, 25 I&N Dec. 264 (BIA 2010)"
+  ],
+  "summary": [
+    "C-A-R-R- addresses some conditions under which an Immigration Judge may treat an asylum application as incomplete and thereby consider it waived or abandoned. The I-589 itself--the actual freaking form, not a supplement pointed to with a note like 'see supplement'--must contain substantive answers to every question.",
+    "Importantly, however, a separate written declaration is not itself a required constituent part of Form I-589. Failure to submit a declaration therefore does not, standing alone, make the asylum application incomplete."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/eoir/volume-29",
+  "notes": "This is, in a way, a long time coming, and represents a tremendously powerful tool for the DHS to request pre-termission of cases, thereby clearing out the cases that, `on their face`, are highly unlikely to prosper on their merits. The other tool, or horseman of the apocalypse depending on your politics, is Matter of H-A-A-V-, which addresses whether the facts alleged by the respondent in their application, even if accepted as true, establish prima facie eligibility for relief. One interesting thing to consider is the existence, in Spanish administrative law / case administration, of the legal figure 'aceptar a trámite'. This is a binary yes /no initial decisoin, generally made by a judge or similarly positioned legal expert, as to whether the case meets certain prima facie levels of sufficiency on given criteria. In a way -- if we can step back for a second -- the idea that the US Immigration courts went forward with a full hearing on applications that were wildly incomplete and whose alleged fact patterns clearly match existing case law barring the relief requested -- is a bit insane."
+},
+{
+  "id": "matter-of-m-a-m",
+  "name": "Matter of M-A-M-",
+  "citation": "25 I&N Dec. 474 (BIA 2011)",
+  "year": 2011,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "Respondents in immigration proceedings are presumed competent. If there are no indicia of incompetency, no further competency inquiry is required.",
+    "The test for competency is whether the respondent has a rational and factual understanding of the nature and object of the proceedings, can consult with an attorney or representative if there is one, and has a reasonable opportunity to examine and present evidence and cross-examine witnesses.",
+    "If there are indicia of incompetency, the Immigration Judge must make further inquiry to determine whether the respondent is competent for purposes of the proceedings.",
+    "If the respondent lacks sufficient competency to proceed, the Immigration Judge must evaluate appropriate safeguards.",
+    "Immigration Judges must articulate the rationale for their decisions regarding competency issues."
+  ],
+  "topics": [
+    "competency",
+    "mental competency",
+    "procedural safeguards"
+  ],
+  "relatedTerms": [
+    "MAM hearing",
+    "competent",
+    "mental competency"
+  ],
+  "cites": [],
+  "summary": [
+    "This case created the case law which governs competency in immigration proceedings. M-A-M- establishes both the competency standard and the Immigration Judge's obligation to investigate competency when there are indicia that a respondent may not be competent."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3711.pdf",
+  "notes": "The way that this case law is put into practice is through what is literally called a 'MAM hearing'. This is confusing, of course, due to the existence of the Mayan language `Mam`, which is quite commonly seen in some US Immigration Courts, and the fact that the EOIR's internal 'language code' representing that language is, sigh, `MAM`, all caps. Of course, the citation for the case is `M-A-M-`, but when jurists refer to a `MAM hearing`, they leave the dashes out. Regardless of my issues with punctuation and proofreading: if the IJ finds that the respondent is not competent, the case doesn't just *go away*, the IJ implements safeguards to ensure that the respondent's rights are respected given the degree of their impairment."
+},
+{
+  "id": "ina-237-a-1-b",
+  "name": "INA § 237(a)(1)(B)",
+  "citation": "INA § 237(a)(1)(B); 8 U.S.C. § 1227(a)(1)(B)",
+  "year": null,
+  "body": "Federal Statute",
+  "holding": [
+    "A noncitizen who is present in the United States in violation of the Immigration and Nationality Act or any other law of the United States, or whose documentation authorizing admission as a nonimmigrant has been revoked, is deportable."
+  ],
+  "topics": [
+    "deportability",
+    "removability",
+    "immigration status",
+    "overstay"
+  ],
+  "relatedTerms": [
+    "deportable",
+    "removable",
+    "overstay",
+    "arriving alien",
+    "EWI"
+  ],
+  "cites": [],
+  "summary": [
+    "One of the basic statutory grounds of deportability, in the old days, or what we now call removability. Section 237(a)(1)(B) applies to a person who is present in the United States in violation of immigration law or other federal law, including circumstances in which a person lawfully entered but no longer has authorization to remain."
+  ],
+  "status": "Current",
+  "officialUrl": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title8-section1227",
+  "notes": "INA § 237 generally concerns grounds of deportability applicable after admission, in contrast with INA § 212, which contains grounds of inadmissibility."
+},
+{
+  "id": "ina-212-a-7-a-i-i",
+  "name": "INA § 212(a)(7)(A)(i)(I)",
+  "citation": "INA § 212(a)(7)(A)(i)(I); 8 U.S.C. § 1182(a)(7)(A)(i)(I)",
+  "year": null,
+  "body": "Federal Statute",
+  "holding": [
+    "Except as otherwise provided by law, an immigrant applying for admission who does not possess the required valid, unexpired immigrant visa, reentry permit, border crossing identification card, or other required entry document, together with any required valid passport or other suitable travel or identity document, is inadmissible."
+  ],
+  "topics": [
+    "inadmissibility",
+    "entry documents",
+    "immigrant visa",
+    "admission"
+  ],
+  "relatedTerms": [
+    "inadmissible",
+    "admission",
+    "entry documents",
+    "arriving alien",
+    "EWI"
+  ],
+  "cites": [],
+  "summary": [
+    "A documentation-based ground of inadmissibility applying to immigrants seeking admission to the United States without the documents required for lawful admission.",
+    "This provision belongs to INA § 212, the statutory collection of grounds of inadmissibility, rather than INA § 237's grounds of deportability. The INA-to-U.S.-Code correspondence  is: INA § 212 = 8 U.S.C. § 1182. Thus INA § 212(a)(7)(A)(i)(I) appears at 8 U.S.C. § 1182(a)(7)(A)(i)(I)."
+  ],
+  "status": "Current",
+  "officialUrl": "https://uscode.house.gov/view.xhtml?req=%28title%3A8+section%3A1182%29",
+  "notes": "The NTA review colloquy that IJs give regarding this charge is often formulated as follows: 'the Department (or Government) also alleges at the moment that you arrived/crossed the border/requested permission to enter/applied for admission to the United States, you were not then in possession of a valid, unexpired immigrant visa, re-entry permit, border crossing card, or other valid entry/immigration document as required by law. Is that true?'"
+},
+{
+  "id": "matter-of-m-a-f",
+  "name": "Matter of M-A-F-",
+  "citation": "26 I&N Dec. 651 (BIA 2015)",
+  "year": 2015,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "Where an applicant filed an asylum application before the May 11, 2005 effective date of the REAL ID Act and subsequently files an application properly regarded as a new application, the filing date of the later application controls for determining whether the REAL ID Act's credibility provisions apply.",
+    "A subsequent asylum application is properly regarded as a new application when it presents a previously unraised basis for relief or is predicated on a new or substantially different factual basis.",
+    "Where multiple asylum applications have been filed and the later application constitutes a new application, the filing date of the later application controls for purposes of the one-year statutory filing deadline."
+  ],
+  "topics": [
+    "asylum",
+    "I-589",
+    "REAL ID Act",
+    "credibility",
+    "one-year filing deadline",
+    "new asylum application"
+  ],
+  "relatedTerms": [
+    "asylum",
+    "I-589",
+    "REAL ID Act",
+    "one-year filing deadline"
+  ],
+  "cites": [],
+  "summary": [
+    "M-A-F- addresses when a later-filed asylum application (an 'updated' I-589, when one has already been filed) should be considered to modify, complete, or otherwise update the existing claim, and when it instead constitutes a completely new factual basis and should be treated as a separate application."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/eoir/precedent-decisions-volume-26",
+  "notes": "The distinction, well, 'it depends', of course, but if the updated 589 has new or different boxes checked for the protected ground on which the application's claim is based, and there are suddenly 300 pages of evidence (ie, you hadn't marked political opinion before, and you'd said vague things about crime in your country, and now it's political opinion and it turns out you were a candidate for political office targeted by government agents??), well--someone might start talking about matter of M-A-F-. Additionally, if the new 589 is considered to be a new application, this can change the date that is considered applicable for both REAL ID Act credibility rules and the asylum one-year filing deadline."
+},
+{
+  "id": "matter-of-quilantan",
+  "name": "Matter of Graciela QUILANTAN, Respondent",
+  "citation": "25 I&N Dec. 285 (BIA 2010)",
+  "year": 2010,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "For purposes of establishing eligibility for adjustment of status under INA § 245(a), a noncitizen seeking to establish that he or she was 'admitted' under INA § 101(a)(13)(A) need only establish procedural regularity in the entry.",
+    "An admission does not require that immigration authorities question the person at the time of entry or that the person be admitted in a particular immigration status."
+  ],
+  "topics": [
+    "admission",
+    "adjustment of status",
+    "245(a)",
+    "procedural regularity",
+    "waved through"
+  ],
+  "relatedTerms": [
+    "admission",
+    "adjustment of status",
+    "waved through"
+  ],
+  "cites": [
+    "Matter of Areguillin, 17 I&N Dec. 308 (BIA 1980)"
+  ],
+  "summary": [
+    "Quilantan is the major case law behind the concept commonly described as being 'waved through' the border: a polemical concept that leaked out of the immigration law backrooms into public discourse, at least for a time. This results in certain circumstances in which persons are allowed to adjust status under INA § 245(a) even though they were not formally questioned, admitted, or otherwise assigned an immigration status -- in other words, they were 'waved through'. But only in certain circumstances.",
+    "The main factor is making a distinction between procedural regularity and substantive entitlement to enter. In other words, a person who physically presented themself for inspection and was permitted (waved, but not *waived*) through may have been 'admitted' for § 245(a) purposes even though they lacked documents that would ordinarily have entitled them to admission."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3688.pdf",
+  "notes": ""
+},
+{
+  "id": "matter-of-monreal",
+  "name": "Matter of Monreal",
+  "citation": "23 I&N Dec. 56 (BIA 2001)",
+  "year": 2001,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "To establish 'exceptional and extremely unusual hardship' for non-LPR cancellation of removal under INA § 240A(b), an applicant must demonstrate that a qualifying spouse, parent, or child would suffer hardship substantially beyond that ordinarily expected to result from the applicant's removal, although the hardship need not be unconscionable.",
+    "The exceptional and extremely unusual hardship standard is more demanding than the former 'extreme hardship' standard applicable to suspension of deportation.",
+    "Only hardship to qualifying relatives may be considered in determining statutory eligibility for non-LPR cancellation; hardship to the applicant may be considered only insofar as it affects a qualifying relative."
+  ],
+  "topics": [
+    "cancellation of removal",
+    "42B",
+    "hardship",
+    "exceptional and extremely unusual hardship",
+    "qualifying relative"
+  ],
+  "relatedTerms": [
+    "cancellation of removal",
+    "exceptional and extremely unusual hardship",
+    "qualifying relative"
+  ],
+  "cites": [],
+  "summary": [
+    "One of the foundational cases defining the 'exceptional and extremely unusual hardship' requirement for non-LPR cancellation of removal, aka 42-B relief. Monreal establishes that ordinary consequences of removal, even serious ones, are not enough; hardship to a qualifying relative must be substantially beyond what would ordinarily be expected.",
+    "The case also sharply limits whose hardship counts. The respondent's own hardship is not independently part of the statutory analysis, although circumstances affecting the respondent can matter insofar as they produce hardship for a qualifying U.S.-citizen or lawful-permanent-resident spouse, parent, or child."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3447.pdf",
+  "notes": "Frequently cited in 42B proceedings as a baseline statement of the hardship standard. It should be read alongside later hardship cases, particularly Matter of Andazola and Matter of Recinas."
+}
 ]
