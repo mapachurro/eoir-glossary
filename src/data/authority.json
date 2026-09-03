@@ -323,5 +323,38 @@
   "status": "Current",
   "officialUrl": "https://www.justice.gov/eoir/precedent-decisions-volume-26",
   "notes": "The distinction, well, 'it depends', of course, but if the updated 589 has new or different boxes checked for the protected ground on which the application's claim is based, and there are suddenly 300 pages of evidence (ie, you hadn't marked political opinion before, and you'd said vague things about crime in your country, and now it's political opinion and it turns out you were a candidate for political office targeted by government agents??), well--someone might start talking about matter of M-A-F-. Additionally, if the new 589 is considered to be a new application, this can change the date that is considered applicable for both REAL ID Act credibility rules and the asylum one-year filing deadline."
+},
+{
+  "id": "matter-of-quilantan",
+  "name": "Matter of Quilantan",
+  "citation": "25 I&N Dec. 285 (BIA 2010)",
+  "year": 2010,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "For purposes of establishing eligibility for adjustment of status under INA § 245(a), a noncitizen seeking to establish that he or she was 'admitted' under INA § 101(a)(13)(A) need only establish procedural regularity in the entry.",
+    "An admission does not require that immigration authorities question the person at the time of entry or that the person be admitted in a particular immigration status."
+  ],
+  "topics": [
+    "admission",
+    "adjustment of status",
+    "245(a)",
+    "procedural regularity",
+    "waved through"
+  ],
+  "relatedTerms": [
+    "admission",
+    "adjustment of status",
+    "waved through"
+  ],
+  "cites": [
+    "Matter of Areguillin, 17 I&N Dec. 308 (BIA 1980)"
+  ],
+  "summary": [
+    "Quilantan is the major case law behind the concept commonly described as being 'waved through' the border: a polemical concept that leaked out of the immigration law backrooms into public discourse, at least for a time. This results in certain circumstances in which persons are allowed to adjust status under INA § 245(a) even though they were not formally questioned, admitted, or otherwise assigned an immigration status -- in other words, they were 'waved through'. But only in certain circumstances.",
+    "The main factor is making a distinction between procedural regularity and substantive entitlement to enter. In other words, a person who physically presented themself for inspection and was permitted (waved, but not *waived*) through may have been 'admitted' for § 245(a) purposes even though they lacked documents that would ordinarily have entitled them to admission."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3688.pdf",
+  "notes": ""
 }
 ]
