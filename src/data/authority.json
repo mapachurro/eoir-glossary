@@ -229,5 +229,66 @@
   "status": "Current",
   "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3711.pdf",
   "notes": "The way that this case law is put into practice is through what is literally called a 'MAM hearing'. This is confusing, of course, due to the existence of the Mayan language `Mam`, which is quite commonly seen in some US Immigration Courts, and the fact that the EOIR's internal 'language code' representing that language is, sigh, `MAM`, all caps. Of course, the citation for the case is `M-A-M-`, but when jurists refer to a `MAM hearing`, they leave the dashes out. Regardless of my issues with punctuation and proofreading: if the IJ finds that the respondent is not competent, the case doesn't just *go away*, the IJ implements safeguards to ensure that the respondent's rights are respected given the degree of their impairment."
+},
+{
+  "id": "ina-237-a-1-b",
+  "name": "INA § 237(a)(1)(B)",
+  "citation": "INA § 237(a)(1)(B); 8 U.S.C. § 1227(a)(1)(B)",
+  "year": null,
+  "body": "Federal Statute",
+  "holding": [
+    "A noncitizen who is present in the United States in violation of the Immigration and Nationality Act or any other law of the United States, or whose documentation authorizing admission as a nonimmigrant has been revoked, is deportable."
+  ],
+  "topics": [
+    "deportability",
+    "removability",
+    "immigration status",
+    "overstay"
+  ],
+  "relatedTerms": [
+    "deportable",
+    "removable",
+    "overstay",
+    "arriving alien",
+    "EWI"
+  ],
+  "cites": [],
+  "summary": [
+    "One of the basic statutory grounds of deportability, in the old days, or what we now call removability. Section 237(a)(1)(B) applies to a person who is present in the United States in violation of immigration law or other federal law, including circumstances in which a person lawfully entered but no longer has authorization to remain."
+  ],
+  "status": "Current",
+  "officialUrl": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title8-section1227",
+  "notes": "INA § 237 generally concerns grounds of deportability applicable after admission, in contrast with INA § 212, which contains grounds of inadmissibility."
+},
+{
+  "id": "ina-212-a-7-a-i-i",
+  "name": "INA § 212(a)(7)(A)(i)(I)",
+  "citation": "INA § 212(a)(7)(A)(i)(I); 8 U.S.C. § 1182(a)(7)(A)(i)(I)",
+  "year": null,
+  "body": "Federal Statute",
+  "holding": [
+    "Except as otherwise provided by law, an immigrant applying for admission who does not possess the required valid, unexpired immigrant visa, reentry permit, border crossing identification card, or other required entry document, together with any required valid passport or other suitable travel or identity document, is inadmissible."
+  ],
+  "topics": [
+    "inadmissibility",
+    "entry documents",
+    "immigrant visa",
+    "admission"
+  ],
+  "relatedTerms": [
+    "inadmissible",
+    "admission",
+    "entry documents",
+    "arriving alien",
+    "EWI"
+  ],
+  "cites": [],
+  "summary": [
+    "A documentation-based ground of inadmissibility applying to immigrants seeking admission to the United States without the documents required for lawful admission.",
+    "This provision belongs to INA § 212, the statutory collection of grounds of inadmissibility, rather than INA § 237's grounds of deportability. The INA-to-U.S.-Code correspondence  is: INA § 212 = 8 U.S.C. § 1182. Thus INA § 212(a)(7)(A)(i)(I) appears at 8 U.S.C. § 1182(a)(7)(A)(i)(I)."
+  ],
+  "status": "Current",
+  "officialUrl": "https://uscode.house.gov/view.xhtml?req=%28title%3A8+section%3A1182%29",
+  "notes": "The NTA review colloquy that IJs give regarding this charge is often formulated as follows: 'the Department (or Government) also alleges at the moment that you arrived/crossed the border/requested permission to enter/applied for admission to the United States, you were not then in possession of a valid, unexpired immigrant visa, re-entry permit, border crossing card, or other valid entry/immigration document as required by law. Is that true?'"
 }
 ]
