@@ -290,5 +290,38 @@
   "status": "Current",
   "officialUrl": "https://uscode.house.gov/view.xhtml?req=%28title%3A8+section%3A1182%29",
   "notes": "The NTA review colloquy that IJs give regarding this charge is often formulated as follows: 'the Department (or Government) also alleges at the moment that you arrived/crossed the border/requested permission to enter/applied for admission to the United States, you were not then in possession of a valid, unexpired immigrant visa, re-entry permit, border crossing card, or other valid entry/immigration document as required by law. Is that true?'"
+},
+{
+  "id": "matter-of-m-a-f",
+  "name": "Matter of M-A-F-",
+  "citation": "26 I&N Dec. 651 (BIA 2015)",
+  "year": 2015,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "Where an applicant filed an asylum application before the May 11, 2005 effective date of the REAL ID Act and subsequently files an application properly regarded as a new application, the filing date of the later application controls for determining whether the REAL ID Act's credibility provisions apply.",
+    "A subsequent asylum application is properly regarded as a new application when it presents a previously unraised basis for relief or is predicated on a new or substantially different factual basis.",
+    "Where multiple asylum applications have been filed and the later application constitutes a new application, the filing date of the later application controls for purposes of the one-year statutory filing deadline."
+  ],
+  "topics": [
+    "asylum",
+    "I-589",
+    "REAL ID Act",
+    "credibility",
+    "one-year filing deadline",
+    "new asylum application"
+  ],
+  "relatedTerms": [
+    "asylum",
+    "I-589",
+    "REAL ID Act",
+    "one-year filing deadline"
+  ],
+  "cites": [],
+  "summary": [
+    "M-A-F- addresses when a later-filed asylum application (an 'updated' I-589, when one has already been filed) should be considered to modify, complete, or otherwise update the existing claim, and when it instead constitutes a completely new factual basis and should be treated as a separate application."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/eoir/precedent-decisions-volume-26",
+  "notes": "The distinction, well, 'it depends', of course, but if the updated 589 has new or different boxes checked for the protected ground on which the application's claim is based, and there are suddenly 300 pages of evidence (ie, you hadn't marked political opinion before, and you'd said vague things about crime in your country, and now it's political opinion and it turns out you were a candidate for political office targeted by government agents??), well--someone might start talking about matter of M-A-F-. Additionally, if the new 589 is considered to be a new application, this can change the date that is considered applicable for both REAL ID Act credibility rules and the asylum one-year filing deadline."
 }
 ]
