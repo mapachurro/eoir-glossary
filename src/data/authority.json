@@ -198,5 +198,36 @@
   "status": "Current",
   "officialUrl": "https://www.justice.gov/eoir/volume-29",
   "notes": "This is, in a way, a long time coming, and represents a tremendously powerful tool for the DHS to request pre-termission of cases, thereby clearing out the cases that, `on their face`, are highly unlikely to prosper on their merits. The other tool, or horseman of the apocalypse depending on your politics, is Matter of H-A-A-V-, which addresses whether the facts alleged by the respondent in their application, even if accepted as true, establish prima facie eligibility for relief. One interesting thing to consider is the existence, in Spanish administrative law / case administration, of the legal figure 'aceptar a trámite'. This is a binary yes /no initial decisoin, generally made by a judge or similarly positioned legal expert, as to whether the case meets certain prima facie levels of sufficiency on given criteria. In a way -- if we can step back for a second -- the idea that the US Immigration courts went forward with a full hearing on applications that were wildly incomplete and whose alleged fact patterns clearly match existing case law barring the relief requested -- is a bit insane."
+},
+{
+  "id": "matter-of-m-a-m",
+  "name": "Matter of M-A-M-",
+  "citation": "25 I&N Dec. 474 (BIA 2011)",
+  "year": 2011,
+  "body": "Board of Immigration Appeals",
+  "holding": [
+    "Respondents in immigration proceedings are presumed competent. If there are no indicia of incompetency, no further competency inquiry is required.",
+    "The test for competency is whether the respondent has a rational and factual understanding of the nature and object of the proceedings, can consult with an attorney or representative if there is one, and has a reasonable opportunity to examine and present evidence and cross-examine witnesses.",
+    "If there are indicia of incompetency, the Immigration Judge must make further inquiry to determine whether the respondent is competent for purposes of the proceedings.",
+    "If the respondent lacks sufficient competency to proceed, the Immigration Judge must evaluate appropriate safeguards.",
+    "Immigration Judges must articulate the rationale for their decisions regarding competency issues."
+  ],
+  "topics": [
+    "competency",
+    "mental competency",
+    "procedural safeguards"
+  ],
+  "relatedTerms": [
+    "MAM hearing",
+    "competent",
+    "mental competency"
+  ],
+  "cites": [],
+  "summary": [
+    "This case created the case law which governs competency in immigration proceedings. M-A-M- establishes both the competency standard and the Immigration Judge's obligation to investigate competency when there are indicia that a respondent may not be competent."
+  ],
+  "status": "Current",
+  "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3711.pdf",
+  "notes": "The way that this case law is put into practice is through what is literally called a 'MAM hearing'. This is confusing, of course, due to the existence of the Mayan language `Mam`, which is quite commonly seen in some US Immigration Courts, and the fact that the EOIR's internal 'language code' representing that language is, sigh, `MAM`, all caps. Of course, the citation for the case is `M-A-M-`, but when jurists refer to a `MAM hearing`, they leave the dashes out. Regardless of my issues with punctuation and proofreading: if the IJ finds that the respondent is not competent, the case doesn't just *go away*, the IJ implements safeguards to ensure that the respondent's rights are respected given the degree of their impairment."
 }
 ]
