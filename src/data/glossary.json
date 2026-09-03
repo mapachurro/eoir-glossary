@@ -15867,5 +15867,21 @@
     "proposals": "",
     "id": "the-queue-lista-de-documentos-pendientes",
     "contrastsWith": ["the record of proceedings", "documents filed"]
+  },
+    {
+    "english": "CARR-compliant",
+    "englishDefinition": "An application, specifically an I-589, that complies with the requirements set forth in Matter of C-A-R-R-. In other words, an application that is filled out completely and does not rely on supplements for substantive answers.",
+    "spanish": "cumple con el caso CARR",
+    "spanishDefinition": "",
+    "comments": "",
+    "category": [],
+    "tags": [],
+    "aliases": [],
+    "status": "active",
+    "lastUpdated": "9-3-2026",
+    "source": "mapachurro",
+    "proposals": "",
+    "id": "carr-compliant-cumple-con-el-caso-carr",
+    "contrastsWith": ["substantially incomplete application"]
   }
 ]
