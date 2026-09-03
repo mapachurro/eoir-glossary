@@ -15851,5 +15851,21 @@
     "proposals": "",
     "id": "untitled-renta-minima",
     "contrastsWith": []
+  },
+    {
+    "english": "the queue",
+    "englishDefinition": "This is the 'queue', or list, of documents that have been filed by respondent or respondents' counsel to a given IJ, and that are pending acceptance or rejection.",
+    "spanish": "lista de documentos pendientes (de aceptar o rechazar)",
+    "spanishDefinition": "Una especie de cola o lista de documentos que o bien los comparecientes o sus representantes legales han presentado al Tribunal, dirigido a un juez de lo migratorio en particular, y que ese juez o su personal todavía no han aceptado o rechazado.",
+    "comments": "",
+    "category": [],
+    "tags": [],
+    "aliases": [],
+    "status": "active",
+    "lastUpdated": "9-3-2026",
+    "source": "mapachurro - IJ DCW",
+    "proposals": "",
+    "id": "the-queue-lista-de-documentos-pendientes",
+    "contrastsWith": ["the record of proceedings", "documents filed"]
   }
 ]
