@@ -388,5 +388,202 @@
   "status": "Current",
   "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3447.pdf",
   "notes": "Frequently cited in 42B proceedings as a baseline statement of the hardship standard. It should be read alongside later hardship cases, particularly Matter of Andazola and Matter of Recinas."
-}
+},
+{
+    "id": "mendez-rojas-v-wolf",
+    "name": "Mendez Rojas v. Wolf",
+    "citation": "305 F. Supp. 3d 1176 (W.D. Wash. 2018); No. 2:16-cv-01024-RSM",
+    "year": 2018,
+    "body": "U.S. District Court, Western District of Washington",
+    "holding": [
+      "The district court ruled that the government's failure to provide adequate notice of the one-year asylum filing deadline and a meaningful filing mechanism violated legal requirements for affected class members."
+    ],
+    "topics": ["asylum", "one-year filing deadline", "notice", "class action"],
+    "relatedTerms": ["asylum", "I-589", "one-year filing deadline"],
+    "cites": [],
+    "summary": [
+      "Class-action litigation concerning notice of the one-year asylum application deadline. A 2020 settlement established notice and filing procedures and time-limited relief for qualifying class members."
+    ],
+    "status": "Settlement approved (2020)",
+    "officialUrl": "https://www.justice.gov/eoir/page/file/1336541/dl",
+    "notes": "REVIEW: Distinguish the 2018 district court ruling from the 2020 settlement and its expired class-member deadlines. The linked document is the settlement agreement."
+  },
+  {
+    "id": "matter-of-m-s",
+    "name": "Matter of M-S-",
+    "citation": "27 I&N Dec. 509 (A.G. 2019)",
+    "year": 2019,
+    "body": "Attorney General",
+    "holding": [
+      "Matter of X-K-, 23 I&N Dec. 731 (BIA 2005), is overruled.",
+      "Under this decision, a person transferred from expedited removal to full removal proceedings after a positive credible-fear determination is ineligible for release on bond by an Immigration Judge, although DHS parole remains a possibility."
+    ],
+    "topics": ["bond", "detention", "expedited removal", "credible fear", "parole"],
+    "relatedTerms": ["bond", "credible fear", "parole", "detention"],
+    "cites": ["Matter of X-K-, 23 I&N Dec. 731 (BIA 2005)"],
+    "summary": [
+      "An Attorney General decision concerning detention authority after a person passes credible-fear screening and is placed into full removal proceedings."
+    ],
+    "status": "Review current treatment",
+    "officialUrl": "https://www.justice.gov/eoir/volume-27",
+    "notes": "REVIEW: Confirm subsequent judicial and administrative developments before marking this authority Current. Bond jurisdiction and DHS parole are different questions."
+  },
+  {
+    "id": "matter-of-acosta",
+    "name": "Matter of Acosta",
+    "citation": "19 I&N Dec. 211 (BIA 1985)",
+    "year": 1985,
+    "body": "Board of Immigration Appeals",
+    "holding": [
+      "A particular social group may be defined by a shared immutable characteristic, either one members cannot change or one so fundamental to identity or conscience that they should not be required to change it."
+    ],
+    "topics": ["asylum", "particular social group", "immutability", "persecution"],
+    "relatedTerms": ["asylum", "particular social group", "persecution"],
+    "cites": [],
+    "summary": [
+      "A foundational BIA decision addressing refugee eligibility and articulating the common-immutable-characteristic approach to particular social groups."
+    ],
+    "status": "Partially superseded; review",
+    "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/2986.pdf",
+    "notes": "The opinion includes numerous other asylum holdings, some affected by later Supreme Court decisions and statutory changes. This entry isolates the PSG immutability principle."
+  },
+  {
+    "id": "matter-of-zambrano",
+    "name": "Matter of Zambrano",
+    "citation": "17 I&N Dec. 639 (BIA 1981)",
+    "year": 1981,
+    "body": "Board of Immigration Appeals",
+    "holding": [
+      "The BIA reconsidered the recognition of foreign absentee divorces under New Jersey law in light of intervening state authority.",
+      "Where evidence was insufficient to determine whether a Dominican Republic divorce complied with applicable legal formalities, remand for additional evidence was appropriate."
+    ],
+    "topics": ["visa petition", "marriage", "foreign divorce", "recognition of divorce"],
+    "relatedTerms": ["visa petition", "marriage"],
+    "cites": ["Matter of Guzman, 15 I&N Dec. 624 (BIA 1976)"],
+    "summary": [
+      "Addresses recognition of foreign divorce decrees when determining the validity of a marriage supporting an immigrant visa petition."
+    ],
+    "status": "Historical; review current applicability",
+    "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/2864.pdf",
+    "notes": "IMPORTANT SOURCE MISMATCH: The GitHub issue described SIJS, visa-bulletin movement, and administrative closure, none of which appears in this linked 1981 decision. Confirm which authority the judge actually cited."
+  },
+  {
+    "id": "rodriguez-de-palucho-v-garland",
+    "name": "Rodriguez de Palucho v. Garland",
+    "citation": "49 F.4th 532 (6th Cir. 2022)",
+    "year": 2022,
+    "body": "U.S. Court of Appeals for the Sixth Circuit",
+    "holding": [
+      "In an asylum claim based on violence by private actors, the applicant must establish that the government is unable or unwilling to control the persecutors; the court rejected the claim on the record before it."
+    ],
+    "topics": ["asylum", "private-actor persecution", "government protection", "gang violence"],
+    "relatedTerms": ["asylum", "persecution", "particular social group"],
+    "cites": [],
+    "summary": [
+      "A Sixth Circuit decision examining whether evidence of gang violence and government conduct established the required connection to state action through governmental inability or unwillingness to protect."
+    ],
+    "status": "Review current treatment",
+    "officialUrl": "https://law.justia.com/cases/federal/appellate-courts/ca6/21-3611/21-3611-2022-09-09.html",
+    "notes": "Circuit-specific. The case does not establish that a government must have advance knowledge of every threat before an asylum claim can succeed."
+  },
+  {
+    "id": "velasquez-v-sessions",
+    "name": "Velasquez v. Sessions",
+    "citation": "866 F.3d 188 (4th Cir. 2017)",
+    "year": 2017,
+    "body": "U.S. Court of Appeals for the Fourth Circuit",
+    "holding": [
+      "On the facts presented, a family custody dispute was a personal conflict rather than persecution on account of a protected ground; the applicant did not establish the required nexus."
+    ],
+    "topics": ["asylum", "nexus", "family", "custody dispute", "particular social group"],
+    "relatedTerms": ["asylum", "particular social group", "nexus"],
+    "cites": [],
+    "summary": [
+      "The Fourth Circuit addressed an asylum claim arising from a child-custody dispute involving family members and concluded that the applicant had not established a protected-ground nexus."
+    ],
+    "status": "Review current treatment",
+    "officialUrl": "https://www.ca4.uscourts.gov/Opinions/161669.P.pdf",
+    "notes": "Fourth Circuit, not Supreme Court. Do not generalize the decision to mean that family membership can never support a cognizable asylum claim."
+  },
+  {
+    "id": "matter-of-pereira",
+    "name": "Matter of Pereira",
+    "citation": "19 I&N Dec. 169 (BIA 1984)",
+    "year": 1984,
+    "body": "Board of Immigration Appeals",
+    "holding": [
+      "Under the rescission regulations considered, issuance of a Notice of Intent to Rescind within five years of adjustment tolled the limitation period under INA section 246(a).",
+      "Relief under former INA section 241(f), which applied to deportation proceedings, was not available in the rescission proceeding at issue."
+    ],
+    "topics": ["rescission", "adjustment of status", "marriage fraud", "statute of limitations"],
+    "relatedTerms": ["adjustment of status", "rescission"],
+    "cites": ["Quintana v. Holland, 255 F.2d 161 (3d Cir. 1958)"],
+    "summary": [
+      "A BIA decision concerning rescission of an adjustment of status obtained through a fraudulent marriage, including the timing of rescission proceedings."
+    ],
+    "status": "Historical; review current applicability",
+    "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/2978.pdf",
+    "notes": "IMPORTANT SOURCE MISMATCH: This is NOT Pereira v. Sessions, the Supreme Court's 2018 stop-time decision. The issue's stop-time discussion appears to concern that separate case. Confirm the intended authority before publishing."
+  },
+  {
+    "id": "matter-of-a-k-r",
+    "name": "Matter of A-K-R-",
+    "citation": "29 I&N Dec. 839 (BIA 2026)",
+    "year": 2026,
+    "body": "Board of Immigration Appeals",
+    "holding": [
+      "The Immigration Judge properly denied a further continuance to obtain counsel because the respondent had not shown good cause.",
+      "The statutory ten-day protection concerns the scheduling of the first hearing after service of the NTA; it does not create a general entitlement to repeated continuances. Matter of C-B- was modified."
+    ],
+    "topics": ["continuance", "right to counsel", "good cause", "notice to appear"],
+    "relatedTerms": ["continuance", "notice to appear", "right to counsel"],
+    "cites": ["Matter of C-B-, 25 I&N Dec. 888 (BIA 2012)"],
+    "summary": [
+      "A 2026 BIA precedent concerning requests for additional time to secure legal representation and the minimum statutory preparation period following service of an NTA."
+    ],
+    "status": "Current; verify subsequent treatment",
+    "officialUrl": "https://www.justice.gov/eoir/media/1458041/dl?inline=",
+    "notes": "The ten-day rule is not a ten-day cap on continuances. It refers to INA section 239(b)(1), concerning the first hearing after NTA service."
+  },
+  {
+    "id": "matter-of-l-a-b-r",
+    "name": "Matter of L-A-B-R-",
+    "citation": "27 I&N Dec. 405 (A.G. 2018)",
+    "year": 2018,
+    "body": "Attorney General",
+    "holding": [
+      "In evaluating good cause for a continuance to pursue collateral relief, an Immigration Judge should focus principally on the likelihood that the collateral relief will be granted and whether it would materially affect the outcome of removal proceedings.",
+      "The judge must also consider relevant secondary factors, including diligence, DHS's position, administrative efficiency, prior continuances, and the timing and length of the requested continuance."
+    ],
+    "topics": ["continuance", "good cause", "collateral relief", "case management"],
+    "relatedTerms": ["continuance", "good cause", "adjustment of status"],
+    "cites": [],
+    "summary": [
+      "An Attorney General decision setting out a structured good-cause analysis for continuances requested while a respondent pursues relief in another adjudicative process."
+    ],
+    "status": "Review current treatment",
+    "officialUrl": "https://www.justice.gov/eoir/page/file/1087781/dl",
+    "notes": "The rule concerns collateral-relief continuances, not every possible reason to seek additional preparation time."
+  },
+  {
+    "id": "matter-of-lozada",
+    "name": "Matter of Lozada",
+    "citation": "19 I&N Dec. 637 (BIA 1988)",
+    "year": 1988,
+    "body": "Board of Immigration Appeals",
+    "holding": [
+      "An ineffective-assistance claim supporting a motion to reopen or reconsider ordinarily requires a detailed affidavit describing the representation agreement and alleged deficiencies.",
+      "Prior counsel must be informed of the allegations and given an opportunity to respond.",
+      "The motion must state whether a disciplinary complaint was filed against prior counsel and, if not, explain why."
+    ],
+    "topics": ["ineffective assistance of counsel", "motion to reopen", "motion to reconsider", "due process"],
+    "relatedTerms": ["motion to reopen", "motion to reconsider", "ineffective assistance of counsel"],
+    "cites": [],
+    "summary": [
+      "Establishes the procedural framework commonly used to evaluate ineffective-assistance-of-counsel allegations in immigration proceedings. A Lozada motion typically seeks to remedy prejudice from deficient prior representation."
+    ],
+    "status": "Review current treatment",
+    "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3059.pdf",
+    "notes": "A 'Lozada motion' is not a separate statutory form of motion. It commonly refers to a motion to reopen alleging ineffective assistance, with the procedural showing required by this precedent."
+  }
 ]
