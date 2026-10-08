@@ -70,5 +70,74 @@
   "relatedTerms": [],
   "officialUrl": "N/A",
   "notes": "Internal document only."
+},
+{
+    "id": "i-94",
+    "agency": "CBP",
+    "formNumber": "I-94",
+    "title": "Arrival/Departure Record",
+    "aka": "I-94 admission record",
+    "spanishTitle": "Registro de llegada/salida",
+    "purpose": "This is that piece of paper they give you on the airplane before you land. Or when you're paroled into the country. It's a record of someone entering or leaving the country if they're not a citizen.",
+    "relatedTerms": [
+      "admission",
+      "parole",
+      "class of admission",
+      "authorized stay"
+    ],
+    "officialUrl": "https://i94.cbp.dhs.gov/",
+    "notes": "The I-94 is involved in the parole process, from the point of view of the parolee; however, it's not the actual form that does the parole; that would be USCIS form I-131."
+  },
+  {
+    "id": "ssa-7050",
+    "agency": "SSA",
+    "formNumber": "SSA-7050",
+    "title": "Request for Social Security Earnings Information",
+    "aka": "Earnings record request",
+    "spanishTitle": "Solicitud de información sobre ingresos registrados por el Seguro Social",
+    "purpose": "Requests the record of earnings declared by, or attributable to, a particular individual.",
+    "relatedTerms": [
+      "earnings record",
+      "Social Security",
+      "employment history",
+      "evidence"
+    ],
+    "officialUrl": "https://www.ssa.gov/forms/ssa-7050.pdf",
+    "notes": "While not an immigration form, and highly rare in the immigratoin context, it may come up e.g. if someone is trying to prove lawful presence in the country, either their own or that of a relative e.g. in order to obtain derivative or inherited status."
+  },
+  {
+    "id": "i-286",
+    "agency": "ICE",
+    "formNumber": "I-286",
+    "title": "Notice of Custody Determination",
+    "aka": "Custody determination notice",
+    "spanishTitle": "Notificación de determinación de custodia",
+    "purpose": "An internal DHS document that serves as notice and declaration of a custody decision regarding an individual.",
+    "relatedTerms": [
+      "bond",
+      "custody determination",
+      "detention",
+      "immigration judge"
+    ],
+    "officialUrl": "",
+    "notes": " Most often, this would be determining that they should be detained without bond; however, if they are granted a bond, or even granted the option to have bond e.g. through a class habeus case, another I-286 may be filed to reflect that change."
+  },
+  {
+  "id": "n-600",
+  "agency": "USCIS",
+  "formNumber": "N-600",
+  "title": "Application for Certificate of Citizenship",
+  "aka": "Certificate of Citizenship application",
+  "spanishTitle": "Solicitud de certificado de ciudadanía",
+  "purpose": "Does what it says on the tin: this form requests a certification of citizenship. It doesn't change anything about the citizenship, merely serves to verify the citizenship exists.",
+  "relatedTerms": [
+    "citizenship",
+    "derivative citizenship",
+    "acquisition of citizenship",
+    "certificate of citizenship",
+    "naturalization"
+  ],
+  "officialUrl": "https://www.uscis.gov/n-600",
+  "notes": "Again, pretty rare, and to my knowledge, not something an IJ could find on; however, it could come up in cases involving derived or inherited citizenship, wherein someone is trying to prove that they're related to a citizen. Or in disputed removability proceedings."
 }
 ]
