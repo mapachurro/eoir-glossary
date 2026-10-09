@@ -594,17 +594,20 @@
     ],
     "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/media/1458041/dl?inline=",
-    "notes": "Depending on your background and context, this could seem like an 'oh ok so what' kind of a decision, or a 'what the hell did you just say' kind of decision. Despite the fact that the statute the BIA affirms in this case had been valid and on the books for a very long time before this decision, it was rarely enforced to the letter of the law, especially outside of detained contexts, where there are other restraints on continuances (and, often, on possible forms of relief and other bars to relief, ue to e.g. criminal history). It had been common, prior to this decision, for respondents to have multiple, fairly lengthy (months), continuances to seek counsel before being obligated by the IJ to respond to the allegations in the NTA and proceed to apply for relief. The private bar had structured their working processes accordingly. This case, were it to be adopted as policy by the EOIR and the DHS, would remake the face of removal proceedings and the work of those representing those responding to removal proceedings."
+    "notes": "Depending on your background and context, this could seem like an 'oh ok so what' kind of a decision, or a 'what the hell did you just say' kind of decision. Despite the fact that the statute the BIA affirms in this case had been valid and on the books for a very long time before this decision, it was rarely enforced to the letter of the law, especially outside of detained contexts, where there are other restraints on continuances (and, often, on possible forms of relief and other bars to relief, ue to e.g. criminal history). It had been common, prior to this decision, for respondents to have multiple, fairly lengthy (months), continuances to seek counsel before being obligated by the IJ to respond to the allegations in the NTA and proceed to apply for relief. The private bar had structured their working processes accordingly. This case, were it to be adopted as policy by the EOIR and the DHS, would remake the face of removal proceedings and the work of those representing those responding to removal proceedings. See also: Matter of L-A-B-R-."
   },
   {
     "id": "matter-of-l-a-b-r",
-    "name": "Matter of L-A-B-R-",
+    "name": "Matter of L-A-B-R- et al., Respondents",
     "citation": "27 I&N Dec. 405 (A.G. 2018)",
     "year": 2018,
     "body": "Attorney General",
     "holding": [
-      "In evaluating good cause for a continuance to pursue collateral relief, an Immigration Judge should focus principally on the likelihood that the collateral relief will be granted and whether it would materially affect the outcome of removal proceedings.",
-      "The judge must also consider relevant secondary factors, including diligence, DHS's position, administrative efficiency, prior continuances, and the timing and length of the requested continuance."
+      "(1) An immigration judge may grant a motion for a continuance of removal proceedings only “for good cause shown.” 8 C.F.R. § 1003.29.",
+      "(2) The good-cause standard is a substantive requirement that limits the discretion of immigration judges and prohibits them from granting continuances for any reason or no reason at all.",
+      "(3) The good-cause standard requires consideration and balancing of multiple relevant factors when a respondent alien requests a continuance to pursue collateral relief from another authority—for example, a visa from the Department of Homeland Security. See Matter of Hashmi, 24 I&N Dec. 785, 790 (BIA 2009).",
+      "(4) When a respondent requests a continuance to pursue collateral relief, the immigration judge must consider primarily the likelihood that the collateral relief will be granted and will materially affect the outcome of the removal proceedings.",
+      "(5) The immigration judge should also consider relevant secondary factors, which may include the respondent's diligence in seeking collateral relief, DHS's position on the motion for continuance, concerns of administrative efficiency, the length of the continuance requested, the number of hearings held and continuances granted previously, and the timing of the continuance motion."
     ],
     "topics": [
       "continuance",
@@ -615,11 +618,11 @@
     "relatedTerms": ["continuance", "good cause", "adjustment of status"],
     "cites": [],
     "summary": [
-      "An Attorney General decision setting out a structured good-cause analysis for continuances requested while a respondent pursues relief in another adjudicative process."
+      "Puts in place much more stringent definitions and limitations for an IJ to grant continuances. While Matter of A-K-R- concerns specifically continuances at the beginning of proceedings for respondents to seek legal counsel, L-A-B-R- et al covers a number of different, but common, scenarios wherein cases could get 'bogged down', from a certain point of view."
     ],
     "status": "Review current treatment",
     "officialUrl": "https://www.justice.gov/eoir/page/file/1087781/dl",
-    "notes": "The rule concerns collateral-relief continuances, not every possible reason to seek additional preparation time."
+    "notes": "This authority specifically targets collateral relief, in other words, 'I have an application pending before USCIS, so could you please delay my removal in order for me to be able to have that adjudicated?' The contexts for this are multitudinous, but one that may be high-profile is that of Special Immigrant Juvenile Status, or SIJS, applications, which generally concern UACs: Unaccompanied Children, minors who cross the border without being in the presence of their parent or legal guardian. To be clear, this authority would limit those children from having access to protection against deportation while awaiting their SIJS petition's adjudication."
   },
   {
     "id": "matter-of-lozada",
