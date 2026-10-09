@@ -631,9 +631,8 @@
     "year": 1988,
     "body": "Board of Immigration Appeals",
     "holding": [
-      "An ineffective-assistance claim supporting a motion to reopen or reconsider ordinarily requires a detailed affidavit describing the representation agreement and alleged deficiencies.",
-      "Prior counsel must be informed of the allegations and given an opportunity to respond.",
-      "The motion must state whether a disciplinary complaint was filed against prior counsel and, if not, explain why."
+      "(1) A motion to reopen or reconsider based upon a claim of ineffective assistance of counsel requires (1) that the motion be supported by an affidavit of the allegedly aggrieved respondent setting forth in detail the agreement that was entered into with counsel with respect to the actions to be taken and what representations counsel did or did not make to the respondent in this regard, (2) that counsel whose integrity or competence is being impugned be informed of the allegations leveled against him and be given an opportunity to respond, and (3) that the motion reflect whether a complaint has been filed with appropriate disciplinary authorities with respect to any violation of counsel's ethical or legal responsibilities, and if not, why not.",
+      "(2) An alien deportable under section 241(a)(4) of the Immigration and Nationality Act, 8 U.S.C. § 1251(a)(4) (1982), is ineligible for voluntary departure unless he qualifies under the provisions of section 244(a)(2) of the Act, 8 U.S.C. § 1254(a)(2) (1982), which in the case of criminal offenders requires, inter alia, that the alien have been physically present in the United States and a person of good moral character for a continuous period of not less than 10 years follow."
     ],
     "topics": [
       "ineffective assistance of counsel",
@@ -648,10 +647,10 @@
     ],
     "cites": [],
     "summary": [
-      "Establishes the procedural framework commonly used to evaluate ineffective-assistance-of-counsel allegations in immigration proceedings. A Lozada motion typically seeks to remedy prejudice from deficient prior representation."
+      "Mixed findings, in a way: the first one established the basis for ineffective assistance of counsel in immigration proceedings. To the author's belief, this holding and precedent has since been superseded or overturned. The second holding clarifies stipulations about good moral character in requests for voluntary departure."
     ],
-    "status": "Review current treatment",
+    "status": "Overturned or superseded",
     "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3059.pdf",
-    "notes": "A 'Lozada motion' is not a separate statutory form of motion. It commonly refers to a motion to reopen alleging ineffective assistance, with the procedural showing required by this precedent."
+    "notes": "You may hear references to 'Lozada motions' in the context of claims of ineffective assistance of counsel."
   }
 ]
