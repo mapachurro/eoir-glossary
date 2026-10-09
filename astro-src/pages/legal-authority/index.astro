@@ -1,4 +1,3 @@
-
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import authorities from "../../../src/data/authority.json";
@@ -33,17 +32,16 @@ function searchableText(item) {
     <h1>Legal Authority</h1>
 
     <p>
-      Immigration law in the United States is a fascinating patchwork of
-      Federal law, regulation, and case law from the Board of Immigration
-      Appeals, Federal Circuit Courts, the Supreme Court, and the secret
-      off-the-menu item of Attorney General-authored decisions. Try to keep
-      up.
+      Immigration law in the United States is a fascinating patchwork of Federal
+      law, regulation, and case law from the Board of Immigration Appeals,
+      Federal Circuit Courts, the Supreme Court, and the secret off-the-menu
+      item of Attorney General-authored decisions. Try to keep up.
     </p>
 
     <p>
-      This is not legal advice. This is a wildly incomplete, evolving
-      knowledge base of case law and relevant statutes that may, or may not,
-      come up frequently in immigration proceedings and processes.
+      This is not legal advice. This is a wildly incomplete, evolving knowledge
+      base of case law and relevant statutes that may, or may not, come up
+      frequently in immigration proceedings and processes.
     </p>
 
     <div class="search-bar">
@@ -99,7 +97,7 @@ function searchableText(item) {
   const count = document.querySelector<HTMLElement>("#authority-results-count");
   const empty = document.querySelector<HTMLElement>("#authority-empty");
   const cards = Array.from(
-    document.querySelectorAll<HTMLElement>("#authority-grid .authority-card")
+    document.querySelectorAll<HTMLElement>("#authority-grid .authority-card"),
   );
 
   if (search && count && empty) {

@@ -59,12 +59,9 @@ function resolveTerm(label: string) {
     </p>
 
     <p>
-  <strong>Comments:</strong>
-  <LinkedGlossaryText
-    text={term.comments || "—"}
-    currentTermId={term.id}
-  />
-</p>
+      <strong>Comments:</strong>
+      <LinkedGlossaryText text={term.comments || "—"} currentTermId={term.id} />
+    </p>
   </div>
 
   <div class="term-card__actions">

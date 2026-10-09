@@ -1,4 +1,3 @@
-
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TermCard from "../../components/TermCard.astro";
@@ -26,10 +25,7 @@ const description = [
   .slice(0, 160);
 ---
 
-<BaseLayout
-  title={`${name} | Immigration Glossary`}
-  description={description}
->
+<BaseLayout title={`${name} | Immigration Glossary`} description={description}>
   <section class="page">
     <h1>{name}</h1>
 

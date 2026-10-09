@@ -24,9 +24,7 @@ function linkify(value: string): Segment[] {
   const urlRegex = /https?:\/\/[^\s<>"']+/g;
 
   // Use a fresh regex for every call.
-  const glossaryRegex = regex
-    ? new RegExp(regex.source, regex.flags)
-    : null;
+  const glossaryRegex = regex ? new RegExp(regex.source, regex.flags) : null;
 
   const matches: {
     start: number;
@@ -71,7 +69,7 @@ function linkify(value: string): Segment[] {
     (a, b) =>
       a.start - b.start ||
       Number(b.external) - Number(a.external) ||
-      b.end - a.end
+      b.end - a.end,
   );
 
   let cursor = 0;
@@ -104,18 +102,16 @@ function linkify(value: string): Segment[] {
 const segments = linkify(String(text ?? ""));
 ---
 
-{
-  segments.map((segment) =>
-    segment.href ? (
-      <a
-        href={segment.href}
-        target={segment.external ? "_blank" : undefined}
-        rel={segment.external ? "noopener noreferrer" : undefined}
-      >
-        {segment.text}
-      </a>
-    ) : (
-      segment.text
-    )
-  )
-}
+{segments.map((segment) =>
+  segment.href ? (
+    <a
+      href={segment.href}
+      target={segment.external ? "_blank" : undefined}
+      rel={segment.external ? "noopener noreferrer" : undefined}
+    >
+      {segment.text}
+    </a>
+  ) : (
+    segment.text
+  ),
+)}

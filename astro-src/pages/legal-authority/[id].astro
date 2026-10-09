@@ -1,4 +1,3 @@
-
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import authorities from "../../../src/data/authority.json";
@@ -37,7 +36,9 @@ const description =
       <p class="authority-card__citation">{item.citation}</p>
 
       {item.status && (
-        <p><strong>Status:</strong> {item.status}</p>
+        <p>
+          <strong>Status:</strong> {item.status}
+        </p>
       )}
 
       {item.summary?.length > 0 && (
@@ -97,11 +98,7 @@ const description =
 
       {item.officialUrl?.startsWith("https://") && (
         <p>
-          <a
-            href={item.officialUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={item.officialUrl} target="_blank" rel="noopener noreferrer">
             Official source ↗
           </a>
         </p>
