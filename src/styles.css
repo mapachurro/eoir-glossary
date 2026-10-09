@@ -739,3 +739,30 @@ a {
 .term-card__details {
   padding-top: 1rem;
 }
+
+.term-result[hidden],
+.empty-state[hidden] {
+  display: none !important;
+}
+
+/* Term search box styling */
+
+#term-search {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 1.5rem;
+  font: inherit;
+  font-size: 1rem;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#term-search:focus {
+  outline: 2px solid #4776a8;
+  outline-offset: 2px;
+}
