@@ -191,6 +191,7 @@
   "cites": [
     "Matter of Interiano-Rosa, 25 I&N Dec. 264 (BIA 2010)"
   ],
+  "citedBy": [],
   "summary": [
     "C-A-R-R- addresses some conditions under which an Immigration Judge may treat an asylum application as incomplete and thereby consider it waived or abandoned. The I-589 itself--the actual freaking form, not a supplement pointed to with a note like 'see supplement'--must contain substantive answers to every question.",
     "Importantly, however, a separate written declaration is not itself a required constituent part of Form I-589. Failure to submit a declaration therefore does not, standing alone, make the asylum application incomplete."
@@ -223,6 +224,7 @@
     "mental competency"
   ],
   "cites": [],
+  "citedBy": [],
   "summary": [
     "This case created the case law which governs competency in immigration proceedings. M-A-M- establishes both the competency standard and the Immigration Judge's obligation to investigate competency when there are indicia that a respondent may not be competent."
   ],
@@ -253,6 +255,7 @@
     "EWI"
   ],
   "cites": [],
+  "citedBy": [],
   "summary": [
     "One of the basic statutory grounds of deportability, in the old days, or what we now call removability. Section 237(a)(1)(B) applies to a person who is present in the United States in violation of immigration law or other federal law, including circumstances in which a person lawfully entered but no longer has authorization to remain."
   ],
@@ -283,6 +286,7 @@
     "EWI"
   ],
   "cites": [],
+  "citedBy": [],
   "summary": [
     "A documentation-based ground of inadmissibility applying to immigrants seeking admission to the United States without the documents required for lawful admission.",
     "This provision belongs to INA § 212, the statutory collection of grounds of inadmissibility, rather than INA § 237's grounds of deportability. The INA-to-U.S.-Code correspondence  is: INA § 212 = 8 U.S.C. § 1182. Thus INA § 212(a)(7)(A)(i)(I) appears at 8 U.S.C. § 1182(a)(7)(A)(i)(I)."
@@ -317,6 +321,7 @@
     "one-year filing deadline"
   ],
   "cites": [],
+  "citedBy": [],
   "summary": [
     "M-A-F- addresses when a later-filed asylum application (an 'updated' I-589, when one has already been filed) should be considered to modify, complete, or otherwise update the existing claim, and when it instead constitutes a completely new factual basis and should be treated as a separate application."
   ],
@@ -349,6 +354,7 @@
   "cites": [
     "Matter of Areguillin, 17 I&N Dec. 308 (BIA 1980)"
   ],
+  "citedBy": [],
   "summary": [
     "Quilantan is the major case law behind the concept commonly described as being 'waved through' the border: a polemical concept that leaked out of the immigration law backrooms into public discourse, at least for a time. This results in certain circumstances in which persons are allowed to adjust status under INA § 245(a) even though they were not formally questioned, admitted, or otherwise assigned an immigration status -- in other words, they were 'waved through'. But only in certain circumstances.",
     "The main factor is making a distinction between procedural regularity and substantive entitlement to enter. In other words, a person who physically presented themself for inspection and was permitted (waved, but not *waived*) through may have been 'admitted' for § 245(a) purposes even though they lacked documents that would ordinarily have entitled them to admission."
@@ -381,6 +387,7 @@
     "qualifying relative"
   ],
   "cites": [],
+  "citedBy": [],
   "summary": [
     "One of the foundational cases defining the 'exceptional and extremely unusual hardship' requirement for non-LPR cancellation of removal, aka 42-B relief. Monreal establishes that ordinary consequences of removal, even serious ones, are not enough; hardship to a qualifying relative must be substantially beyond what would ordinarily be expected.",
     "The case also sharply limits whose hardship counts. The respondent's own hardship is not independently part of the statutory analysis, although circumstances affecting the respondent can matter insofar as they produce hardship for a qualifying U.S.-citizen or lawful-permanent-resident spouse, parent, or child."
@@ -519,32 +526,53 @@
     "relatedTerms": ["asylum", "particular social group", "nexus"],
     "cites": [],
     "summary": [
-      "The Fourth Circuit addressed an asylum claim arising from a child-custody dispute involving family members and concluded that the applicant had not established a protected-ground nexus."
+      "A highly specific fact pattern, but one that can be applied to a lot of situations. The case in question involved a truly acrimonious family conflict with terrible consequences. The Fourth Circuit affirmed that this situation in particular was an internal family dispute, and did not provide grounds for fear, persecution, or CAT-based protection."
     ],
     "status": "Review current treatment",
     "officialUrl": "https://www.ca4.uscourts.gov/Opinions/161669.P.pdf",
-    "notes": "Fourth Circuit, not Supreme Court. Do not generalize the decision to mean that family membership can never support a cognizable asylum claim."
+    "notes": "Fourth Circuit, not Supreme Court."
   },
-  {
-    "id": "matter-of-pereira",
-    "name": "Matter of Pereira",
-    "citation": "19 I&N Dec. 169 (BIA 1984)",
-    "year": 1984,
-    "body": "Board of Immigration Appeals",
-    "holding": [
-      "Under the rescission regulations considered, issuance of a Notice of Intent to Rescind within five years of adjustment tolled the limitation period under INA section 246(a).",
-      "Relief under former INA section 241(f), which applied to deportation proceedings, was not available in the rescission proceeding at issue."
-    ],
-    "topics": ["rescission", "adjustment of status", "marriage fraud", "statute of limitations"],
-    "relatedTerms": ["adjustment of status", "rescission"],
-    "cites": ["Quintana v. Holland, 255 F.2d 161 (3d Cir. 1958)"],
-    "summary": [
-      "A BIA decision concerning rescission of an adjustment of status obtained through a fraudulent marriage, including the timing of rescission proceedings."
-    ],
-    "status": "Historical; review current applicability",
-    "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/2978.pdf",
-    "notes": "IMPORTANT SOURCE MISMATCH: This is NOT Pereira v. Sessions, the Supreme Court's 2018 stop-time decision. The issue's stop-time discussion appears to concern that separate case. Confirm the intended authority before publishing."
-  },
+  
+{
+  "id": "pereira-v-sessions",
+  "name": "Pereira v. Sessions",
+  "citation": "585 U.S. 198 (2018)",
+  "year": 2018,
+  "body": "Supreme Court of the United States",
+  "holding": [
+    "A notice to appear that fails to specify the time or place of a noncitizen's removal proceedings, as required by INA § 239(a)(1) (8 U.S.C. § 1229(a)(1)), does not trigger the stop-time rule under INA § 240A(d)(1) (8 U.S.C. § 1229b(d)(1)).",
+    "The statutory definition of a notice to appear requires, at a minimum for purposes of the stop-time rule, information identifying when and where the removal proceedings will be held. A document omitting that information does not satisfy the statutory requirement.",
+    "The statutory language governing notices to appear and the stop-time rule is unambiguous on this question. The government's administrative practice of issuing notices with hearing dates or locations to be determined does not override the requirements established by Congress."
+  ],
+  "topics": [
+    "notice to appear",
+    "stop-time rule",
+    "cancellation of removal",
+    "continuous physical presence",
+    "statutory interpretation"
+  ],
+  "relatedTerms": [
+    "notice to appear",
+    "stop-time rule",
+    "cancellation of removal",
+    "continuous physical presence",
+    "NTA"
+  ],
+  "cites": [
+    "Matter of Camarillo, 25 I&N Dec. 644 (BIA 2011)"
+  ],
+  "citedBy": [
+    "Niz-Chavez v. Garland, 593 U.S. 155 (2021)"
+  ],
+  "summary": [
+    "This is a chapter in the 'what is a valid NTA' saga: the prequel to Niz-Chavez. In a stunning bit of horrifically-difficult-to-translate legalese, this case concerns 'the stop-time rule'. That rule is about a part of 42-B cancellation of removal: the requirement that the applicant respondent to have been continuously physically present in the United States for a period of ten years prior to the service of the NTA. That service 'stops (the) time (count)' -- physical presence subsequent to the service of the NTA cannot be counted towards those ten years.",
+    "So, Pereira v. Sessions says that it's about the stop-time rule, but that's just a red herring. The case is actually about what makes a valid NTA, because a valid NTA is what triggers the stop-time rule. To Be Continued in the next chapter, Niz-Chavez v. Garland."
+  ],
+  "status": "Current, but see Niz-Chavez.",
+  "officialUrl": "https://supreme.justia.com/cases/federal/us/585/17-459/",
+  "notes": "At time of writing, the Supreme Court's .pdf posting of this authority 404s out: https://www.supremecourt.gov/opinions/17pdf/17-459_1o13.pdf. An alternate link is provided, but it of course may become defunct."
+},
+
   {
     "id": "matter-of-a-k-r",
     "name": "Matter of A-K-R-",
