@@ -1,0 +1,55 @@
+---
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+
+const isActive = (path) => currentPath === path;
+
+const primaryLinks = [
+  { href: "/", label: "Home" },
+  { href: "/terms", label: "All Terms" },
+  { href: "/forms", label: "Forms" },
+  { href: "/legal-authority", label: "Authority" },
+  { href: "/adjournment-codes", label: "Adjournment Codes" },
+];
+
+const secondaryLinks = [
+  { href: "/sources", label: "Bibliography & Sources" },
+  { href: "/submissions", label: "Submissions & Revisions" },
+];
+---
+
+<header class="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a href="/" class="site-title">
+        <span>Immigration Glossary</span>
+        <span>Glosario de lo migratorio</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav__row">
+          {primaryLinks.map(({ href, label }) => (
+            <a
+              href={href}
+              class:list={{ active: isActive(href) }}
+              aria-current={isActive(href) ? "page" : undefined}
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+
+        <div class="site-nav__row">
+          {secondaryLinks.map(({ href, label }) => (
+            <a
+              href={href}
+              class:list={{ active: isActive(href) }}
+              aria-current={isActive(href) ? "page" : undefined}
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
