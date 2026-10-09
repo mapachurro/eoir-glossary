@@ -10,6 +10,7 @@ import TermPage from "./pages/TermPage";
 import FormsPage from "./pages/FormsPage";
 import AdjournmentCodesPage from "./pages/AdjournmentCodesPage";
 import LegalAuthority from "./pages/LegalAuthority";
+import AuthorityDetail from "./pages/AuthorityDetail";
 
 export default function App() {
   return (
@@ -25,6 +26,8 @@ export default function App() {
         <Route path="forms" element={<FormsPage />} />
         <Route path="adjournment-codes" element={<AdjournmentCodesPage />} />
         <Route path="legal-authority" element={<LegalAuthority />} />
+        <Route path="/legal-authority" element={<LegalAuthority />} />
+        <Route path="/legal-authority/:id" element={<AuthorityDetail />} />
       </Route>
     </Routes>
   );
