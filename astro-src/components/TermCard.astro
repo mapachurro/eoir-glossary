@@ -1,9 +1,9 @@
-
 ---
 import glossary from "../../src/data/glossary.json";
 import slugify from "../../src/utils/slugify";
 import { buildEditSuggestionUrl } from "../../src/utils/githubIssueLinks";
 import { findTermByLabel } from "../../src/utils/termLookup";
+import LinkedGlossaryText from "./LinkedGlossaryText.astro";
 
 interface Props {
   term: any;
@@ -44,17 +44,27 @@ function resolveTerm(label: string) {
 
     <p>
       <strong>Definition</strong> (English):
-      {term.englishDefinition || "—"}
+      <LinkedGlossaryText
+        text={term.englishDefinition || "—"}
+        currentTermId={term.id}
+      />
     </p>
 
     <p>
       <strong>Definition</strong> (Spanish):
-      {term.spanishDefinition || "—"}
+      <LinkedGlossaryText
+        text={term.spanishDefinition || "—"}
+        currentTermId={term.id}
+      />
     </p>
 
     <p>
-      <strong>Comments:</strong> {term.comments || "—"}
-    </p>
+  <strong>Comments:</strong>
+  <LinkedGlossaryText
+    text={term.comments || "—"}
+    currentTermId={term.id}
+  />
+</p>
   </div>
 
   <div class="term-card__actions">
@@ -74,100 +84,91 @@ function resolveTerm(label: string) {
     <div class="term-card__details">
       <p>
         <strong>Category:</strong>
-        {
-          term.category?.length
-            ? term.category.map((category: string, index: number) => (
-                <>
-                  <a
-                    class="term-meta-link"
-                    href={`/category/${slugify(category)}/`}
-                  >
-                    {category}
-                  </a>
-                  {index < term.category.length - 1 ? ", " : ""}
-                </>
-              ))
-            : " —"
-        }
+        {term.category?.length
+          ? term.category.map((category: string, index: number) => (
+              <>
+                <a
+                  class="term-meta-link"
+                  href={`/category/${slugify(category)}/`}
+                >
+                  {category}
+                </a>
+                {index < term.category.length - 1 ? ", " : ""}
+              </>
+            ))
+          : " —"}
       </p>
 
       <p>
         <strong>Tags:</strong>
-        {
-          term.tags?.length
-            ? term.tags.map((tag: string, index: number) => (
-                <>
-                  <a
-                    class="term-meta-link"
-                    href={`/tag/${slugify(tag)}/`}
-                  >
-                    {tag}
-                  </a>
-                  {index < term.tags.length - 1 ? ", " : ""}
-                </>
-              ))
-            : " —"
-        }
+        {term.tags?.length
+          ? term.tags.map((tag: string, index: number) => (
+              <>
+                <a class="term-meta-link" href={`/tag/${slugify(tag)}/`}>
+                  {tag}
+                </a>
+                {index < term.tags.length - 1 ? ", " : ""}
+              </>
+            ))
+          : " —"}
       </p>
 
       <p>
         <strong>Aliases:</strong>
-        {
-          term.aliases?.length
-            ? term.aliases.map((alias: string, index: number) => {
-                const match = resolveTerm(alias);
+        {term.aliases?.length
+          ? term.aliases.map((alias: string, index: number) => {
+              const match = resolveTerm(alias);
 
-                return (
-                  <>
-                    {match ? (
-                      <a
-                        class="term-meta-link"
-                        href={`/term/${match.id}/`}
-                      >
-                        {alias}
-                      </a>
-                    ) : (
-                      alias
-                    )}
-                    {index < term.aliases.length - 1 ? ", " : ""}
-                  </>
-                );
-              })
-            : " —"
-        }
+              return (
+                <>
+                  {match ? (
+                    <a class="term-meta-link" href={`/term/${match.id}/`}>
+                      {alias}
+                    </a>
+                  ) : (
+                    alias
+                  )}
+                  {index < term.aliases.length - 1 ? ", " : ""}
+                </>
+              );
+            })
+          : " —"}
       </p>
 
       <p>
         <strong>Contrasts with:</strong>
-        {
-          term.contrastsWith?.length
-            ? term.contrastsWith.map((label: string, index: number) => {
-                const match = resolveTerm(label);
+        {term.contrastsWith?.length
+          ? term.contrastsWith.map((label: string, index: number) => {
+              const match = resolveTerm(label);
 
-                return (
-                  <>
-                    {match ? (
-                      <a
-                        class="term-meta-link"
-                        href={`/term/${match.id}/`}
-                      >
-                        {label}
-                      </a>
-                    ) : (
-                      label
-                    )}
-                    {index < term.contrastsWith.length - 1 ? ", " : ""}
-                  </>
-                );
-              })
-            : " —"
-        }
+              return (
+                <>
+                  {match ? (
+                    <a class="term-meta-link" href={`/term/${match.id}/`}>
+                      {label}
+                    </a>
+                  ) : (
+                    label
+                  )}
+                  {index < term.contrastsWith.length - 1 ? ", " : ""}
+                </>
+              );
+            })
+          : " —"}
       </p>
 
-      <p><strong>Status:</strong> {term.status || "—"}</p>
-      <p><strong>Last updated:</strong> {term.lastUpdated || "—"}</p>
-      <p><strong>Source:</strong> {term.source || "—"}</p>
-      <p><strong>Proposals:</strong> {term.proposals || "—"}</p>
+      <p>
+        <strong>Status:</strong> {term.status || "—"}
+      </p>
+      <p>
+        <strong>Last updated:</strong> {term.lastUpdated || "—"}
+      </p>
+      <p>
+        <strong>Source:</strong> {term.source || "—"}
+      </p>
+      <p>
+        <strong>Proposals:</strong> {term.proposals || "—"}
+      </p>
     </div>
   </details>
 </article>

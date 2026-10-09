@@ -26,13 +26,14 @@
   "dependencies": {
     "astro": "^7.3.8",
     "csv-parse": "^6.2.1",
-    "prettier-plugin-astro": "^1.1.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.1",
     "vite": "^8.0.3"
   }
 }
