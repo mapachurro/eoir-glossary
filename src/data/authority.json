@@ -485,7 +485,7 @@
     ],
     "status": "Historical; review current applicability",
     "officialUrl": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/2864.pdf",
-    "notes": "IMPORTANT SOURCE MISMATCH: The GitHub issue described SIJS, visa-bulletin movement, and administrative closure, none of which appears in this linked 1981 decision. Confirm which authority the judge actually cited."
+    "notes": "While it seems *oddly specific*, given the wide variety of contexts that exist under USCIS, all the different visas they issue (or don't), Zambrano continues to be relevant."
   },
   {
     "id": "rodriguez-de-palucho-v-garland",
@@ -500,10 +500,10 @@
     "relatedTerms": ["asylum", "persecution", "particular social group"],
     "cites": [],
     "summary": [
-      "A Sixth Circuit decision examining whether evidence of gang violence and government conduct established the required connection to state action through governmental inability or unwillingness to protect."
+      "A Sixth Circuit decision examining whether evidence of gang violence and government conduct established the required connection to state action through governmental inability or unwillingness to protect; affirms the BIA's underlying decisions."
     ],
     "status": "Review current treatment",
-    "officialUrl": "https://law.justia.com/cases/federal/appellate-courts/ca6/21-3611/21-3611-2022-09-09.html",
+    "officialUrl": "https://www.opn.ca6.uscourts.gov/opinions.pdf/22a0212p-06.pdf",
     "notes": "Circuit-specific. The case does not establish that a government must have advance knowledge of every threat before an asylum claim can succeed."
   },
   {
