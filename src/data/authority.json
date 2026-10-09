@@ -578,8 +578,8 @@
     "year": 2026,
     "body": "Board of Immigration Appeals",
     "holding": [
-      "The Immigration Judge properly denied a further continuance to obtain counsel because the respondent had not shown good cause.",
-      "The statutory ten-day protection concerns the scheduling of the first hearing after service of the NTA; it does not create a general entitlement to repeated continuances. Matter of C-B- was modified."
+      "(1) The Immigration Judge properly denied the respondent's request for a further continuance to seek legal counsel based on a lack of good cause, consistent with the governing statutes and regulations.",
+      "(2) The only statutory or regulatory time requirement that is necessary to safeguard an alien's privilege of legal counsel is that the first hearing may not be scheduled earlier than 10 days after service of the notice to appear as set forth in section 239(b)(1) of the Immigration and Nationality Act, 8 U.S.C. § 1229(b)(1). Matter of C-B-, 25 I&N Dec. 888 (BIA 2012), modified."
     ],
     "topics": [
       "continuance",
@@ -590,11 +590,11 @@
     "relatedTerms": ["continuance", "notice to appear", "right to counsel"],
     "cites": ["Matter of C-B-, 25 I&N Dec. 888 (BIA 2012)"],
     "summary": [
-      "A 2026 BIA precedent concerning requests for additional time to secure legal representation and the minimum statutory preparation period following service of an NTA."
+      "A seismic-level piece of authority in a single sentence: the second holding above, affirming statute, that the EOIR and the IJ has no obligation to provide any additional time to acquire legal representation other than ten days subsequent to the service of the Notice to Appear."
     ],
-    "status": "Current; verify subsequent treatment",
+    "status": "Current",
     "officialUrl": "https://www.justice.gov/eoir/media/1458041/dl?inline=",
-    "notes": "The ten-day rule is not a ten-day cap on continuances. It refers to INA section 239(b)(1), concerning the first hearing after NTA service."
+    "notes": "Depending on your background and context, this could seem like an 'oh ok so what' kind of a decision, or a 'what the hell did you just say' kind of decision. Despite the fact that the statute the BIA affirms in this case had been valid and on the books for a very long time before this decision, it was rarely enforced to the letter of the law, especially outside of detained contexts, where there are other restraints on continuances (and, often, on possible forms of relief and other bars to relief, ue to e.g. criminal history). It had been common, prior to this decision, for respondents to have multiple, fairly lengthy (months), continuances to seek counsel before being obligated by the IJ to respond to the allegations in the NTA and proceed to apply for relief. The private bar had structured their working processes accordingly. This case, were it to be adopted as policy by the EOIR and the DHS, would remake the face of removal proceedings and the work of those representing those responding to removal proceedings."
   },
   {
     "id": "matter-of-l-a-b-r",
