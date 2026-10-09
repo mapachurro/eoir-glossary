@@ -19,9 +19,12 @@
     "build:data": "node ./scripts/build-indexes.js",
     "build": "npm run build:data && vite build",
     "preview": "vite preview",
-    "clean-slate": "bash ./clean-slate.sh"
+    "clean-slate": "bash ./clean-slate.sh",
+    "dev:astro": "astro dev",
+    "build:astro": "npm run build:data && astro build"
   },
   "dependencies": {
+    "astro": "^7.3.8",
     "csv-parse": "^6.2.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
@@ -29,6 +32,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.1",
     "vite": "^8.0.3"
   }
 }

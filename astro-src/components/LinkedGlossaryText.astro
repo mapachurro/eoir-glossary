@@ -1,0 +1,117 @@
+---
+import glossary from "../../src/data/glossary.json";
+import { buildGlossaryMatcher } from "../../src/utils/linkGlossaryText";
+
+interface Props {
+  text?: string;
+  currentTermId?: string;
+}
+
+const { text = "", currentTermId } = Astro.props;
+
+type Segment = {
+  text: string;
+  href?: string;
+  external?: boolean;
+};
+
+const { lookup, regex } = buildGlossaryMatcher(glossary);
+
+function linkify(value: string): Segment[] {
+  if (!value) return [];
+
+  const segments: Segment[] = [];
+  const urlRegex = /https?:\/\/[^\s<>"']+/g;
+
+  // Use a fresh regex for every call.
+  const glossaryRegex = regex ? new RegExp(regex.source, regex.flags) : null;
+
+  const matches: {
+    start: number;
+    end: number;
+    text: string;
+    href: string;
+    external: boolean;
+  }[] = [];
+
+  // First identify URLs.
+  for (const match of value.matchAll(urlRegex)) {
+    matches.push({
+      start: match.index,
+      end: match.index + match[0].length,
+      text: match[0],
+      href: match[0],
+      external: true,
+    });
+  }
+
+  // Then identify glossary references.
+  if (glossaryRegex) {
+    for (const match of value.matchAll(glossaryRegex)) {
+      const matchedTerm = lookup.get(match[0].trim().toLowerCase());
+
+      if (!matchedTerm || matchedTerm.id === currentTermId) {
+        continue;
+      }
+
+      matches.push({
+        start: match.index,
+        end: match.index + match[0].length,
+        text: match[0],
+        href: `/term/${matchedTerm.id}/`,
+        external: false,
+      });
+    }
+  }
+
+  // URLs take priority over overlapping glossary matches.
+  matches.sort(
+    (a, b) =>
+      a.start - b.start ||
+      Number(b.external) - Number(a.external) ||
+      b.end - a.end,
+  );
+
+  let cursor = 0;
+
+  for (const match of matches) {
+    if (match.start < cursor) continue;
+
+    if (match.start > cursor) {
+      segments.push({
+        text: value.slice(cursor, match.start),
+      });
+    }
+
+    segments.push({
+      text: match.text,
+      href: match.href,
+      external: match.external,
+    });
+
+    cursor = match.end;
+  }
+
+  if (cursor < value.length) {
+    segments.push({ text: value.slice(cursor) });
+  }
+
+  return segments;
+}
+
+const segments = linkify(String(text ?? ""));
+---
+
+{segments.map((segment) =>
+  segment.href ? (
+    <a
+      href={segment.href}
+      target={segment.external ? "_blank" : undefined}
+      rel={segment.external ? "noopener noreferrer" : undefined}
+    >
+      {segment.text}
+    </a>
+  ) : (
+    segment.text
+  ),
+)}

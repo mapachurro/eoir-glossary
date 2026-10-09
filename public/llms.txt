@@ -1,39 +1,48 @@
-# gringo.bingo
 
-An English-Spanish bilingual immigration terminology reference.
+# Immigration Glossary | Glosario de lo migratorio
+
+An English-Spanish bilingual reference for terminology, legal authorities, forms, and procedures in United States immigration law.
+
+Website: https://gringo.bingo/
 
 ## Purpose
 
-This project provides authoritative bilingual terminology, definitions, legal references, immigration forms, adjournment codes, and case law references used in United States immigration practice.
+This independent reference project documents English and Spanish immigration terminology, legal definitions, administrative procedures, immigration forms, adjournment codes, and relevant legal authorities.
 
-## Audience
+The project is intended for educational and reference use. It does not provide legal advice and is not an official government resource.
 
-- immigration attorneys
-- accredited representatives
-- interpreters
-- translators
-- asylum officers
-- immigration judges
-- journalists
-- students
-- migrants
+## Main sections
 
-## Preferred citation
+- [Home](https://gringo.bingo/)
+- [All glossary terms](https://gringo.bingo/#/terms)
+- [Legal Authority Explorer](https://gringo.bingo/#/legal-authority)
+- [Immigration Forms](https://gringo.bingo/#/forms)
+- [Adjournment Codes](https://gringo.bingo/#/adjournment-codes)
+- [Bibliography and Sources](https://gringo.bingo/#/sources)
 
-Immigration Glossary - Glosario de lo migratorio
-https://gringo.bingo
+## Content and sources
 
-## Pages
+Glossary entries contain English and Spanish terminology, definitions, aliases, and contextual notes.
 
+The Legal Authority Explorer contains case law and statutory references, citations, holdings, and links to primary legal sources when available.
+
+The Forms Explorer and Adjournment Codes Explorer document administrative forms and hearing-related terminology.
+
+Government sources are linked for verification where available. The existence of a link does not imply endorsement by the issuing agency.
+
+## Citation
+
+Immigration Glossary | Glosario de lo migratorio
 https://gringo.bingo/
-https://gringo.bingo/#/terms
-https://gringo.bingo/#/forms
-https://gringo.bingo/#/authority
-https://gringo.bingo/#/adjournment-codes
-https://gringo.bingo/#/sources
 
-## License
+When citing a particular authority, consult and cite the underlying judicial or administrative decision.
 
-Unless otherwise noted, original glossary content may be cited with attribution.
+## Limitations
 
-Government documents remain public domain.
+The project is incomplete and continually evolving. Legal authorities may be amended, distinguished, superseded, or overturned.
+
+Users should verify current law and procedures against authoritative primary sources.
+
+## Licensing
+
+Refer to the project's published licensing terms. Government materials may have separate public-domain or reuse conditions.

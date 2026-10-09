@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import authorities from "../../../src/data/authority.json";
+
+export function getStaticPaths() {
+  return authorities.map((item) => ({
+    params: { id: item.id },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+
+const description =
+  item.summary?.[0] ||
+  `${item.name}, ${item.citation}. Immigration legal authority.`;
+---
+
+<BaseLayout
+  title={`${item.name} | Immigration Glossary`}
+  description={description}
+>
+  <div class="authority-detail">
+    <a href="/legal-authority/" class="authority-back">
+      ← All authorities
+    </a>
+
+    <article class="authority-card">
+      <div class="authority-card__header">
+        <span>{item.body}</span>
+        {item.year && <span>{item.year}</span>}
+      </div>
+
+      <h1>{item.name}</h1>
+
+      <p class="authority-card__citation">{item.citation}</p>
+
+      {item.status && (
+        <p>
+          <strong>Status:</strong> {item.status}
+        </p>
+      )}
+
+      {item.summary?.length > 0 && (
+        <section>
+          <h2>Summary</h2>
+          {item.summary.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </section>
+      )}
+
+      {item.holding?.length > 0 && (
+        <section>
+          <h2>Holding</h2>
+          {item.holding.map((point) => (
+            <p>{point}</p>
+          ))}
+        </section>
+      )}
+
+      {item.topics?.length > 0 && (
+        <p>
+          <strong>Topics:</strong> {item.topics.join(", ")}
+        </p>
+      )}
+
+      {item.relatedTerms?.length > 0 && (
+        <p>
+          <strong>Related terms:</strong> {item.relatedTerms.join(", ")}
+        </p>
+      )}
+
+      {item.cites?.length > 0 && (
+        <section>
+          <h2>Cited authorities</h2>
+          {item.cites.map((citation) => (
+            <p>{citation}</p>
+          ))}
+        </section>
+      )}
+
+      {item.citedBy?.length > 0 && (
+        <section>
+          <h2>Cited by</h2>
+          {item.citedBy.map((citation) => (
+            <p>{citation}</p>
+          ))}
+        </section>
+      )}
+
+      {item.notes && (
+        <section>
+          <h2>Notes</h2>
+          <p>{item.notes}</p>
+        </section>
+      )}
+
+      {item.officialUrl?.startsWith("https://") && (
+        <p>
+          <a href={item.officialUrl} target="_blank" rel="noopener noreferrer">
+            Official source ↗
+          </a>
+        </p>
+      )}
+    </article>
+  </div>
+</BaseLayout>

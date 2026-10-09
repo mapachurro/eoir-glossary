@@ -1,0 +1,50 @@
+---
+import Header from "../components/Header.astro";
+import "../../src/styles.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Immigration Glossary • Glosario de lo migratorio",
+  description = "A bilingual English-Spanish glossary of United States immigration terminology, forms, case law, and immigration court references.",
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content="https://gringo.bingo/social-card.png" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <div class="site-shell">
+      <Header />
+
+      <main class="site-main">
+        <div class="container">
+          <slot />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

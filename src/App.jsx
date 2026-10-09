@@ -26,8 +26,7 @@ export default function App() {
         <Route path="forms" element={<FormsPage />} />
         <Route path="adjournment-codes" element={<AdjournmentCodesPage />} />
         <Route path="legal-authority" element={<LegalAuthority />} />
-        <Route path="/legal-authority" element={<LegalAuthority />} />
-        <Route path="/legal-authority/:id" element={<AuthorityDetail />} />
+        <Route path="legal-authority/:id" element={<AuthorityDetail />} />
       </Route>
     </Routes>
   );

@@ -1,0 +1,171 @@
+---
+import glossary from "../../src/data/glossary.json";
+import slugify from "../../src/utils/slugify";
+import { buildEditSuggestionUrl } from "../../src/utils/githubIssueLinks";
+import { findTermByLabel } from "../../src/utils/termLookup";
+import LinkedGlossaryText from "./LinkedGlossaryText.astro";
+
+interface Props {
+  term: any;
+  defaultExpanded?: boolean;
+}
+
+const { term, defaultExpanded = false } = Astro.props;
+
+const editUrl = buildEditSuggestionUrl(term);
+
+function resolveTerm(label: string) {
+  return findTermByLabel(glossary, label);
+}
+---
+
+<article class="term-card">
+  <div class="term-card__main">
+    <div class="term-head">
+      <div class="term-head__english">
+        <span class="term-label">English: </span>
+        <span class="term-value">
+          <strong>{term.english || "—"}</strong>
+        </span>
+      </div>
+
+      <br />
+
+      <div class="term-head__spanish">
+        <span class="term-label">Spanish: </span>
+        <span class="term-value">
+          <strong>{term.spanish || "—"}</strong>
+        </span>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <p>
+      <strong>Definition</strong> (English):
+      <LinkedGlossaryText
+        text={term.englishDefinition || "—"}
+        currentTermId={term.id}
+      />
+    </p>
+
+    <p>
+      <strong>Definition</strong> (Spanish):
+      <LinkedGlossaryText
+        text={term.spanishDefinition || "—"}
+        currentTermId={term.id}
+      />
+    </p>
+
+    <p>
+      <strong>Comments:</strong>
+      <LinkedGlossaryText text={term.comments || "—"} currentTermId={term.id} />
+    </p>
+  </div>
+
+  <div class="term-card__actions">
+    <a
+      class="term-card__suggest-link"
+      href={editUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Suggest edit
+    </a>
+  </div>
+
+  <details class="term-card__expandable" open={defaultExpanded}>
+    <summary class="term-card__toggle">Details</summary>
+
+    <div class="term-card__details">
+      <p>
+        <strong>Category:</strong>
+        {term.category?.length
+          ? term.category.map((category: string, index: number) => (
+              <>
+                <a
+                  class="term-meta-link"
+                  href={`/category/${slugify(category)}/`}
+                >
+                  {category}
+                </a>
+                {index < term.category.length - 1 ? ", " : ""}
+              </>
+            ))
+          : " —"}
+      </p>
+
+      <p>
+        <strong>Tags:</strong>
+        {term.tags?.length
+          ? term.tags.map((tag: string, index: number) => (
+              <>
+                <a class="term-meta-link" href={`/tag/${slugify(tag)}/`}>
+                  {tag}
+                </a>
+                {index < term.tags.length - 1 ? ", " : ""}
+              </>
+            ))
+          : " —"}
+      </p>
+
+      <p>
+        <strong>Aliases:</strong>
+        {term.aliases?.length
+          ? term.aliases.map((alias: string, index: number) => {
+              const match = resolveTerm(alias);
+
+              return (
+                <>
+                  {match ? (
+                    <a class="term-meta-link" href={`/term/${match.id}/`}>
+                      {alias}
+                    </a>
+                  ) : (
+                    alias
+                  )}
+                  {index < term.aliases.length - 1 ? ", " : ""}
+                </>
+              );
+            })
+          : " —"}
+      </p>
+
+      <p>
+        <strong>Contrasts with:</strong>
+        {term.contrastsWith?.length
+          ? term.contrastsWith.map((label: string, index: number) => {
+              const match = resolveTerm(label);
+
+              return (
+                <>
+                  {match ? (
+                    <a class="term-meta-link" href={`/term/${match.id}/`}>
+                      {label}
+                    </a>
+                  ) : (
+                    label
+                  )}
+                  {index < term.contrastsWith.length - 1 ? ", " : ""}
+                </>
+              );
+            })
+          : " —"}
+      </p>
+
+      <p>
+        <strong>Status:</strong> {term.status || "—"}
+      </p>
+      <p>
+        <strong>Last updated:</strong> {term.lastUpdated || "—"}
+      </p>
+      <p>
+        <strong>Source:</strong> {term.source || "—"}
+      </p>
+      <p>
+        <strong>Proposals:</strong> {term.proposals || "—"}
+      </p>
+    </div>
+  </details>
+</article>
