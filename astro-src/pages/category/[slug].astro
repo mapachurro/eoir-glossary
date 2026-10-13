@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TermCard from "../../components/TermCard.astro";
+
+import glossary from "../../../src/data/glossary.json";
+import categories from "../../../src/data/categories.json";
+import slugify from "../../../src/utils/slugify.js";
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: {
+      category,
+      matchingTerms: glossary.filter((term) =>
+        (term.category || []).some(
+          (value) => slugify(value) === category.slug,
+        ),
+      ),
+    },
+  }));
+}
+
+const { category, matchingTerms } = Astro.props;
+---
+
+<BaseLayout
+  title={`Category: ${category.label}`}
+  description={`Browse immigration glossary terms in the ${category.label} category.`}
+>
+  <section class="page">
+    <h1>Category: {category.label}</h1>
+
+    <p>
+      {matchingTerms.length}
+      {matchingTerms.length === 1 ? " term" : " terms"} shown.
+    </p>
+
+    <div class="term-list">
+      {
+        matchingTerms.map((term) => (
+          <TermCard term={term} />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
