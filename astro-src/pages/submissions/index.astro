@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const NEW_TERM_URL = "https://github.com/mapachurro/eoir-glossary/issues/new";
+const REVISION_URL = "https://github.com/mapachurro/eoir-glossary/issues/new";
+---
+
+<BaseLayout
+  title="Submissions and Revisions"
+  description="Suggest corrections, translations, definitions, or new entries for the Immigration Glossary."
+>
+  <section class="page">
+    <h1>Submissions and Revisions</h1>
+
+    <p class="page-intro">
+      Use the options below to suggest a revision or submit a new term.
+    </p>
+
+    <div class="browse-grid">
+      <article class="browse-card">
+        <h2>Submit a revision</h2>
+
+        <p>
+          Suggest a change to an existing term, translation, definition, or
+          note.
+        </p>
+
+        <a
+          class="button-link"
+          href={REVISION_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open revision issue
+        </a>
+      </article>
+
+      <article class="browse-card">
+        <h2>Submit a new term</h2>
+
+        <p>
+          Propose a new glossary entry with as many fields filled in as
+          possible.
+        </p>
+
+        <a
+          class="button-link"
+          href={NEW_TERM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open new-term issue
+        </a>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
