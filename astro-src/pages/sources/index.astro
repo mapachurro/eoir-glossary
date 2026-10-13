@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SourcesHistory from "../../components/sources/SourcesHistory.astro";
+import sources from "../../data/sources.json";
+
+const { historicalGlossaries, bibliographyEntries } = sources;
+
+function isUrl(value) {
+  return /^https?:\/\//i.test(String(value || ""));
+}
+
+function publicUrl(path) {
+  return (
+    "/" +
+    String(path || "")
+      .replace(/^\/+/, "")
+      .replace(/^public\//, "")
+  );
+}
+---
+
+<BaseLayout
+  title="Bibliography & Sources"
+  description="Historical immigration glossaries, terminology resources, and bibliography for the Immigration Glossary project."
+>
+  <section class="page">
+    <h1>Bibliography & Sources</h1>
+
+    <SourcesHistory />
+
+    <section class="source-section">
+      <h2>Historical Glossaries</h2>
+
+      <div class="glossary-history-grid">
+        {historicalGlossaries.map((item) => (
+          <article class="glossary-history-card">
+            <a
+              href={publicUrl(item.pdf)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={publicUrl(item.thumbnail)}
+                alt={`Cover of ${item.title}`}
+                loading="lazy"
+              />
+              <h3>{item.title}</h3>
+            </a>
+
+            {item.description && <p>{item.description}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="source-section">
+      <h2>Bibliography</h2>
+
+      <div class="table-wrapper">
+        <table class="bibliography-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {bibliographyEntries.map((entry) => (
+              <tr>
+                <td>
+                  {isUrl(entry.title) ? (
+                    <a
+                      href={entry.title}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {entry.title}
+                    </a>
+                  ) : (
+                    entry.title
+                  )}
+                </td>
+                <td>{entry.author || "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</BaseLayout>
