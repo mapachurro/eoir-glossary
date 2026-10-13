@@ -1,0 +1,148 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import forms from "../../../src/data/forms.json";
+
+const searchableForms = forms.map((form) => ({
+  id: form.id,
+  searchText: [
+    form.agency,
+    form.formNumber,
+    form.title,
+    form.aka,
+    form.spanishTitle,
+    form.purpose,
+    form.notes,
+    ...(form.relatedTerms || []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase(),
+}));
+---
+
+<BaseLayout
+  title="Forms Explorer"
+  description="A reference guide to common EOIR, USCIS, and immigration-related forms."
+>
+  <section class="page">
+    <h1>Forms Explorer</h1>
+
+    <p class="page-intro">
+      A reference guide to common EOIR, USCIS, and immigration-related forms.
+    </p>
+
+    <input
+      id="forms-search"
+      type="search"
+      placeholder="Search by form number, agency, title, purpose..."
+      aria-label="Search immigration forms"
+      autocomplete="off"
+    />
+
+    <p id="forms-count" aria-live="polite">
+      {forms.length} {forms.length === 1 ? "form" : "forms"} shown.
+    </p>
+
+    <div id="forms-empty" class="empty-state" hidden>
+      <h2>No matching forms found</h2>
+      <p>Try a different form number, agency, or keyword.</p>
+    </div>
+
+    <div class="forms-grid">
+      {
+        forms.map((form) => (
+          <article class="form-card" data-form-id={form.id}>
+            <div class="form-card__header">
+              <span class="form-card__agency">{form.agency}</span>
+              <h2>{form.formNumber}</h2>
+            </div>
+
+            <h3>{form.title}</h3>
+
+            {form.spanishTitle && (
+              <p class="form-card__spanish">{form.spanishTitle}</p>
+            )}
+
+            {form.purpose && <p>{form.purpose}</p>}
+
+            {form.relatedTerms?.length > 0 && (
+              <p>
+                <strong>Related terms:</strong>{" "}
+                {form.relatedTerms.join(", ")}
+              </p>
+            )}
+
+            {form.officialUrl && (
+              <a
+                href={form.officialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official form/source
+              </a>
+            )}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ searchableForms }}>
+  const input = document.querySelector("#forms-search");
+  const count = document.querySelector("#forms-count");
+  const empty = document.querySelector("#forms-empty");
+
+  const cards = new Map(
+    Array.from(document.querySelectorAll("[data-form-id]")).map((card) => [
+      card.dataset.formId,
+      card,
+    ])
+  );
+
+  function filterForms(query) {
+    const normalized = query.trim().toLowerCase();
+    let visible = 0;
+
+    for (const form of searchableForms) {
+      const matches =
+        !normalized || form.searchText.includes(normalized);
+
+      const card = cards.get(form.id);
+
+      if (card) {
+        card.hidden = !matches;
+      }
+
+      if (matches) visible++;
+    }
+
+    count.textContent = `${visible} ${visible === 1 ? "form" : "forms"} shown.`;
+    empty.hidden = visible !== 0;
+
+    const url = new URL(window.location.href);
+
+    if (normalized) {
+      url.searchParams.set("q", query);
+    } else {
+      url.searchParams.delete("q");
+    }
+
+    window.history.replaceState({}, "", url);
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  input.value = params.get("q") || "";
+
+  filterForms(input.value);
+
+  input.addEventListener("input", () => {
+    filterForms(input.value);
+  });
+
+  window.addEventListener("popstate", () => {
+    const params = new URLSearchParams(window.location.search);
+    input.value = params.get("q") || "";
+    filterForms(input.value);
+  });
+</script>
