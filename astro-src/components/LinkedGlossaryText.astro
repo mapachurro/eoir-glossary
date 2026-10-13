@@ -1,6 +1,5 @@
 ---
-import glossary from "../../src/data/glossary.json";
-import { buildGlossaryMatcher } from "../../src/utils/linkGlossaryText";
+import { glossaryMatcher } from "../utils/glossaryMatcher";
 
 interface Props {
   text?: string;
@@ -15,7 +14,7 @@ type Segment = {
   external?: boolean;
 };
 
-const { lookup, regex } = buildGlossaryMatcher(glossary);
+const { lookup, regex } = glossaryMatcher;
 
 function linkify(value: string): Segment[] {
   if (!value) return [];
