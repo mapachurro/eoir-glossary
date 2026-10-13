@@ -748,7 +748,8 @@ a {
 /* Term search box styling */
 
 #term-search,
-#forms-search {
+#forms-search,
+#codes-search {
   display: block;
   width: 100%;
   max-width: 600px;
@@ -764,7 +765,16 @@ a {
 }
 
 #term-search:focus,
-#forms-search:focus {
+#forms-search:focus,
+#codes-search:focus {
   outline: 2px solid #4776a8;
   outline-offset: 2px;
+}
+
+/* Hiding categories that don't have any search results */
+
+.code-row[hidden],
+.code-category-section[hidden],
+#codes-empty[hidden] {
+  display: none !important;
 }
