@@ -486,11 +486,11 @@ export default function SourcesPage() {
           invole extending that legal system to people who should not be assumed
           to speak English, or not speak it well enough to be linguistically
           present in legal proceedings. The US Governmment did not have the
-          resources on-hand to figure out how to handle this. When it came to ensuring that 
-          those who did <strong>spoke with one voice</strong>, we, as humans,
-          didn't even have a codified profession of "interpreter" yet. Consider
-          the fact that the profession as such is considered to have been
-          created during the Nuremberg Trials.
+          resources on-hand to figure out how to handle this. When it came to
+          ensuring that those who did <strong>spoke with one voice</strong>, we,
+          as humans, didn't even have a codified profession of "interpreter"
+          yet. Consider the fact that the profession as such is considered to
+          have been created during the Nuremberg Trials.
         </p>
         <p>
           But don't worry, this is the United States. What do we do when we
@@ -571,10 +571,12 @@ export default function SourcesPage() {
           Unfortunately, someone in the Legal department of this concern was
           awake and paying attention, and there is a clear note in the footer of
           every page of the copy of this glossary that I have:{" "}
+          <i>"This glossary is the property of </i>
+          <strong>redacted</strong>.
           <i>
-            "This glossary is the property of </i><strong>redacted</strong>.<i> The
-            copy or distribution of this document to other parties is strictly
-            prohibited."
+            {" "}
+            The copy or distribution of this document to other parties is
+            strictly prohibited."
           </i>
         </p>
         <p>
@@ -697,31 +699,29 @@ export default function SourcesPage() {
             explanatory terminology bases. Other EOIR interpreters made
             additional contributions, which I endeavoured to note in the text,
             and I am sure I am forgetting others who helped explain key concepts
-            to me. 
+            to me.
             <br />
             <br />
-            The intention of this glossary is not prescriptive or
-            restrictive; rather, it seeks to serve as a reference and a starting
-            point for further development and elucidation of the twisted
-            terminological webs of this field of law, administration, and
-            procedure. More than anything else, as I drafted the explanations, I
-            thought of the interpreter who has been newly hired to the EOIR, and
-            can't make heads or tails of what the difference is between an
-            admission and a concession, or why people aren't following the
-            Federal Rules of Evidence. 
+            The intention of this glossary is not prescriptive or restrictive;
+            rather, it seeks to serve as a reference and a starting point for
+            further development and elucidation of the twisted terminological
+            webs of this field of law, administration, and procedure. More than
+            anything else, as I drafted the explanations, I thought of the
+            interpreter who has been newly hired to the EOIR, and can't make
+            heads or tails of what the difference is between an admission and a
+            concession, or why people aren't following the Federal Rules of
+            Evidence.
             <br />
             <br />
-            In composing this glossary, I began by
-            compiling every term from every official and otherwise reputable
-            Immigration glossary I could find--seven or eight in
-            total--cross-referenced all of them for consensus on terms, and
-            began researching, revising, and occasionally deleting. 
+            In composing this glossary, I began by compiling every term from
+            every official and otherwise reputable Immigration glossary I could
+            find--seven or eight in total--cross-referenced all of them for
+            consensus on terms, and began researching, revising, and
+            occasionally deleting.
             <br />
-            <br />
-            I hope this
-            glossary is the next step in what is already a long history of
-            terminology study and standardization in the immigration agencies of
-            the United States. -Oliver JL Renwick
+            <br />I hope this glossary is the next step in what is already a
+            long history of terminology study and standardization in the
+            immigration agencies of the United States. -Oliver JL Renwick
           </i>
         </p>
         <h2>Footnotes</h2>

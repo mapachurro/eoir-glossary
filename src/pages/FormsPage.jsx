@@ -57,8 +57,7 @@ export default function FormsPage() {
 
             {form.relatedTerms?.length > 0 && (
               <p>
-                <strong>Related terms:</strong>{" "}
-                {form.relatedTerms.join(", ")}
+                <strong>Related terms:</strong> {form.relatedTerms.join(", ")}
               </p>
             )}
 

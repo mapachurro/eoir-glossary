@@ -6,10 +6,7 @@ import TermCard from "../components/TermCard";
 export default function TermPage() {
   const { id } = useParams();
 
-  const term = useMemo(
-    () => glossary.find((entry) => entry.id === id),
-    [id]
-  );
+  const term = useMemo(() => glossary.find((entry) => entry.id === id), [id]);
 
   if (!term) {
     return (

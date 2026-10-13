@@ -30,12 +30,12 @@ export default function AuthorityDetail() {
 
         <h1>{item.name}</h1>
 
-        <p className="authority-card__citation">
-          {item.citation}
-        </p>
+        <p className="authority-card__citation">{item.citation}</p>
 
         {item.status && (
-          <p><strong>Status:</strong> {item.status}</p>
+          <p>
+            <strong>Status:</strong> {item.status}
+          </p>
         )}
 
         {item.summary?.length > 0 && (
@@ -64,8 +64,7 @@ export default function AuthorityDetail() {
 
         {item.relatedTerms?.length > 0 && (
           <p>
-            <strong>Related terms:</strong>{" "}
-            {item.relatedTerms.join(", ")}
+            <strong>Related terms:</strong> {item.relatedTerms.join(", ")}
           </p>
         )}
 

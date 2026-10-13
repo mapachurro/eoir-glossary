@@ -96,9 +96,7 @@ export default function CodesPage() {
         being continued to a later date into the record. They can affect the
         results of a case; they can affect other processes outside of the EOIR,
         most significantly the{" "}
-        <a href="https://gringo.bingo/#/terms?q=asylum%20clock">
-          asylum clock
-        </a>
+        <a href="https://gringo.bingo/#/terms?q=asylum%20clock">asylum clock</a>
         , a timekeeping measure that determines when an asylum seeker present in
         the US is eligible to receive a work permit.
       </p>
@@ -110,7 +108,8 @@ export default function CodesPage() {
       />
 
       <p className="results-count">
-        {filteredCodes.length} code{filteredCodes.length === 1 ? "" : "s"} shown.
+        {filteredCodes.length} code{filteredCodes.length === 1 ? "" : "s"}{" "}
+        shown.
       </p>
 
       {sortedCategories.map((category) => {
@@ -135,9 +134,7 @@ export default function CodesPage() {
                     <h3>{code.meaning}</h3>
 
                     {code.spanishMeaning && (
-                      <p className="code-row__spanish">
-                        {code.spanishMeaning}
-                      </p>
+                      <p className="code-row__spanish">{code.spanishMeaning}</p>
                     )}
 
                     {code.notes && (
