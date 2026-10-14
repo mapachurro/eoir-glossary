@@ -44,7 +44,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "abandonment-of-application-claim-relief-desestimacion-de-la-apelacion-la-solicitud-el-amparo-solicitado",
+    "id": "abandonment-of-application-claim-relief-5331d4f02f48",
     "contrastsWith": []
   },
   {
@@ -190,7 +190,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "adjustment-of-to-immigrant-status-visa-to-lpr-cambio-de-condicon-migratoria-out-of-status-undocumented-to-lpr-regularizacion",
+    "id": "adjustment-of-to-immigrant-status-0d229a70e509",
     "contrastsWith": []
   },
   {
@@ -286,7 +286,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "admit-allegations-and-concede-removability-admitir-las-pretensiones-de-hecho-facticas-reconocer-la-expulsabilidad",
+    "id": "admit-allegations-and-concede-removability-9546016979f2",
     "contrastsWith": []
   },
   {
@@ -430,7 +430,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "agent-law-enforcement-officer-agente-government-employee-funcionario-authorized-representative-apoderado",
+    "id": "agent-d41f46ac79c0",
     "contrastsWith": []
   },
   {
@@ -750,7 +750,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "applicant-appears-genuinely-afraid-of-persecution-solicitante-parece-tener-un-temor-genuino-autentico-de-la-persecucion",
+    "id": "applicant-appears-genuinely-afraid-of-persecution-1a69b23cde06",
     "contrastsWith": []
   },
   {
@@ -830,7 +830,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "application-for-immigrant-visa-and-alien-registration-solicitud-de-visado-de-residente-inmigrante-y-registro-como-extranjero",
+    "id": "application-for-immigrant-visa-and-alien-registration-f457de8f5bb6",
     "contrastsWith": []
   },
   {
@@ -1008,7 +1008,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "asylum-claim-asylum-application-solicitud-request-for-asylum-peticion-the-story-arguments-and-information-presented-in-the-application-and-evidence-pretension-pretensiones-reclamar-reclamacion",
+    "id": "asylum-claim-6f49e2e33ae4",
     "contrastsWith": []
   },
   {
@@ -1027,7 +1027,7 @@
     "id": "asylum-clock-acumulacion-de-dias-dias-transcurridos",
     "contrastsWith": []
   },
-    {
+  {
     "english": "Asylum Cooperative Agreeement (ACA)",
     "englishDefinition": "A bilateral agreement between the government of the United States and the government of another country which establishes the terms through which asylum seekers coming to one country may be sent to the other country in order to pursue their asylum claims in that country.",
     "spanish": "acuerdo cooperativo de asilo",
@@ -1035,7 +1035,9 @@
     "comments": "An initial review of official government documents regarding these agreements appears to show that the term 'Asylum Cooperative Agreement' may be a sort of US English shorthand. These sorts of agreements have existed for a long time; they became relevant to the work of the interpreter during the second Trump administration, when that administration began to execute agreements with e.g. Ecuador and Honduras, amongst others, and the DHS began to, in fact, pre-termit respondents' application process in the United States in order to refer them to a 'safe third country' in order to pursue their claim for protectoin there. The official government agreements released, for example in <a href='https://coleccionlegis.com/muestra/documento/lectura/acuerdo-entre-el-gobierno-de-la-republica-de-honduras-y-el-gobierno-de-los-estados-unidos-de-america-para-la-cooperacion-en-el-examen-de-las-solicitudes-de-proteccion'>Honduras</a> and the corresponding <a href='https://www.state.gov/wp-content/uploads/2025/09/25-625-Honduras-Migration-and-Refugees-JIP.pdf'> English version from the United States refer to these agreements as `Acuerdo entre el Gobierno de la República de Honduras y el Gobierno de los Estados Unidos de América para la cooperación en el examen de las solicitudes de protección.` and `AGREEMENT BETWEEN THE GOVERNMENT OF THE UNITED STATES OF AMERICA AND THE GOVERNMENT OF THE REPUBLIC OF HONDURAS FOR COOPERATION IN THE EXAMINATION OF PROTECTION REQUESTS`, respectively. So: they are not 'cooperative asylum agreements' per se, but rather 'cooperative agreements in the examination of protection requests'. After all--we call the thing 'asylum', but in the US, asylum is requested via the form I-589, which can encompass three forms of protection: asylum, corresponding to the legal institution created and somewhat acknowledged and implemented on an international level, suspension of removal, which in this author's understanding is a form of relief from removal, not necessarily protection, that is US-specific, and protection under the Convention Against Torture, which is a whole other ball of misery. Therefore: 'Asylum Cooperative Agreement' is a simplified shorthand for this... thing.",
     "category": [],
     "tags": [],
-    "aliases": ["ACA"],
+    "aliases": [
+      "ACA"
+    ],
     "status": "active",
     "lastUpdated": "9-3-2026",
     "source": "mapachurro",
@@ -1632,7 +1634,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "cancellation-of-removal-and-adjustment-of-status-for-certain-non-permanent-residents-eoir-42-b-cancelacion-de-la-expulsion-y-cambio-de-condicion-migratoria-para-ciertos-residentes-no-permanentes",
+    "id": "cancellation-of-removal-and-adjustment-of-status-for-ce-2ffdeed30f68",
     "contrastsWith": []
   },
   {
@@ -1648,7 +1650,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "cancellation-of-removal-for-certain-permanent-residents-eoir-42-a-cancelacion-de-la-expulsion-para-ciertos-residentes-permanentes",
+    "id": "cancellation-of-removal-for-certain-permanent-residents-229269a18c5c",
     "contrastsWith": []
   },
   {
@@ -2256,7 +2258,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "compelling-evidence-prueba-convincente-resolves-the-judge-s-doubts-apremiante-forces-the-judge-to-take-a-certain-stance-or-decision",
+    "id": "compelling-evidence-48bb8c8b5362",
     "contrastsWith": []
   },
   {
@@ -2432,7 +2434,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "contempt-of-court-general-desacato-al-tribunal-being-held-found-in-contumacia-contumaz-failure-to-appear-nonappearance-rebeldia",
+    "id": "contempt-of-court-6df0dcb79b13",
     "contrastsWith": []
   },
   {
@@ -2528,7 +2530,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "convict-person-que-tiene-con-antecedentes-penales-no-longer-locked-up-recluso-preso-currently-locked-up",
+    "id": "convict-person-53419ac0658c",
     "contrastsWith": []
   },
   {
@@ -2722,7 +2724,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "court-this-court-the-immigration-court-in-general-tribunal-de-lo-migratorio-the-building-el-tribunal-the-courtroom-la-sala-esta-sala-the-judge-yo-el-la-juez",
+    "id": "court-this-court-the-596974d7ad74",
     "contrastsWith": []
   },
   {
@@ -3266,7 +3268,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "deferral-of-removal-under-the-convention-against-torture-suspension-de-la-expulsion-conforme-al-convenio-contra-la-tortura",
+    "id": "deferral-of-removal-under-the-convention-against-tortur-5277ea2461c4",
     "contrastsWith": []
   },
   {
@@ -4066,7 +4068,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "eoir-executive-office-for-immigration-review-oficina-ejecutiva-para-la-revision-de-casos-de-inmigracion",
+    "id": "eoir-executive-office-for-immigration-review-3c6cec15d1d4",
     "contrastsWith": []
   },
   {
@@ -4114,7 +4116,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "establish-eligibility-as-a-refugee-demostrar-establecer-que-reune-cumple-con-llena-los-requisitos-de-refugiado",
+    "id": "establish-eligibility-as-a-refugee-6ef9cb9a92d3",
     "contrastsWith": []
   },
   {
@@ -4162,7 +4164,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "evidence-to-take-police-collecting-evidence-levantar-pruebas-court-judge-accepting-exhibits-recibir-pruebas",
+    "id": "evidence-to-take-8b722641dc82",
     "contrastsWith": []
   },
   {
@@ -4258,7 +4260,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "exceptional-and-extremely-unusual-hardship-adversidades-dificultades-excepcionales-y-sumamente-extraordinarias",
+    "id": "exceptional-and-extremely-unusual-hardship-e38c4a049ecc",
     "contrastsWith": []
   },
   {
@@ -4354,7 +4356,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "exclusion-of-witnesses-incomunicacion-de-los-testigos-witnesses-separated-to-avoid-being-influenced-by-others-testimony-exclusion-de-testigos-witnesses-barred-from-testifying",
+    "id": "exclusion-of-witnesses-4325b42fae6d",
     "contrastsWith": []
   },
   {
@@ -4770,7 +4772,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "fingerprints-are-stale-current-up-to-date-clear-las-huellas-digitales-dactilares-no-estan-vigentes-estan-inactivas-actualizadas-al-dia-limpias",
+    "id": "fingerprints-are-stale-current-up-to-date-clear-ba6f98adfbd1",
     "contrastsWith": []
   },
   {
@@ -5234,7 +5236,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "gross-sexual-imposition-gsi-abuso-sexual-lesser-included-not-rising-to-the-level-of-rape-or-violence-agresion-sexual-involved-violence-or-aggravating-factors-abusos-deshonestos-involving-a-minor-of-13-years-or-less",
+    "id": "gross-sexual-imposition-gsi-81c73a2d73d6",
     "contrastsWith": []
   },
   {
@@ -5314,7 +5316,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "having-been-found-removable-tras-decidir-fallar-resolver-que-esta-sujeto-a-a-objeto-de-la-expulsion-expulsable",
+    "id": "having-been-found-removable-4d0bbff8fe9f",
     "contrastsWith": []
   },
   {
@@ -5666,7 +5668,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "immigration-marriage-fraud-amendments-of-1986-enmiendas-migratorias-a-la-inmigracion-por-matrimonios-falsos-del-1986",
+    "id": "immigration-marriage-fraud-amendments-of-1986-ff311faa7fab",
     "contrastsWith": []
   },
   {
@@ -5698,7 +5700,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "immigration-reform-and-control-act-of-1986-irca-ley-de-reforma-y-control-migratorio-de-inmigracion-del-1986",
+    "id": "immigration-reform-and-control-act-of-1986-irca-d9e6bdff474f",
     "contrastsWith": []
   },
   {
@@ -5794,7 +5796,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "incompetent-no-capaz-sin-capacidad-no-mentalmente-capaz-sin-capacidad-mental-suficiente-no-capaz-de-ser-procesado",
+    "id": "incompetent-e69effcdee9d",
     "contrastsWith": []
   },
   {
@@ -5954,7 +5956,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "inspected-admitted-or-paroled-you-were-not-no-paso-por-inspeccion-ni-le-dieron-permiso-ni-permiso-condicional-de-entrar",
+    "id": "inspected-admitted-or-paroled-you-were-not-6a3d84c40e5d",
     "contrastsWith": []
   },
   {
@@ -6194,7 +6196,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "law-enforcement-enforce-or-carry-out-the-law-aplicar-cumplir-con-la-ley-ensure-compliance-with-the-law-hacer-cumplir-cumplir-con-la-ley-police-la-policia-other-law-enforcement-bodies-in-general-la-autoridad-las-autoridades-the-justice-system-la-justicia-generic-concept-of-legality-and-societal-order-orden-publico",
+    "id": "law-enforcement-c30498505010",
     "contrastsWith": []
   },
   {
@@ -6370,7 +6372,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "limitations-on-discretionary-relief-for-failure-to-appear-restricciones-limitaciones-sobre-el-amparo-discrecional-debido-a-su-incomparecencia",
+    "id": "limitations-on-discretionary-relief-for-failure-to-appe-13785d7403f7",
     "contrastsWith": []
   },
   {
@@ -6402,7 +6404,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "lodge-a-charge-tramitar-filings-escritos-application-solicitud-entablar-acusacion-en-lo-penal-imputar-imputacion-de-expulsabilidad",
+    "id": "lodge-a-charge-6696ed4f1e0f",
     "contrastsWith": []
   },
   {
@@ -6530,7 +6532,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "maintenance-of-status-and-departure-bond-fianza-caucion-para-mantener-su-condicion-situacion-migratoria-y-salida",
+    "id": "maintenance-of-status-and-departure-bond-34460b339bb0",
     "contrastsWith": []
   },
   {
@@ -6818,7 +6820,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "motion-for-termination-pedimento-peticion-de-cerrar-archivar-sobreseer-un-caso-extinguir-la-condicion-de-asilado-daca-o-tps",
+    "id": "motion-for-termination-463c531eb055",
     "contrastsWith": []
   },
   {
@@ -7157,7 +7159,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-asylum-only-hearing-aviso-notificacion-de-una-audiencia-en-un-proceso-exclusivamente-solamente-de-asilo",
+    "id": "notice-of-asylum-only-hearing-d569129ea469",
     "contrastsWith": []
   },
   {
@@ -7173,7 +7175,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-consequences-for-failure-to-appear-aviso-notificacion-de-consecuencias-por-falta-de-comparecencia",
+    "id": "notice-of-consequences-for-failure-to-appear-523c86e0cbf6",
     "contrastsWith": []
   },
   {
@@ -7189,7 +7191,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-consequences-for-failure-to-depart-aviso-notificacion-de-consecuencias-por-no-cumplir-con-la-orden-de-salida",
+    "id": "notice-of-consequences-for-failure-to-depart-a71c02831e72",
     "contrastsWith": []
   },
   {
@@ -7205,7 +7207,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-consequences-for-failure-to-surrender-to-the-immigration-and-naturalization-service-for-removal-from-the-united-states-aviso-notificacion-de-consecuencias-por-no-entregarse-al-servicio-de-inmigracion-y-naturalizacion-para-su-expulsion-de-los-estados-unidos",
+    "id": "notice-of-consequences-for-failure-to-surrender-to-the-0d8b0bd43220",
     "contrastsWith": []
   },
   {
@@ -7221,7 +7223,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-consequences-for-knowingly-filing-a-frivolous-asylum-application-aviso-notificacion-de-consecuencias-por-presentar-a-sabiendas-una-solicitud-de-asilo-que-contiene-falsedades",
+    "id": "notice-of-consequences-for-knowingly-filing-a-frivolous-0f15cb6d1497",
     "contrastsWith": []
   },
   {
@@ -7253,7 +7255,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-entry-of-appearance-as-attorney-aviso-notificacion-de-comparecencia-representacion-como-abogado",
+    "id": "notice-of-entry-of-appearance-as-attorney-d82785de9817",
     "contrastsWith": []
   },
   {
@@ -7285,7 +7287,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-intent-to-issue-a-final-administrative-deportation-order-form-i-851-aviso-notificacion-de-intencion-de-emitir-una-orden-administrativa-de-deportacion-final",
+    "id": "notice-of-intent-to-issue-a-final-administrative-deport-fbe8606929b0",
     "contrastsWith": []
   },
   {
@@ -7317,7 +7319,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-of-intention-to-rescind-and-request-for-hearing-by-alien-aviso-notificacion-por-parte-del-extranjero-de-rescindir-y-pedir-una-audiencia",
+    "id": "notice-of-intention-to-rescind-and-request-for-hearing-4360ba8dd403",
     "contrastsWith": []
   },
   {
@@ -7413,7 +7415,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-to-alien-detained-for-exclusion-hearing-form-i-122-aviso-notificacion-a-un-extranjero-detenido-para-su-audiencia-de-expulsion-formulario-tipo-i-122",
+    "id": "notice-to-alien-detained-for-exclusion-hearing-form-i-1-00af3149fbe7",
     "contrastsWith": []
   },
   {
@@ -7445,7 +7447,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "notice-to-appear-for-removal-proceedings-aviso-notificacion-de-comparecencia-para-el-proceso-de-expulsion",
+    "id": "notice-to-appear-for-removal-proceedings-2129e08142fe",
     "contrastsWith": []
   },
   {
@@ -7509,7 +7511,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "offense-criminal-minor-misdemeanor-ticket-infraccion-multa-misdemeanor-falta-delito-menor-delito-leve-felony-delito-delito-mayor-delito-de-sangre-rape-murder-etc-crimen-generic-term-acto-ilicito",
+    "id": "offense-criminal-f51c7a327c1a",
     "contrastsWith": []
   },
   {
@@ -7845,7 +7847,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "pattern-and-practice-of-persecution-of-similarly-situated-individuals-patron-y-practica-de-persecucion-de-personas-en-situaciones-parecidas",
+    "id": "pattern-and-practice-of-persecution-of-similarly-situat-2e42cea7eba4",
     "contrastsWith": []
   },
   {
@@ -8325,7 +8327,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "prejudice-withdraw-application-with-without-definitivamente-no-definitivamente-firme-no-firme-con-fuerza-de-cosa-juzgada-sin-fuerza-de-cosa-juzgada",
+    "id": "prejudice-withdraw-application-with-without-8a7292f6e74b",
     "contrastsWith": []
   },
   {
@@ -8725,7 +8727,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "public-charge-public-burden-us-immigration-rules-carga-publica-carga-al-publico-carga-para-la-asistencia-social",
+    "id": "public-charge-public-burden-3ad082910529",
     "contrastsWith": []
   },
   {
@@ -8901,7 +8903,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "reasonable-substantial-and-probative-evidence-sustained-by-confirmado-por-pruebas-razonables-sustanciales-y-probativas",
+    "id": "reasonable-substantial-and-probative-evidence-sustained-24b4e847a953",
     "contrastsWith": []
   },
   {
@@ -9029,7 +9031,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "record-of-negative-credible-fear-finding-and-request-for-review-by-immigration-judge-i-869-acta-de-fallo-negativo-sobre-el-temor-creible-y-peticion-para-su-revision-por-un-juez-de-inmigracion",
+    "id": "record-of-negative-credible-fear-finding-and-request-fo-2a0e68ed7255",
     "contrastsWith": []
   },
   {
@@ -9061,7 +9063,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "record-of-sworn-statement-in-administrative-proceedings-constancia-acta-de-declaracion-jurada-en-un-proceso-administrativo",
+    "id": "record-of-sworn-statement-in-administrative-proceedings-8ebccf51da50",
     "contrastsWith": []
   },
   {
@@ -9173,7 +9175,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "refugee-claim-application-solicitud-request-for-refugee-status-peticion-para-la-concesion-otorgamiento-de-condicion-estatuto-de-refugiado-the-story-arguments-and-information-presented-in-the-application-and-evidence-pretension-pretensiones-reclamar-reclamacion",
+    "id": "refugee-claim-71442e31dafb",
     "contrastsWith": []
   },
   {
@@ -9365,7 +9367,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "remand-retrotraer-sending-a-case-back-down-to-a-court-of-lesser-instance-remitir-rendition-of-a-person-or-case-to-an-authority",
+    "id": "remand-6b9bedfc57ff",
     "contrastsWith": []
   },
   {
@@ -9573,7 +9575,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "reserve-a-decision-reserved-decision-decision-fallo-en-suspenso-reservado-reservar-mantener-en-suspenso-a-una-decision-fallo",
+    "id": "reserve-a-decision-reserved-decision-36f6e603fa56",
     "contrastsWith": []
   },
   {
@@ -9781,7 +9783,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "right-to-obtain-the-services-of-legal-counsel-derecho-a-conseguir-los-servicios-de-un-licenciado-abogado-consejo-legal",
+    "id": "right-to-obtain-the-services-of-legal-counsel-a294da6c35d1",
     "contrastsWith": []
   },
   {
@@ -10053,7 +10055,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "smuggler-de-bienes-contrabandista-de-personas-tratante-de-personas-frontera-eeuu-mex-coyote-cuba-lanchero",
+    "id": "smuggler-bfcc881d0946",
     "contrastsWith": []
   },
   {
@@ -10213,7 +10215,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "state-department-country-report-informe-del-departamento-de-estado-sobre-las-condiciones-actuales-en-el-pais",
+    "id": "state-department-country-report-0ff4907d647c",
     "contrastsWith": []
   },
   {
@@ -10661,7 +10663,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "superseding-charging-document-imputacion-acusacion-documento-acusatorio-imputatorio-sustituivo-supletorio",
+    "id": "superseding-charging-document-2ff59b5be966",
     "contrastsWith": []
   },
   {
@@ -10869,7 +10871,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "temporary-protected-status-tps-usa-estatus-worldwide-condicion-spain-eu-estatuto-de-proteccion-temporal",
+    "id": "temporary-protected-status-tps-54c1ab13f93c",
     "contrastsWith": []
   },
   {
@@ -10965,7 +10967,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "threshold-eligibility-has-not-been-established-the-no-se-ha-demostrado-que-cumple-con-reune-los-requisitos-minimos",
+    "id": "threshold-eligibility-has-not-been-established-the-2ae449974ad4",
     "contrastsWith": []
   },
   {
@@ -11349,7 +11351,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "united-nations-high-commissioner-for-refugees-alto-comisionado-de-las-naciones-unidas-para-los-refugiados",
+    "id": "united-nations-high-commissioner-for-refugees-ed49305621dc",
     "contrastsWith": []
   },
   {
@@ -11365,7 +11367,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "united-nations-convention-relating-to-the-status-of-refugees-la-convencion-relacionada-con-el-estatus-de-refugiados-de-las-naciones-unidas",
+    "id": "united-nations-convention-relating-to-the-status-of-ref-025f15c15b06",
     "contrastsWith": []
   },
   {
@@ -11413,7 +11415,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "unusual-outstanding-and-countervaillance-equities-factores-positivos-inusuales-excepcionales-o-vigentes-que-compensan-compensatorios",
+    "id": "unusual-outstanding-and-countervaillance-equities-4953fee2d47c",
     "contrastsWith": []
   },
   {
@@ -11445,7 +11447,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "uphold-objections-dar-lugar-a-uphold-an-appeal-declarar-firme-la-resolucion-recurrida-o-apelada-declarar-haber-lugar",
+    "id": "uphold-069b2691635c",
     "contrastsWith": []
   },
   {
@@ -11637,7 +11639,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "voluntary-departure-at-the-conclusion-of-removal-proceedings-salida-voluntaria-tras-a-la-conclusion-de-la-audiencia",
+    "id": "voluntary-departure-at-the-conclusion-of-removal-procee-2e7b30a6716f",
     "contrastsWith": []
   },
   {
@@ -11717,7 +11719,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "waiver-give-up-renunciar-opt-not-to-optar-por-no-to-allow-in-a-specific-instance-permitir-an-allowance-in-a-specific-instance-dispensa-exencion",
+    "id": "waiver-20dfa7c2c3db",
     "contrastsWith": []
   },
   {
@@ -11749,7 +11751,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "warning-regarding-knowingly-filing-a-frivolous-asylum-application-aviso-advertencia-contra-la-tramitacion-de-una-solicitud-de-asilo-que-contiene-falsedades",
+    "id": "warning-regarding-knowingly-filing-a-frivolous-asylum-a-695d9d5e1ff5",
     "contrastsWith": []
   },
   {
@@ -11797,7 +11799,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "well-founded-fear-of-persecution-based-on-race-religion-nationality-member-in-a-particular-social-group-or-political-opinion-temor-fundado-de-persecucion-basado-en-la-raza-religion-nacionalidad-o-membresia-en-un-determinado-grupo-social",
+    "id": "well-founded-fear-of-persecution-based-on-race-religion-674979559a45",
     "contrastsWith": []
   },
   {
@@ -11829,7 +11831,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - 2020 Terms List.csv",
     "proposals": "",
-    "id": "willful-misrepresentation-of-a-material-fact-representacion-falsa-intencional-inexacta-intencional-tergiversacion-de-un-hecho-importante-esencial-pertinente",
+    "id": "willful-misrepresentation-of-a-material-fact-44a83b4a590c",
     "contrastsWith": []
   },
   {
@@ -13117,7 +13119,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Decisions and Appeals.csv",
     "proposals": "",
-    "id": "decision-general-decision-eoir-written-decision-auto-decision-eoir-final-decision-decision-firme-decision-final",
+    "id": "decision-285d1dbd6468",
     "contrastsWith": []
   },
   {
@@ -13599,7 +13601,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Decisions and Appeals.csv",
     "proposals": "",
-    "id": "uphold-objections-dar-lugar-a-uphold-an-appeal-declarar-firme-la-resolucion-recurrida-o-apelada-declarar-haber-lugar-2",
+    "id": "uphold-840c7bcce65a",
     "contrastsWith": []
   },
   {
@@ -13797,7 +13799,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "a-standard-of-proof-as-per-black-s-the-degree-or-level-of-proof-demanded-in-a-specific-case-such-as-beyond-a-reasonable-doubt-or-by-a-preponderance-of-the-evidence-see-burden-of-persuasion-this-concept-is-so-essential-to-the-anglo-saxon-understanding-of-law-that-it-can-be-difficult-to-describe-it-and-to-conceive-of-a-judicial-system-without-it-it-could-perhaps-be-described-as-the-minimum-level-by-which-a-case-can-be-considered-to-be-proven-based-on-the-wording-of-the-law-be-it-statutory-or-case-law-when-reading-spanish-language-discussions-of-the-concept-you-will-encounter-the-term-umbral-used-to-describe-this-idea-a-threshold-for-proof-while-this-concept-does-not-exist-as-such-in-civil-law-countries-it-is-beginning-to-be-imported-and-is-frequently-described-using-a-very-literal-phrasing-estandar-de-prueba-see-notably-los-estandares-de-prueba-en-el-proceso-penal-espanol-jordi-ferrer-beltran-estandares-probatorios-en-el-sistema-acusatorio-y-su-desarrollo-en-colombia-claudia-edith-velandia-coy-aplicacion-del-estandar-de-prueba-por-los-jueces-promiscuos-autores-varios-no-spanish",
+    "id": "a-standard-of-proof-as-per-black-s-the-degree-or-level-bee9ef5866f1",
     "contrastsWith": []
   },
   {
@@ -14121,7 +14123,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "presumed-to-have-a-well-founded-fear-of-persecution-on-the-basis-of-the-original-claim-se-le-presumira-tener-un-temor-fundado-de-la-persecucion-basado-en-las-pretensiones-la-solicitud-original",
+    "id": "presumed-to-have-a-well-founded-fear-of-persecution-on-b9d49279584e",
     "contrastsWith": []
   },
   {
@@ -14139,7 +14141,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "it-shall-be-presumed-that-internal-relocation-would-not-be-reasonable-se-presumira-que-la-reubicacion-dentro-del-pais-no-seria-razonable",
+    "id": "it-shall-be-presumed-that-internal-relocation-would-not-d66c7e18afd2",
     "contrastsWith": []
   },
   {
@@ -14157,7 +14159,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "it-shall-be-presumed-that-the-applicant-s-life-or-freedom-would-be-threatened-in-the-future-in-the-country-of-removal-on-the-basis-of-the-original-claim-se-presumira-que-la-vida-o-la-libertad-del-solicitante-se-veria-amenazada-en-el-futuro-en-el-pais-de-expulsion-basado-en-las-pretensiones-originales",
+    "id": "it-shall-be-presumed-that-the-applicant-s-life-or-freed-5bec301f7f01",
     "contrastsWith": []
   },
   {
@@ -14373,7 +14375,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "applicant-has-a-colorable-claim-to-status-el-la-solicitante-tiene-derecho-aparente-parece-tener-derecho-a-una-condicion-migratoria-legal",
+    "id": "applicant-has-a-colorable-claim-to-status-c36f4129d94b",
     "contrastsWith": []
   },
   {
@@ -14427,7 +14429,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "demonstrate-that-the-applicant-s-claim-is-probably-true-demostrar-que-la-solicitud-las-pretensiones-del-la-solicitante-es-son-probablemente-verdadera-s",
+    "id": "demonstrate-that-the-applicant-s-claim-is-probably-true-284287a16163",
     "contrastsWith": []
   },
   {
@@ -14445,7 +14447,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "credible-is-persuasive-and-refers-to-specific-facts-creible-es-persuasiva-y-hace-referencia-a-hechos-especificos",
+    "id": "credible-is-persuasive-and-refers-to-specific-facts-83d47c51591f",
     "contrastsWith": []
   },
   {
@@ -14463,7 +14465,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "demonstrate-s-that-the-applicant-does-not-have-the-evidence-and-cannot-reasonably-obtain-the-evidence-demuestra-n-que-el-la-solicitante-no-tiene-las-pruebas-y-no-las-podria-conseguir-de-manera-razonable",
+    "id": "demonstrate-s-that-the-applicant-does-not-have-the-evid-8193e777ab73",
     "contrastsWith": []
   },
   {
@@ -14481,7 +14483,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "to-the-satisfaction-of-the-asylum-officer-the-immigration-judge-or-the-board-that-he-or-she-qualifies-for-an-exception-to-the-1-year-deadline-based-on-changed-circumstances-or-extraordinary-circumstances-a-la-satisfaccion-del-oficial-de-asilo-el-juez-de-lo-migratorio-o-a-la-junta-que-el-o-ella-cumple-con-los-requisitos-para-una-excepcion-a-la-fecha-limite-de-1-ano-basado-en-circunstancias-cambiadas-o-extraordinarias",
+    "id": "to-the-satisfaction-of-the-asylum-officer-the-immigrati-6bf0d12c6979",
     "contrastsWith": []
   },
   {
@@ -14499,7 +14501,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "a-preponderance-of-the-evidence-a-fundamental-change-in-circumstances-such-that-the-applicant-no-longer-has-a-well-founded-fear-of-persecution-or-that-the-applicant-could-avoid-future-persecution-by-relocating-to-anoher-part-of-the-alien-s-country-and-under-all-the-circumstances-it-would-be-reasonable-to-expect-the-applicant-to-do-so-una-preponderancia-de-las-pruebas-que-haya-un-cambio-fundamental-en-las-circunstancias-tal-que-el-o-la-solicitante-ya-no-tenga-temor-fundado-de-la-persecucion-o-que-el-o-la-solicitante-podria-evitar-persecucion-en-el-futuro-al-reubicarse-a-otra-parte-del-pais-del-extranjero-y-tomando-en-cuenta-todas-las-circunstanciass-seria-razonable-esperar-que-asi-lo-haga-el-o-la-solicitante",
+    "id": "a-preponderance-of-the-evidence-a-fundamental-change-in-4a3d144c7abe",
     "contrastsWith": []
   },
   {
@@ -14535,7 +14537,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "demonstrate-compelling-reasons-for-being-unwilling-or-unable-to-return-to-the-country-arising-out-of-the-severity-of-the-past-persecution-or-the-application-has-established-that-there-is-a-reasonable-possibility-that-he-or-she-may-suffer-other-serious-harm-upon-removal-to-that-country-demostrar-establecer-motivos-convincentes-por-no-estar-dispuesto-o-capaz-de-volver-al-pais-que-surjan-de-la-severidad-de-la-persecucion-en-el-pasado-o-que-el-la-solicitante-ha-establecido-demostrado-que-exista-una-posibilidad-razonable-que-el-o-ella-podria-sufrir-de-otros-danos-graves-al-ser-expulsado-a-a-ese-pais",
+    "id": "demonstrate-compelling-reasons-for-being-unwilling-or-u-7a9cc2fbc031",
     "contrastsWith": []
   },
   {
@@ -14553,7 +14555,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "establishing-that-it-would-not-be-reasonable-for-him-or-her-to-relocate-unless-the-persecution-is-by-a-government-or-is-government-sponsored-establecer-demostrar-que-no-seria-razonable-que-el-o-ella-se-reubicara-dentro-del-pais-salvo-que-la-persecucion-la-lleve-a-cabo-un-gobierno-o-por-parte-del-gobierno",
+    "id": "establishing-that-it-would-not-be-reasonable-for-him-or-904f6d14daf3",
     "contrastsWith": []
   },
   {
@@ -14571,7 +14573,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "establish-by-a-preponderance-of-the-evidence-that-under-all-the-circumstances-it-would-be-reasonable-for-the-applicant-to-relocate-establecer-demostrar-probar-por-medio-de-una-preponderancia-de-la-prueba-que-al-tomar-en-cuenta-todas-las-circunstancias-seria-razonable-que-el-o-la-solicitante-se-reubique-dentro-del-pais",
+    "id": "establish-by-a-preponderance-of-the-evidence-that-under-ee42a9d7ce05",
     "contrastsWith": []
   },
   {
@@ -14589,7 +14591,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "prove-by-a-preponderance-of-the-evidence-that-he-or-she-did-not-so-act-probar-por-medio-de-una-preponderancia-de-la-prueba-que-el-o-ella-no-actuo-de-tal-manera",
+    "id": "prove-by-a-preponderance-of-the-evidence-that-he-or-she-2128a7902ede",
     "contrastsWith": []
   },
   {
@@ -14607,7 +14609,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "prove-by-a-preponderance-of-the-evidence-that-there-has-been-a-fundamental-change-in-circumstances-such-that-the-applicant-s-life-or-freedom-would-not-be-threatened-on-a-protected-ground-or-that-the-applicant-could-avoid-a-future-threat-to-his-or-her-life-or-freedom-by-relocating-to-another-part-of-the-proposed-country-of-removal-and-under-all-the-circumstances-it-would-be-reasonable-to-expect-the-applicant-to-do-so-probar-por-medio-de-una-preponderancia-de-la-prueba-que-ha-habido-un-cambio-fundamental-en-las-circunstancias-tal-que-la-vida-o-libertad-del-solicitante-o-la-solicitante-no-se-veria-amenazada-basado-en-un-criterio-protegido-por-ley-o-que-el-o-la-solicitante-podria-evitar-amenazas-en-el-futuro-contra-su-vida-o-libertad-al-reubicarse-a-otra-parte-del-pais-propuesto-para-su-expulsion-y-tomando-en-cuenta-todas-las-circunstancias-seria-razonable-esperar-que-asi-lo-haga-el-o-la-solicitante",
+    "id": "prove-by-a-preponderance-of-the-evidence-that-there-has-5863386d34a3",
     "contrastsWith": []
   },
   {
@@ -14625,7 +14627,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "by-a-preponderance-of-the-evidence-that-1-there-was-fraud-in-the-alien-s-asylum-application-and-2-the-fraud-was-such-that-the-alien-was-not-eligible-for-asylum-at-the-time-it-was-granted-por-medio-de-una-preponderancia-de-la-prueba-que-1-hubo-fraude-en-la-solicitud-de-asilo-del-extranjero-y-2-el-fraude-fue-tal-que-el-extranjero-no-reunia-los-requisitos-para-el-asilo-en-el-momento-en-que-se-concedio",
+    "id": "by-a-preponderance-of-the-evidence-that-1-there-was-fra-13b9a75176d0",
     "contrastsWith": []
   },
   {
@@ -14643,7 +14645,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "the-burden-of-proof-is-on-the-applicant-for-withholding-of-removal-under-the-convention-against-torture-to-establish-that-it-is-more-likely-than-not-that-he-or-she-would-be-tortured-if-removed-to-the-proposed-country-of-removal-la-carga-de-la-prueba-le-incumbe-a-recae-sobre-el-o-la-solicitante-de-suspension-de-la-expulsion-conforme-con-el-convenio-contra-la-tortura-para-establecer-probar-que-sea-mas-probable-que-no-que-el-o-ella-seria-torturado-a-si-es-expulsado-a-al-propuesto-pais-de-expulsion",
+    "id": "the-burden-of-proof-is-on-the-applicant-for-withholding-c74db85e3de3",
     "contrastsWith": []
   },
   {
@@ -14661,7 +14663,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "the-burden-of-proof-is-on-the-applicant-to-establish-by-a-preponderance-of-the-evidence-that-he-or-she-is-eligible-for-suspension-of-deportation-or-special-rule-cancellation-of-removal-and-that-discretion-should-be-exercised-to-grant-relief-la-carga-de-la-prueba-le-incumbe-a-recae-sobre-el-o-la-solicitante-para-probar-por-medio-de-una-preponderancia-de-la-prueba-que-el-o-ella-reuna-los-requisitos-para-la-suspension-de-la-deportacion-o-cancelacion-de-la-expulsion-segun-la-regla-especial-y-que-se-deba-de-ejercer-la-discrecion-para-otorgar-el-amparo",
+    "id": "the-burden-of-proof-is-on-the-applicant-to-establish-by-919a0e984942",
     "contrastsWith": []
   },
   {
@@ -14679,7 +14681,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "to-establish-that-it-is-more-likely-than-not-that-neither-the-applicant-nor-a-qualified-relative-would-suffer-extreme-hardship-if-the-applicant-were-deported-or-removed-from-the-united-states-establecer-probar-que-sea-mas-probable-que-no-que-ni-el-o-la-solicitante-ni-un-familiar-que-reuna-los-requisitos-sufriria-adversidades-dificultades-extremas-si-el-o-la-solicitante-fuera-deportado-a-o-expulsado-a-de-los-estados-unidos",
+    "id": "to-establish-that-it-is-more-likely-than-not-that-neith-78fa37179c79",
     "contrastsWith": []
   },
   {
@@ -14697,7 +14699,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "a-heavy-burden-of-showing-new-evidence-would-likely-chang-the-result-in-the-case-a-reasonable-likelihood-of-success-on-the-merits-una-carga-de-la-prueba-pesada-de-demostrar-que-pruebas-nuevas-probablemente-cambiarian-el-resultado-del-caso-una-probabilidad-razonable-de-exito-sobre-los-meritos-del-caso",
+    "id": "a-heavy-burden-of-showing-new-evidence-would-likely-cha-836582a5b7d9",
     "contrastsWith": []
   },
   {
@@ -14715,7 +14717,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "establish-to-the-satisfaction-of-the-immigration-judge-that-he-or-she-does-not-present-a-danger-to-persons-or-property-is-not-a-threat-to-national-security-and-does-not-pose-a-risk-of-flight-establecer-probar-a-la-satisfaccion-del-juez-de-lo-migratorio-que-el-o-ella-no-represente-un-peligro-a-las-personas-o-la-propiedad-no-representa-una-amenaza-a-la-seguridad-nacional-y-no-representa-un-riesgo-de-fuga",
+    "id": "establish-to-the-satisfaction-of-the-immigration-judge-45361b28b76c",
     "contrastsWith": []
   },
   {
@@ -14733,7 +14735,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "must-also-satisfy-the-attorney-general-that-he-or-she-will-not-pose-a-danger-to-the-safety-of-other-persons-or-of-property-and-is-likely-to-appear-for-hearings-tambien-debe-probar-a-la-satisfaccion-del-procurador-fiscal-general-que-el-o-ella-no-representara-un-peligro-a-la-seguridad-de-otras-personas-o-de-la-propiedad-y-tiene-probabilidad-de-comparecer-para-sus-audiencias",
+    "id": "must-also-satisfy-the-attorney-general-that-he-or-she-w-a63461413ab8",
     "contrastsWith": []
   },
   {
@@ -14751,7 +14753,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Grounds and Standards of Proof.csv",
     "proposals": "",
-    "id": "show-that-the-government-was-substantially-unlikely-to-establish-the-charges-that-rendered-the-alien-subject-to-mandatory-detention-mostrar-que-para-el-gobierno-seria-bastante-dificil-probar-las-imputaciones-migratorias-que-hicieron-que-el-extranjero-fuera-sujeto-a-detencion-obligatoria",
+    "id": "show-that-the-government-was-substantially-unlikely-to-cfc5b77315f9",
     "contrastsWith": []
   },
   {
@@ -15417,7 +15419,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Sex Crimes.csv",
     "proposals": "",
-    "id": "there-is-a-wealth-of-criminal-terminology-in-spanish-and-in-english-relating-to-sex-crimes-partially-due-to-the-fact-that-the-criminality-or-non-criminality-of-certain-acts-has-changed-over-time-and-also-due-to-changes-in-the-way-that-societies-both-anglo-and-hispanic-have-decided-to-describe-the-crimes-specifically-there-has-been-a-strong-movement-in-the-last-half-century-or-so-to-make-sex-crimes-less-morally-described-ofensas-contra-el-honor-el-pudor-p-ej-and-more-clinically-descriptive-this-has-led-to-the-reclassification-in-many-countries-of-sex-crimes-into-either-abuso-or-agresion-abuse-assuault-the-differentiating-factor-between-the-two-is-often-whether-or-not-there-was-resistance-on-the-part-of-the-victim-or-violence-on-the-part-of-the-aggressor-there-were-high-profile-cases-in-spain-in-2019-which-threw-the-inherent-difficulty-of-this-classification-into-relief-wherein-women-who-were-semi-conscious-or-unconscious-due-to-drugs-or-alcohol-and-therefore-did-not-resist-were-considered-to-be-victims-of-abuse-rather-than-assault-no-spanish",
+    "id": "there-is-a-wealth-of-criminal-terminology-in-spanish-an-9a50e27420f0",
     "contrastsWith": []
   },
   {
@@ -15687,7 +15689,7 @@
     "lastUpdated": "",
     "source": "Refactor_ EOIR Spanish-English Glossary 2020.xlsx - Social Services.csv",
     "proposals": "",
-    "id": "case-manager-gerente-de-casos-us-usage-el-la-que-lleva-su-caso-el-la-asistente-a-cargo-encargado-de-su-caso",
+    "id": "case-manager-12c051df225f",
     "contrastsWith": []
   },
   {
@@ -15852,7 +15854,7 @@
     "id": "untitled-renta-minima",
     "contrastsWith": []
   },
-    {
+  {
     "english": "the queue",
     "englishDefinition": "This is the 'queue', or list, of documents that have been filed by respondent or respondents' counsel to a given IJ, and that are pending acceptance or rejection. It's digital.",
     "spanish": "lista de documentos pendientes (de aceptar o rechazar)",
@@ -15866,9 +15868,12 @@
     "source": "mapachurro - IJ DCW",
     "proposals": "",
     "id": "the-queue-lista-de-documentos-pendientes",
-    "contrastsWith": ["the record of proceedings", "documents filed"]
+    "contrastsWith": [
+      "the record of proceedings",
+      "documents filed"
+    ]
   },
-    {
+  {
     "english": "CARR-compliant",
     "englishDefinition": "An application, specifically an I-589, that complies with the requirements set forth in Matter of C-A-R-R-. In other words, an application that is filled out completely and does not rely on supplements for substantive answers.",
     "spanish": "cumple con el caso CARR",
@@ -15882,7 +15887,9 @@
     "source": "mapachurro",
     "proposals": "",
     "id": "carr-compliant-cumple-con-el-caso-carr",
-    "contrastsWith": ["substantially incomplete application"]
+    "contrastsWith": [
+      "substantially incomplete application"
+    ]
   },
   {
     "english": "MAM hearing",
@@ -15898,6 +15905,8 @@
     "source": "mapachurro",
     "proposals": "",
     "id": "mam-hearing-audiencia-mam",
-    "contrastsWith": ["competency evaluation"]
+    "contrastsWith": [
+      "competency evaluation"
+    ]
   }
 ]

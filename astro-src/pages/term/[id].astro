@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TermCard from "../../components/TermCard.astro";
+import glossary from "../../../src/data/glossary.json";
+
+export function getStaticPaths() {
+  return glossary.map((term) => ({
+    params: { id: term.id },
+    props: { term },
+  }));
+}
+
+const { term } = Astro.props;
+
+const name = term.english || term.spanish || "Glossary entry";
+
+const description = [
+  term.english,
+  term.spanish,
+  term.englishDefinition,
+  term.spanishDefinition,
+]
+  .filter(Boolean)
+  .join(" | ")
+  .slice(0, 160);
+---
+
+<BaseLayout title={`${name} | Immigration Glossary`} description={description}>
+  <section class="page">
+    <h1>{name}</h1>
+
+    <TermCard term={term} defaultExpanded />
+  </section>
+</BaseLayout>

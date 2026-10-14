@@ -15,20 +15,19 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "astro dev",
     "build:data": "node ./scripts/build-indexes.js",
-    "build": "npm run build:data && vite build",
-    "preview": "vite preview",
+    "build": "npm run build:data && astro build",
+    "preview": "astro preview",
     "clean-slate": "bash ./clean-slate.sh"
   },
   "dependencies": {
-    "csv-parse": "^6.2.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-router-dom": "^7.13.2"
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.8",
+    "csv-parse": "^6.2.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.1",
-    "vite": "^8.0.3"
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.1"
   }
 }

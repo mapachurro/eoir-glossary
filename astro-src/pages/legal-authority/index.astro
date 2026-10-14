@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import authorities from "../../../src/data/authority.json";
+
+function searchableText(item) {
+  return [
+    item.body,
+    ...(item.holding || []),
+    item.citation,
+    item.name,
+    item.year,
+    item.status,
+    ...(item.topics || []),
+    ...(item.relatedTerms || []),
+    ...(item.cites || []),
+    ...(item.citedBy || []),
+    ...(item.summary || []),
+    item.officialUrl,
+    item.notes,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+---
+
+<BaseLayout
+  title="Legal Authority | Immigration Glossary"
+  description="Explore U.S. immigration case law, statutes, holdings, and legal authorities."
+>
+  <section class="page">
+    <h1>Legal Authority</h1>
+
+    <p>
+      Immigration law in the United States is a fascinating patchwork of Federal
+      law, regulation, and case law from the Board of Immigration Appeals,
+      Federal Circuit Courts, the Supreme Court, and the secret off-the-menu
+      item of Attorney General-authored decisions. Try to keep up.
+    </p>
+
+    <p>
+      This is not legal advice. This is a wildly incomplete, evolving knowledge
+      base of case law and relevant statutes that may, or may not, come up
+      frequently in immigration proceedings and processes.
+    </p>
+
+    <div class="search-bar">
+      <label for="authority-search">Search</label>
+      <input
+        id="authority-search"
+        class="search-bar__input"
+        type="search"
+        placeholder="Search by case name, citation, topic, body, summary..."
+        autocomplete="off"
+      />
+    </div>
+
+    <p id="authority-results-count" class="results-count" aria-live="polite">
+      {authorities.length} authorities
+    </p>
+
+    <div class="authority-grid" id="authority-grid">
+      {authorities.map((item) => (
+        <a
+          href={`/legal-authority/${item.id}/`}
+          class="authority-card authority-card--compact"
+          data-search={searchableText(item)}
+        >
+          <div class="authority-card__header">
+            <span>{item.body}</span>
+            <span>{item.year ?? "Statute"}</span>
+          </div>
+
+          <h2>{item.name}</h2>
+
+          <p class="authority-card__citation">{item.citation}</p>
+
+          <p class="authority-card__status">{item.status}</p>
+
+          <div class="authority-card__topics">
+            {(item.topics || []).map((topic) => (
+              <span class="authority-topic">{topic}</span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <p id="authority-empty" class="empty-state" hidden>
+      No authorities match your search.
+    </p>
+  </section>
+</BaseLayout>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>("#authority-search");
+  const count = document.querySelector<HTMLElement>("#authority-results-count");
+  const empty = document.querySelector<HTMLElement>("#authority-empty");
+  const cards = Array.from(
+    document.querySelectorAll<HTMLElement>("#authority-grid .authority-card"),
+  );
+
+  if (search && count && empty) {
+    search.addEventListener("input", () => {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+
+      for (const card of cards) {
+        const matches = (card.dataset.search || "").includes(query);
+        card.hidden = !matches;
+
+        if (matches) visible++;
+      }
+
+      count.textContent = `${visible} ${visible === 1 ? "authority" : "authorities"}`;
+      empty.hidden = visible !== 0;
+    });
+  }
+</script>
+
+<style>
+  .authority-card[hidden],
+  .empty-state[hidden] {
+    display: none;
+  }
+</style>
