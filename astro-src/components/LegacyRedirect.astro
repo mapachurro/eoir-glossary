@@ -1,0 +1,30 @@
+---
+import migrations from "../../scripts/glossary-id-migration.json";
+
+const legacyIds = Object.fromEntries(
+  migrations.map(({ oldId, newId }) => [oldId, newId]),
+);
+---
+
+<script is:inline define:vars={{ legacyIds }}>
+  (() => {
+    const hash = window.location.hash;
+
+    if (!hash.startsWith("#/")) return;
+
+    const legacyPath = hash.slice(1);
+    const [pathname, query = ""] = legacyPath.split("?");
+
+    const segments = pathname.split("/").filter(Boolean);
+
+    if (segments[0] === "term" && segments[1]) {
+      const oldId = decodeURIComponent(segments[1]);
+      segments[1] = legacyIds[oldId] || oldId;
+    }
+
+    const newPath = "/" + segments.join("/") + "/";
+    const destination = newPath + (query ? "?" + query : "");
+
+    window.location.replace(destination);
+  })();
+</script>

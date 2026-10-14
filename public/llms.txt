@@ -14,11 +14,11 @@ The project is intended for educational and reference use. It does not provide l
 ## Main sections
 
 - [Home](https://gringo.bingo/)
-- [All glossary terms](https://gringo.bingo/#/terms)
-- [Legal Authority Explorer](https://gringo.bingo/#/legal-authority)
-- [Immigration Forms](https://gringo.bingo/#/forms)
-- [Adjournment Codes](https://gringo.bingo/#/adjournment-codes)
-- [Bibliography and Sources](https://gringo.bingo/#/sources)
+- [All glossary terms](https://gringo.bingo/terms)
+- [Legal Authority Explorer](https://gringo.bingo/legal-authority)
+- [Immigration Forms](https://gringo.bingo/forms)
+- [Adjournment Codes](https://gringo.bingo/adjournment-codes)
+- [Bibliography and Sources](https://gringo.bingo/sources)
 
 ## Content and sources
 

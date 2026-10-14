@@ -49,41 +49,38 @@ const searchableForms = forms.map((form) => ({
     </div>
 
     <div class="forms-grid">
-      {
-        forms.map((form) => (
-          <article class="form-card" data-form-id={form.id}>
-            <div class="form-card__header">
-              <span class="form-card__agency">{form.agency}</span>
-              <h2>{form.formNumber}</h2>
-            </div>
+      {forms.map((form) => (
+        <article class="form-card" data-form-id={form.id}>
+          <div class="form-card__header">
+            <span class="form-card__agency">{form.agency}</span>
+            <h2>{form.formNumber}</h2>
+          </div>
 
-            <h3>{form.title}</h3>
+          <h3>{form.title}</h3>
 
-            {form.spanishTitle && (
-              <p class="form-card__spanish">{form.spanishTitle}</p>
-            )}
+          {form.spanishTitle && (
+            <p class="form-card__spanish">{form.spanishTitle}</p>
+          )}
 
-            {form.purpose && <p>{form.purpose}</p>}
+          {form.purpose && <p>{form.purpose}</p>}
 
-            {form.relatedTerms?.length > 0 && (
-              <p>
-                <strong>Related terms:</strong>{" "}
-                {form.relatedTerms.join(", ")}
-              </p>
-            )}
+          {form.relatedTerms?.length > 0 && (
+            <p>
+              <strong>Related terms:</strong> {form.relatedTerms.join(", ")}
+            </p>
+          )}
 
-            {form.officialUrl && (
-              <a
-                href={form.officialUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Official form/source
-              </a>
-            )}
-          </article>
-        ))
-      }
+          {/^https?:\/\//i.test(String(form.officialUrl || "")) && (
+            <a
+              href={form.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Official form/source
+            </a>
+          )}
+        </article>
+      ))}
     </div>
   </section>
 </BaseLayout>
@@ -97,7 +94,7 @@ const searchableForms = forms.map((form) => ({
     Array.from(document.querySelectorAll("[data-form-id]")).map((card) => [
       card.dataset.formId,
       card,
-    ])
+    ]),
   );
 
   function filterForms(query) {
@@ -105,8 +102,7 @@ const searchableForms = forms.map((form) => ({
     let visible = 0;
 
     for (const form of searchableForms) {
-      const matches =
-        !normalized || form.searchText.includes(normalized);
+      const matches = !normalized || form.searchText.includes(normalized);
 
       const card = cards.get(form.id);
 
