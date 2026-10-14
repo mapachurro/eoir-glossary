@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import "../../src/styles.css";
 import LegacyRedirect from "../components/LegacyRedirect.astro";
+import AnalyticsConsent from "../components/AnalyticsConsent.astro";
 
 interface Props {
   title?: string;
@@ -19,19 +20,66 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google Analytics -->
-<script
-  is:inline
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-KSXC0NFZLZ"
-></script>
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "G-KSXC0NFZLZ");
+    <script is:inline>
+  (() => {
+    const measurementId = "G-KSXCONFZLZ";
+    const consentKey = "gringo-analytics-consent";
+
+    function loadAnalytics() {
+      if (window.__analyticsLoaded) return;
+      window.__analyticsLoaded = true;
+
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+
+      window.gtag("consent", "default", {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+      });
+
+      window.gtag("js", new Date());
+
+      window.gtag("consent", "update", {
+        analytics_storage: "granted"
+      });
+
+      window.gtag("config", measurementId);
+
+      const script = document.createElement("script");
+      script.async = true;
+      script.src =
+        "https://www.googletagmanager.com/gtag/js?id=" +
+        measurementId;
+      document.head.appendChild(script);
+    }
+
+    window.setAnalyticsConsent = function (choice) {
+      if (choice !== "accepted" && choice !== "rejected") return;
+
+      localStorage.setItem(consentKey, choice);
+
+      if (choice === "accepted") {
+        loadAnalytics();
+      } else if (window.__analyticsLoaded) {
+        // Stop tracking on this page immediately.
+        window["ga-disable-" + measurementId] = true;
+      }
+
+      document.dispatchEvent(new Event("analytics-consent-changed"));
+    };
+
+    window.getAnalyticsConsent = function () {
+      return localStorage.getItem(consentKey);
+    };
+
+    if (window.getAnalyticsConsent() === "accepted") {
+      loadAnalytics();
+    }
+  })();
 </script>
 
     <meta charset="UTF-8" />
@@ -63,5 +111,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
         </div>
       </main>
     </div>
+    <AnalyticsConsent />
   </body>
 </html>
