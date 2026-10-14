@@ -1,6 +1,10 @@
 #!/bin/bash
-rm -rf package-lock.json node_modules .docusaurus build
+set -e
+
+rm -rf node_modules package-lock.json dist .astro
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 nvm use
 npm install
