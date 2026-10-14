@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import "../../src/styles.css";
 import LegacyRedirect from "../components/LegacyRedirect.astro";
+import AnalyticsConsent from "../components/AnalyticsConsent.astro";
 
 interface Props {
   title?: string;
@@ -19,6 +20,106 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 <!doctype html>
 <html lang="en">
   <head>
+    <script is:inline>
+  (() => {
+    const measurementId = "G-KSXCONFZLZ";
+    const consentKey = "gringo-analytics-consent";
+
+    window.getAnalyticsConsent = function () {
+      return localStorage.getItem(consentKey);
+    };
+
+    function clearAnalyticsCookies() {
+  const cookieNames = document.cookie
+    .split(";")
+    .map((cookie) => cookie.trim().split("=")[0])
+    .filter((name) => name === "_ga" || name.startsWith("_ga_"));
+
+  for (const name of cookieNames) {
+    for (const domain of [
+      undefined,
+      location.hostname,
+      "." + location.hostname,
+      ".gringo.bingo"
+    ]) {
+      const domainAttribute = domain ? "; domain=" + domain : "";
+
+      document.cookie =
+        name +
+        "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" +
+        domainAttribute;
+    }
+  }
+}
+
+    function loadAnalytics() {
+      window["ga-disable-" + measurementId] = false;
+
+      if (window.__analyticsLoaded) {
+        window.gtag("consent", "update", {
+          analytics_storage: "granted"
+        });
+        return;
+      }
+
+      window.__analyticsLoaded = true;
+      window.dataLayer = window.dataLayer || [];
+
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+
+      window.gtag("consent", "default", {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+      });
+
+      window.gtag("js", new Date());
+
+      window.gtag("consent", "update", {
+        analytics_storage: "granted"
+      });
+
+      window.gtag("config", measurementId);
+
+      const script = document.createElement("script");
+      script.async = true;
+      script.src =
+        "https://www.googletagmanager.com/gtag/js?id=" +
+        measurementId;
+
+      document.head.appendChild(script);
+    }
+
+    window.setAnalyticsConsent = function (choice) {
+      if (choice !== "accepted" && choice !== "rejected") return;
+
+      localStorage.setItem(consentKey, choice);
+
+      if (choice === "accepted") {
+        loadAnalytics();
+      } else if (window.__analyticsLoaded) {
+        window.gtag("consent", "update", {
+          analytics_storage: "denied"
+        });
+
+        window["ga-disable-" + measurementId] = true;
+        clearAnalyticsCookies();
+      }
+
+      document.dispatchEvent(
+        new Event("analytics-consent-changed")
+      );
+    };
+
+    if (window.getAnalyticsConsent() === "accepted") {
+      loadAnalytics();
+    }
+  })();
+</script>
+
     <meta charset="UTF-8" />
     <LegacyRedirect />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,5 +149,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
         </div>
       </main>
     </div>
+    <AnalyticsConsent />
   </body>
 </html>

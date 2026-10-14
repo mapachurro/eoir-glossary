@@ -1,0 +1,96 @@
+<div id="analytics-consent" class="consent-banner" hidden>
+  <p>
+    This website uses optional Google Analytics cookies to understand
+    which glossary pages are useful. You can accept or decline
+    analytics without affecting your use of the site.
+  </p>
+
+  <div class="consent-actions">
+    <button id="reject-analytics" type="button">
+      Reject
+    </button>
+    <button id="accept-analytics" type="button">
+      Accept analytics
+    </button>
+  </div>
+</div>
+
+<button id="privacy-settings" type="button" hidden>
+  Privacy settings
+</button>
+
+<script is:inline>
+  (() => {
+    const banner = document.getElementById("analytics-consent");
+    const settings = document.getElementById("privacy-settings");
+
+    function render() {
+      const choice = window.getAnalyticsConsent();
+      banner.hidden = choice !== null;
+      settings.hidden = choice === null;
+    }
+
+    document.getElementById("accept-analytics")
+      .addEventListener("click", () => {
+        window.setAnalyticsConsent("accepted");
+        render();
+      });
+
+    document.getElementById("reject-analytics")
+      .addEventListener("click", () => {
+        window.setAnalyticsConsent("rejected");
+        render();
+      });
+
+    settings.addEventListener("click", () => {
+      banner.hidden = false;
+      settings.hidden = true;
+    });
+
+    render();
+  })();
+</script>
+
+<style>
+  .consent-banner {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    max-width: 42rem;
+    padding: 1.25rem;
+    background: white;
+    color: #222;
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px #0002;
+    z-index: 1000;
+  }
+
+  .consent-banner[hidden],
+  #privacy-settings[hidden] {
+    display: none;
+  }
+
+  .consent-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .consent-actions button,
+  #privacy-settings {
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+  }
+
+  #privacy-settings {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 999;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 0.4rem;
+  }
+</style>
