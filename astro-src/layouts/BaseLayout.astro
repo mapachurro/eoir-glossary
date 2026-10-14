@@ -25,11 +25,46 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
     const measurementId = "G-KSXCONFZLZ";
     const consentKey = "gringo-analytics-consent";
 
-    function loadAnalytics() {
-      if (window.__analyticsLoaded) return;
-      window.__analyticsLoaded = true;
+    window.getAnalyticsConsent = function () {
+      return localStorage.getItem(consentKey);
+    };
 
+    function clearAnalyticsCookies() {
+  const cookieNames = document.cookie
+    .split(";")
+    .map((cookie) => cookie.trim().split("=")[0])
+    .filter((name) => name === "_ga" || name.startsWith("_ga_"));
+
+  for (const name of cookieNames) {
+    for (const domain of [
+      undefined,
+      location.hostname,
+      "." + location.hostname,
+      ".gringo.bingo"
+    ]) {
+      const domainAttribute = domain ? "; domain=" + domain : "";
+
+      document.cookie =
+        name +
+        "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" +
+        domainAttribute;
+    }
+  }
+}
+
+    function loadAnalytics() {
+      window["ga-disable-" + measurementId] = false;
+
+      if (window.__analyticsLoaded) {
+        window.gtag("consent", "update", {
+          analytics_storage: "granted"
+        });
+        return;
+      }
+
+      window.__analyticsLoaded = true;
       window.dataLayer = window.dataLayer || [];
+
       window.gtag = function () {
         window.dataLayer.push(arguments);
       };
@@ -54,6 +89,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
       script.src =
         "https://www.googletagmanager.com/gtag/js?id=" +
         measurementId;
+
       document.head.appendChild(script);
     }
 
@@ -65,15 +101,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
       if (choice === "accepted") {
         loadAnalytics();
       } else if (window.__analyticsLoaded) {
-        // Stop tracking on this page immediately.
+        window.gtag("consent", "update", {
+          analytics_storage: "denied"
+        });
+
         window["ga-disable-" + measurementId] = true;
+        clearAnalyticsCookies();
       }
 
-      document.dispatchEvent(new Event("analytics-consent-changed"));
-    };
-
-    window.getAnalyticsConsent = function () {
-      return localStorage.getItem(consentKey);
+      document.dispatchEvent(
+        new Event("analytics-consent-changed")
+      );
     };
 
     if (window.getAnalyticsConsent() === "accepted") {
