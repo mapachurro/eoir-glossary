@@ -22,7 +22,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
   <head>
     <script is:inline>
   (() => {
-    const measurementId = "G-KSXCONFZLZ";
+    const measurementId = "G-762MN3N43B";
     const consentKey = "gringo-analytics-consent";
 
     window.getAnalyticsConsent = function () {
@@ -53,45 +53,40 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 }
 
     function loadAnalytics() {
-      window["ga-disable-" + measurementId] = false;
+  window["ga-disable-" + measurementId] = false;
 
-      if (window.__analyticsLoaded) {
-        window.gtag("consent", "update", {
-          analytics_storage: "granted"
-        });
-        return;
-      }
+  if (window.__analyticsLoaded) {
+    window.gtag("consent", "update", {
+      analytics_storage: "granted",
+    });
+    return;
+  }
 
-      window.__analyticsLoaded = true;
-      window.dataLayer = window.dataLayer || [];
+  window.__analyticsLoaded = true;
+  window.dataLayer = window.dataLayer || [];
 
-      window.gtag = function () {
-        window.dataLayer.push(arguments);
-      };
+  window.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
 
-      window.gtag("consent", "default", {
-        analytics_storage: "denied",
-        ad_storage: "denied",
-        ad_user_data: "denied",
-        ad_personalization: "denied"
-      });
+  window.gtag("consent", "default", {
+    analytics_storage: "granted",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+  });
 
-      window.gtag("js", new Date());
+  window.gtag("js", new Date());
+  window.gtag("config", measurementId);
 
-      window.gtag("consent", "update", {
-        analytics_storage: "granted"
-      });
+  const script = document.createElement("script");
+  script.async = true;
+  script.src =
+    "https://www.googletagmanager.com/gtag/js?id=" +
+    measurementId;
 
-      window.gtag("config", measurementId);
-
-      const script = document.createElement("script");
-      script.async = true;
-      script.src =
-        "https://www.googletagmanager.com/gtag/js?id=" +
-        measurementId;
-
-      document.head.appendChild(script);
-    }
+  document.head.appendChild(script);
+}
 
     window.setAnalyticsConsent = function (choice) {
       if (choice !== "accepted" && choice !== "rejected") return;
