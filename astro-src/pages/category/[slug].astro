@@ -12,9 +12,7 @@ export function getStaticPaths() {
     props: {
       category,
       matchingTerms: glossary.filter((term) =>
-        (term.category || []).some(
-          (value) => slugify(value) === category.slug,
-        ),
+        (term.category || []).some((value) => slugify(value) === category.slug),
       ),
     },
   }));
@@ -36,11 +34,9 @@ const { category, matchingTerms } = Astro.props;
     </p>
 
     <div class="term-list">
-      {
-        matchingTerms.map((term) => (
-          <TermCard term={term} />
-        ))
-      }
+      {matchingTerms.map((term) => (
+        <TermCard term={term} />
+      ))}
     </div>
   </section>
 </BaseLayout>
