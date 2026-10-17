@@ -778,3 +778,17 @@ a {
 #codes-empty[hidden] {
   display: none !important;
 }
+
+
+.rich-content > :first-child {
+  margin-top: 0;
+}
+
+.rich-content > :last-child {
+  margin-bottom: 0;
+}
+
+.term-definition,
+.term-comments {
+  margin-bottom: 1rem;
+}

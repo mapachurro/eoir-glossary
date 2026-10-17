@@ -1,0 +1,148 @@
+---
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import rehypeRaw from "rehype-raw";
+import rehypeSanitize from "rehype-sanitize";
+import rehypeStringify from "rehype-stringify";
+import { glossaryMatcher } from "../utils/glossaryMatcher";
+
+const { text = "", currentTermId } = Astro.props;
+
+const { lookup, regex } = glossaryMatcher;
+
+function linkifyText(value: string) {
+  const result: any[] = [];
+  const matches: {
+    start: number;
+    end: number;
+    href: string;
+    external: boolean;
+  }[] = [];
+
+  // Recognize bare URLs.
+  const urlRegex = /https?:\/\/[^\s<>"']+/g;
+
+  for (const match of value.matchAll(urlRegex)) {
+    const trimmed = match[0].replace(/[.,;!?)\]]+$/, "");
+
+    if (!trimmed) continue;
+
+    matches.push({
+      start: match.index!,
+      end: match.index! + trimmed.length,
+      href: trimmed,
+      external: true,
+    });
+  }
+
+  // Recognize glossary terms.
+  if (regex) {
+    const termRegex = new RegExp(regex.source, regex.flags);
+
+    for (const match of value.matchAll(termRegex)) {
+      const term = lookup.get(match[0].trim().toLowerCase());
+
+      if (!term || term.id === currentTermId) continue;
+
+      matches.push({
+        start: match.index!,
+        end: match.index! + match[0].length,
+        href: `/term/${term.id}/`,
+        external: false,
+      });
+    }
+  }
+
+  // URLs take priority over glossary references.
+  matches.sort(
+    (a, b) =>
+      a.start - b.start ||
+      Number(b.external) - Number(a.external) ||
+      b.end - a.end,
+  );
+
+  let cursor = 0;
+
+  for (const match of matches) {
+    if (match.start < cursor) continue;
+
+    if (match.start > cursor) {
+      result.push({
+        type: "text",
+        value: value.slice(cursor, match.start),
+      });
+    }
+
+    result.push({
+      type: "element",
+      tagName: "a",
+      properties: {
+        href: match.href,
+        ...(match.external
+          ? { target: "_blank", rel: ["noopener", "noreferrer"] }
+          : {}),
+      },
+      children: [
+        {
+          type: "text",
+          value: value.slice(match.start, match.end),
+        },
+      ],
+    });
+
+    cursor = match.end;
+  }
+
+  if (cursor < value.length) {
+    result.push({
+      type: "text",
+      value: value.slice(cursor),
+    });
+  }
+
+  return result;
+}
+
+function rehypeGlossaryLinks() {
+  return (tree: any) => {
+    function visit(node: any, insideLink = false) {
+      if (!node.children) return;
+
+      const nextChildren: any[] = [];
+
+      for (const child of node.children) {
+        if (child.type === "text" && !insideLink) {
+          nextChildren.push(...linkifyText(child.value));
+        } else {
+          if (child.type === "element") {
+            const skip =
+              insideLink ||
+              ["a", "code", "pre", "script", "style"].includes(child.tagName);
+
+            visit(child, skip);
+          }
+
+          nextChildren.push(child);
+        }
+      }
+
+      node.children = nextChildren;
+    }
+
+    visit(tree);
+  };
+}
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkRehype, { allowDangerousHtml: true })
+  .use(rehypeRaw)
+  .use(rehypeGlossaryLinks)
+  .use(rehypeSanitize)
+  .use(rehypeStringify);
+
+const html = String(await processor.process(String(text ?? "")));
+---
+
+<div class="rich-content" set:html={html} />

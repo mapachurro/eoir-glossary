@@ -47,13 +47,11 @@ const searchableTerms = glossary.map((term) => ({
     </div>
 
     <div class="term-list" id="term-list">
-      {
-        glossary.map((term) => (
-          <div class="term-result" data-term-id={term.id}>
-            <TermCard term={term} />
-          </div>
-        ))
-      }
+      {glossary.map((term) => (
+        <div class="term-result" data-term-id={term.id}>
+          <TermCard term={term} />
+        </div>
+      ))}
     </div>
   </section>
 </BaseLayout>
@@ -67,7 +65,7 @@ const searchableTerms = glossary.map((term) => ({
     Array.from(document.querySelectorAll(".term-result")).map((element) => [
       element.dataset.termId,
       element,
-    ])
+    ]),
   );
 
   function filterTerms(query) {
@@ -75,8 +73,7 @@ const searchableTerms = glossary.map((term) => ({
     let visible = 0;
 
     for (const term of searchableTerms) {
-      const matches =
-        !normalized || term.searchText.includes(normalized);
+      const matches = !normalized || term.searchText.includes(normalized);
 
       const element = elements.get(term.id);
 

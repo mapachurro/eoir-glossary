@@ -70,19 +70,19 @@ const searchableCodes = codes.map((code) => ({
     <h1>Adjournment Code Explorer</h1>
 
     <p class="page-intro">
-      A reference guide, fairly but not completely, complete and up-to-date,
-      to the <strong>adjournment codes</strong> used in US Immigration Court
-      (EOIR) proceedings.
+      A reference guide, fairly but not completely, complete and up-to-date, to
+      the <strong>adjournment codes</strong> used in US Immigration Court (EOIR)
+      proceedings.
     </p>
 
     <p>
-      These codes embed information regarding the reason that the case is
-      being continued to a later date into the record. They can affect the
-      results of a case; they can affect other processes outside of the EOIR,
-      most significantly the
-      <a href="/terms/?q=asylum%20clock">asylum clock</a>,
-      a timekeeping measure that determines when an asylum seeker present in
-      the US is eligible to receive a work permit.
+      These codes embed information regarding the reason that the case is being
+      continued to a later date into the record. They can affect the results of
+      a case; they can affect other processes outside of the EOIR, most
+      significantly the
+      <a href="/terms/?q=asylum%20clock">asylum clock</a>, a timekeeping measure
+      that determines when an asylum seeker present in the US is eligible to
+      receive a work permit.
     </p>
 
     <input
@@ -102,69 +102,64 @@ const searchableCodes = codes.map((code) => ({
       <p>Try another code, category, or keyword.</p>
     </div>
 
-    {
-      sortedCategories.map((category) => (
-        <section class="code-category-section">
-          <h2>{category} Adjournments</h2>
+    {sortedCategories.map((category) => (
+      <section class="code-category-section">
+        <h2>{category} Adjournments</h2>
 
-          <div class="code-table">
-            <div class="code-table__header">
-              <span>Code</span>
-              <span>Meaning</span>
-              <span>EAD Clock Effect</span>
-            </div>
-
-            {[...groupedCodes[category]].sort(sortCodes).map((code) => (
-              <article
-                class="code-row"
-                data-code-id={code.id || code.code}
-              >
-                <div class="code-row__code">{code.code}</div>
-
-                <div class="code-row__main">
-                  <h3>{code.meaning}</h3>
-
-                  {code.spanishMeaning && (
-                    <p class="code-row__spanish">{code.spanishMeaning}</p>
-                  )}
-
-                  {code.notes && (
-                    <p class="code-row__notes">
-                      <strong>Notes:</strong> {code.notes}
-                    </p>
-                  )}
-
-                  {code.relatedTerms?.length > 0 && (
-                    <p class="code-row__related">
-                      <strong>Related terms:</strong>{" "}
-                      {code.relatedTerms.join(", ")}
-                    </p>
-                  )}
-
-                  {code.source && (
-                    <p class="code-row__source">
-                      <a
-                        href={code.source}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Source
-                      </a>
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <span class={getClockClass(code.affectsAsylumClock)}>
-                    {code.affectsAsylumClock || "—"}
-                  </span>
-                </div>
-              </article>
-            ))}
+        <div class="code-table">
+          <div class="code-table__header">
+            <span>Code</span>
+            <span>Meaning</span>
+            <span>EAD Clock Effect</span>
           </div>
-        </section>
-      ))
-    }
+
+          {[...groupedCodes[category]].sort(sortCodes).map((code) => (
+            <article class="code-row" data-code-id={code.id || code.code}>
+              <div class="code-row__code">{code.code}</div>
+
+              <div class="code-row__main">
+                <h3>{code.meaning}</h3>
+
+                {code.spanishMeaning && (
+                  <p class="code-row__spanish">{code.spanishMeaning}</p>
+                )}
+
+                {code.notes && (
+                  <p class="code-row__notes">
+                    <strong>Notes:</strong> {code.notes}
+                  </p>
+                )}
+
+                {code.relatedTerms?.length > 0 && (
+                  <p class="code-row__related">
+                    <strong>Related terms:</strong>{" "}
+                    {code.relatedTerms.join(", ")}
+                  </p>
+                )}
+
+                {code.source && (
+                  <p class="code-row__source">
+                    <a
+                      href={code.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Source
+                    </a>
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <span class={getClockClass(code.affectsAsylumClock)}>
+                  {code.affectsAsylumClock || "—"}
+                </span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
   </section>
 </BaseLayout>
 
@@ -177,11 +172,11 @@ const searchableCodes = codes.map((code) => ({
     Array.from(document.querySelectorAll("[data-code-id]")).map((row) => [
       row.dataset.codeId,
       row,
-    ])
+    ]),
   );
 
   const sections = Array.from(
-    document.querySelectorAll(".code-category-section")
+    document.querySelectorAll(".code-category-section"),
   );
 
   function filterCodes(query) {
@@ -189,8 +184,7 @@ const searchableCodes = codes.map((code) => ({
     let visible = 0;
 
     for (const code of searchableCodes) {
-      const matches =
-        !normalized || code.searchText.includes(normalized);
+      const matches = !normalized || code.searchText.includes(normalized);
 
       const row = rows.get(code.id);
 
@@ -200,7 +194,7 @@ const searchableCodes = codes.map((code) => ({
 
     for (const section of sections) {
       const hasVisibleRows = Array.from(
-        section.querySelectorAll(".code-row")
+        section.querySelectorAll(".code-row"),
       ).some((row) => !row.hidden);
 
       section.hidden = !hasVisibleRows;

@@ -1,11 +1,10 @@
 <div id="analytics-consent" class="consent-banner" hidden>
   <p>
-  This website uses optional Google Analytics cookies to
-  understand which glossary pages are useful. You can
-  accept or decline analytics without affecting your use
-  of the site.
-  <a href="/privacy/">Privacy notice</a>.
-</p>
+    This website uses optional Google Analytics cookies to understand which
+    glossary pages are useful. You can accept or decline analytics without
+    affecting your use of the site.
+    <a href="/privacy/">Privacy notice</a>.
+  </p>
 
   <div class="consent-actions">
     <button id="reject-analytics" type="button">
@@ -32,13 +31,15 @@
       settings.hidden = choice === null;
     }
 
-    document.getElementById("accept-analytics")
+    document
+      .getElementById("accept-analytics")
       .addEventListener("click", () => {
         window.setAnalyticsConsent("accepted");
         render();
       });
 
-    document.getElementById("reject-analytics")
+    document
+      .getElementById("reject-analytics")
       .addEventListener("click", () => {
         window.setAnalyticsConsent("rejected");
         render();
