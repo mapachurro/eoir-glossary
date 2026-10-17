@@ -24,7 +24,7 @@ function linkifyText(value: string) {
   const urlRegex = /https?:\/\/[^\s<>"']+/g;
 
   for (const match of value.matchAll(urlRegex)) {
-    const trimmed = match[0].replace(/[.,;!?]+$/, "");
+    const trimmed = match[0].replace(/[.,;!?)\]]+$/, "");
 
     if (!trimmed) continue;
 
