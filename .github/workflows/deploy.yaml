@@ -34,8 +34,22 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Audit content links
+        run: node scripts/audit-content-links.mjs
+
       - name: Audit internal links
         run: node scripts/audit-internal-links.mjs
+
+      - name: Audit external links
+        run: node scripts/check-external-links.mjs --quiet --warn-only
+
+      - name: Upload external link report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-links-report
+          path: external-links-report.json
+          if-no-files-found: warn
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
